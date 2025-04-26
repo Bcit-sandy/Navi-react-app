@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Explore, Skip } from "./_ui/buttons";
+import { Explore, Skip, Add } from "./_ui/buttons";
 
 
 
@@ -8,9 +8,9 @@ export default function Page() {
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>Hello, world!</h1>
         <p>This is a dummy page to test if everything is working correctly.</p>
-        <button>Click me</button>
         <Explore />
         <Skip />
+        <Add />
       </main>
     );
   }

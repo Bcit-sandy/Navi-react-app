@@ -20,6 +20,11 @@ export function Skip(){
 
 // HomePage
 
+// Add post 
+export function Add() {
+  return <button className="add"><img className="add_button" src="/add.svg"></img></button>
+}
+
 // NavBar - template
 
 // Profile
