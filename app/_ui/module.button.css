@@ -70,3 +70,12 @@
   .explore_arrow {
     margin-left: 10px;
   }
+
+.skip {
+    font-size: var(--bodytext-font-size);
+    font-weight: bold;
+    color: var(--primary-blue-300);
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+}

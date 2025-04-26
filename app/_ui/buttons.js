@@ -8,10 +8,15 @@ import "../globals.css";
 // Onboarding
 
 // Let's go Explore | big button
-
 export function Explore() {
     return <button className="explore">Let's go explore!<img className="explore_arrow" src="/arrow_right.svg"></img></button>;
   }
+
+// small skip
+export function Skip(){
+  return <button className="skip">Skip</button>
+}
+
 
 // HomePage
 
