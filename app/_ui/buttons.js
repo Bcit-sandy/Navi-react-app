@@ -10,7 +10,7 @@ import "../globals.css";
 // Let's go Explore | big button
 
 export function Explore() {
-    return <button>Let's Go Explore</button>;
+    return <button className="explore">Let's go explore!<img className="explore_arrow" src="/arrow_right.svg"></img></button>;
   }
 
 // HomePage
