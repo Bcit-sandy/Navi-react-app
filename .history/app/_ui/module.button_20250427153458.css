@@ -53,8 +53,7 @@
   
   }
 
-/* Sign up*/
-
+/* Sign up*/  
 
 /* Onboarding*/
 .tag {
@@ -79,15 +78,8 @@
     border-color: var(--primary-blue-500);
 }
 
-.tag--selected:active {
+.tag--selected:hover {
     background-color: var(--primary-blue-700);
-}
-
-.tags-container {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 /*HomePage*/  
@@ -109,5 +101,3 @@
 /*Edit Profile*/ 
 
 /*Setting*/
-
-/* Tags container */

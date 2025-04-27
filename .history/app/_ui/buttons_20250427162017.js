@@ -13,7 +13,7 @@ import "../globals.css";
 // button (Let's go explore - skip) - daniel
 
 // button (tags) - sandy
-export function Tags({label, onClick, isSelected = false }) {
+export function Tags({ label, onClick, isSelected = false }) {
     return (
         <button 
             className={`tag ${isSelected ? 'tag--selected' : ''}`}

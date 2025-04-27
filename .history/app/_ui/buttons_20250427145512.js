@@ -10,19 +10,9 @@ import "../globals.css";
 //** ONBOARDING **//
 // radio button (description) - 2 variant (light-un, dark) - angie
 
-// button (Let's go explore - skip) - daniel
+// button (Let’s go explore - skip) - daniel
 
 // button (tags) - sandy
-export function Tags({label, onClick, isSelected = false }) {
-    return (
-        <button 
-            className={`tag ${isSelected ? 'tag--selected' : ''}`}
-            onClick={onClick}
-        >
-            {label}
-        </button>
-    );
-}
 
 
 // ** HOMEPAGE **//

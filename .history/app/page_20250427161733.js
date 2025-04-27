@@ -26,10 +26,11 @@ export default function Page() {
             {tags.map((tag) => (
                 <Tags 
                     key={tag}
-                    label={tag}
                     isSelected={selectedTags.includes(tag)}
                     onClick={() => handleTagClick(tag)}
-                />
+                >
+                    {tag}
+                </Tags>
             ))}
         </div>
       </main>

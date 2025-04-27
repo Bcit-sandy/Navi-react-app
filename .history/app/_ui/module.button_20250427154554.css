@@ -53,8 +53,7 @@
   
   }
 
-/* Sign up*/
-
+/* Sign up*/  
 
 /* Onboarding*/
 .tag {
@@ -83,13 +82,6 @@
     background-color: var(--primary-blue-700);
 }
 
-.tags-container {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
 /*HomePage*/  
 
 /*Posting community post*/ 
@@ -109,5 +101,3 @@
 /*Edit Profile*/ 
 
 /*Setting*/
-
-/* Tags container */
