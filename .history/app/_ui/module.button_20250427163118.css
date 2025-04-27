@@ -61,11 +61,8 @@
 }
 
 .signup-button {
-    width:281px;
-    height: 40px;
     padding: 12px 24px;
     border-radius: 8px;
-    border: none;
     background-color: var(--primary-blue-500);
     color: var(--white-color);
     font-size: var(--bodytext-font-size);
@@ -74,7 +71,7 @@
 }
 
 .signup-button:active {
-    background-color: var(--primary-blue-100);
+    transform: translateY(0);
 }
 
 

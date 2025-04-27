@@ -27,11 +27,6 @@ export default function Page() {
     return (
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
-
-        <div className="signup-container">
-            <SignUp onClick={handleSignUp} />
-        </div>
-        
         <div className="tags-container">
             {tags.map((tag) => (
                 <Tags 
@@ -42,7 +37,9 @@ export default function Page() {
                 />
             ))}
         </div>
-
+        <div className="signup-container">
+            <SignUp onClick={handleSignUp} />
+        </div>
       </main>
     );
 }

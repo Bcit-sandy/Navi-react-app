@@ -20,18 +20,13 @@ export default function Page() {
     };
 
     const handleSignUp = () => {
-        console.log("Sign up!");
-        // Add sign up function later
+        console.log("Sign up clicked!");
+        // Add your sign up logic here
     };
 
     return (
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
-
-        <div className="signup-container">
-            <SignUp onClick={handleSignUp} />
-        </div>
-        
         <div className="tags-container">
             {tags.map((tag) => (
                 <Tags 
@@ -42,7 +37,9 @@ export default function Page() {
                 />
             ))}
         </div>
-
+        <div style={{ marginTop: '20px' }}>
+            <SignUp onClick={handleSignUp} />
+        </div>
       </main>
     );
 }

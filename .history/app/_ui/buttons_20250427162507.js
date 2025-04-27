@@ -3,16 +3,8 @@ import "../globals.css";
 
 // ** SIGN UP **//
 // Sign in/up button - sandy
-export function SignUp({ label = "Sign Up", onClick }) {
-    return (
-        <button 
-            className="signup-button"
-            onClick={onClick}
-        >
-            {label}
-        </button>
-    );
-}
+// One blue
+// One white
 
 
 //** ONBOARDING **//
@@ -100,3 +92,13 @@ export function Tags({label, onClick, isSelected = false }) {
 // Radio button - angie
 
 // Sign up button
+export function SignUp({ label = "Sign Up", onClick }) {
+    return (
+        <button 
+            className="signup-button"
+            onClick={onClick}
+        >
+            {label}
+        </button>
+    );
+}
