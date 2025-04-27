@@ -9,7 +9,7 @@ import "../globals.css";
 
 // Let's go Explore | big button
 export function Explore() {
-    return <button className="explore">Let's go explore!<img className="explore_arrow" src="/arrow_right.svg"></img></button>;
+    return <button className="explore">Let's go explore!<img className="explore_arrow" src="/arrow_right.svg" alt="right arrow"></img></button>;
   }
 
 // small skip
@@ -22,20 +22,20 @@ export function Skip(){
 
 // Add post 
 export function Add() {
-  return <button className="add"><img className="add_button" src="/add.svg"></img></button>
+  return <button className="add"><img className="add_button" src="/add.svg" alt="add button"></img></button>
 }
 
 export function Community () {
-  return <button className="community"><img className="community_icon" src="/community.svg"></img>Create Community Post</button>
+  return <button className="community"><img className="community_icon" src="/community.svg" alt="community icon"></img>Create Community Post</button>
 }
 
 export function Event () {
-  return <button className="event"><img className="event_icon" src="/event.svg"></img>Create Event Post</button>
+  return <button className="event"><img className="event_icon" src="/event.svg" alt="event icon"></img>Create Event Post</button>
 }
 
 // Elipses and Report
 export function Elipses() {
-  return <button className="elipses"><img className="elipses_icon" src="/elipses.svg"></img></button>
+  return <button className="elipses"><img className="elipses_icon" src="/elipses.svg" alt="three dots"></img></button>
 }
 
 export function Report() {
@@ -43,7 +43,7 @@ export function Report() {
     <div className="report">
       <div className="report_heading">
         <p className="report_headingText">Report</p>
-        <img className="report_icon" src="report.svg"></img>
+        <img className="report_icon" src="report.svg" alt="report icon"></img>
       </div>
     <div className="report_options">
       <button className="report_button">Not interested</button>
@@ -56,7 +56,14 @@ export function Report() {
   );
 }
 
-// NavBar - template
+//Image add 
+export function ImageAdd(){
+  return (
+  <button className="imageAdd">
+    <img className="imageAdd_button" src="/add.svg" alt="add button"></img>
+  </button>
+  );
+}
 
 // Profile
 
