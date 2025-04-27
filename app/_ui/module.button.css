@@ -116,3 +116,51 @@
   margin-right: 8px;
 }
 
+.elipses {
+  border: none;
+  background-color: transparent;
+}
+
+.report_heading {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: var(--primary-blue-900);
+  color: var(--white-color);
+  font-weight: var(--bold-weight);
+  width: 212px;
+  height: 34px;
+  border-radius: 8px 8px 0 0;
+}
+
+.report_icon {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.report_options {
+  display: flex;
+  flex-direction: column;
+}
+
+.report_button {
+  font-size: var(--caption-font-size);
+  text-align: end;
+  color: var(--primary-blue-900);
+  background-color: var(--white-color);
+  border: none;
+  border-bottom: 1px solid var(--primary-blue-900);
+  width: 212px;
+  height: 34px;
+}
+
+.report_buttonLast {
+  font-size: var(--caption-font-size);
+  text-align: end;
+  color: var(--primary-blue-900);
+  background-color: var(--white-color);
+  border: none;
+  width: 212px;
+  height: 34px;
+  border-radius: 0 0 8px 8px;
+}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Explore, Skip, Add, Community, Event } from "./_ui/buttons";
+import { Explore, Skip, Add, Community, Event, Elipses, Report } from "./_ui/buttons";
 
 
 
@@ -13,6 +13,8 @@ export default function Page() {
         <Add />
         <Community />
         <Event />
+        <Elipses />
+        <Report />
       </main>
     );
   }
