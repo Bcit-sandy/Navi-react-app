@@ -25,6 +25,16 @@ export function Add() {
   return <button className="add"><img className="add_button" src="/add.svg"></img></button>
 }
 
+export function Community () {
+  return <button className="community"><img className="community_icon" src="/community.svg"></img>Create Community Post</button>
+}
+
+export function Event () {
+  return <button className="event"><img className="event_icon" src="/event.svg"></img>Create Event Post</button>
+}
+
+
+
 // NavBar - template
 
 // Profile

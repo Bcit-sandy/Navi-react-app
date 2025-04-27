@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Explore, Skip, Add } from "./_ui/buttons";
+import { Explore, Skip, Add, Community, Event } from "./_ui/buttons";
 
 
 
@@ -11,6 +11,8 @@ export default function Page() {
         <Explore />
         <Skip />
         <Add />
+        <Community />
+        <Event />
       </main>
     );
   }
