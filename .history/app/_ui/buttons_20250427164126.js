@@ -17,9 +17,9 @@ export function SignUp({ label = "Sign Up", onClick }) {
 export function SignIn({ label = "Sign In", onClick }) {
     return (
         <button 
-            className="signin-button"
+            className="signup-button"
             onClick={onClick}
-        >
+        >   
             {label}
         </button>
     );

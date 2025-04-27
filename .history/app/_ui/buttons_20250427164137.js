@@ -19,7 +19,7 @@ export function SignIn({ label = "Sign In", onClick }) {
         <button 
             className="signin-button"
             onClick={onClick}
-        >
+        >   
             {label}
         </button>
     );

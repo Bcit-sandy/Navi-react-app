@@ -50,7 +50,7 @@
     --bodytext-font-size: 16px;
     --caption-font-size: 14px;
     --label-font-size: 12px; 
-
+  
   }
 
 /* Sign up*/
@@ -65,6 +65,7 @@
     height: 40px;
     padding: 12px 24px;
     border-radius: 8px;
+    border: none;
     font-size: var(--bodytext-font-size);
     font-weight: var(--bold-weight);
     transition: all 0.2s ease;
@@ -77,13 +78,11 @@
 .signup-button {
     background-color: var(--primary-blue-500);
     color: var(--white-color);
-    border: none;
 }
 
 .signin-button {
     background-color: var(--white-color);
-    color: var(--analogous-blue-700);
-    border: 2px solid var(--analogous-blue-700);
+    color: var(--primary-blue-500);
 }
 
 .signup-button:active {
@@ -91,7 +90,7 @@
 }
 
 .signin-button:active {
-    background-color: var(--analogous-blue-300);
+    background-color: var(--analogous-blue-700);
 }
 
 /* Onboarding*/

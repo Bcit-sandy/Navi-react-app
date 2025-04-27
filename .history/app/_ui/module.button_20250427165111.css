@@ -91,7 +91,7 @@
 }
 
 .signin-button:active {
-    background-color: var(--analogous-blue-300);
+    background-color: var(--analogous-blue-100);
 }
 
 /* Onboarding*/

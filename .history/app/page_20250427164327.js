@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Tags, SignUp, SignIn } from "./_ui/buttons";
+import { Tags, SignUp } from "./_ui/buttons";
 import { useState } from "react";
 
 export default function Page() {

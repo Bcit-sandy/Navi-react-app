@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Tags, SignUp, SignIn } from "./_ui/buttons";
+import { Tags, SignUp } from "./_ui/buttons";
 import { useState } from "react";
 
 export default function Page() {
@@ -35,10 +35,6 @@ export default function Page() {
 
         <div className="signup-container">
             <SignUp onClick={handleSignUp} />
-        </div>
-
-        <div className="signin-container">
-            <SignIn onClick={handleSignIn} />
         </div>
 
         <div className="tags-container">

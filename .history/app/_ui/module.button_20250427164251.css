@@ -50,49 +50,46 @@
     --bodytext-font-size: 16px;
     --caption-font-size: 14px;
     --label-font-size: 12px; 
-
+  
   }
 
 /* Sign up*/
 
 /* Sign up button */
-.signup-container, .signin-container {
+.signup-container {
     margin-top: 20px;
 }
 
-.signup-button, .signin-button {
-    width: 281px;
+.signup-button {
+    width:281px;
     height: 40px;
     padding: 12px 24px;
     border-radius: 8px;
+    border: none;
+    background-color: var(--primary-blue-500);
+    color: var(--white-color);
     font-size: var(--bodytext-font-size);
     font-weight: var(--bold-weight);
     transition: all 0.2s ease;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.signup-button {
-    background-color: var(--primary-blue-500);
-    color: var(--white-color);
-    border: none;
-}
-
-.signin-button {
-    background-color: var(--white-color);
-    color: var(--analogous-blue-700);
-    border: 2px solid var(--analogous-blue-700);
 }
 
 .signup-button:active {
     background-color: var(--primary-blue-300);
 }
 
-.signin-button:active {
-    background-color: var(--analogous-blue-300);
+.signin-button {
+    width:281px;
+    height: 40px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white-color);
+    color: var(--primary-blue-500);
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    transition: all 0.2s ease;
 }
+
 
 /* Onboarding*/
 .tag {

@@ -77,13 +77,11 @@
 .signup-button {
     background-color: var(--primary-blue-500);
     color: var(--white-color);
-    border: none;
 }
 
 .signin-button {
     background-color: var(--white-color);
-    color: var(--analogous-blue-700);
-    border: 2px solid var(--analogous-blue-700);
+    color: var(--primary-blue-500);
 }
 
 .signup-button:active {
@@ -91,7 +89,7 @@
 }
 
 .signin-button:active {
-    background-color: var(--analogous-blue-300);
+    background-color: var(--analogous-blue-700);
 }
 
 /* Onboarding*/
