@@ -201,14 +201,7 @@ export function SearchButton({ onClick }) {
             className="search-button"
             onClick={onClick}
         >
-            <Image 
-                src="/search.svg" 
-                alt="search icon"
-                width={20}
-                height={20}
-                className="search-button-icon"
-            />
-            <span>Search</span>
+            Search
         </button>
     );
 }

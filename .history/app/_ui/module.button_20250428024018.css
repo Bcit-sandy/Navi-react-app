@@ -277,9 +277,9 @@
 .search-button {
     padding: 12px 24px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid var(--neutral-blue-700);
     background-color: var(--primary-blue-500);
-    color: var(--white-color);
+    color: var(--primary-blue-100);
     font-size: var(--bodytext-font-size);
     transition: all 0.2s ease;
     width: 100px;
@@ -288,12 +288,11 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    margin: 0 8px;
 }
 
 .search-button:active {
-    background-color: var(--primary-blue-700);
-    color: var(--white-color);
+    background-color: var(--primary-blue-100);
+    color: var(--neutral-blue-700);
 }
 
 .search-button-icon {
