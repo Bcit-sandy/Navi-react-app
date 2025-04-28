@@ -253,7 +253,6 @@
     color: var(--primary-blue-100);
     background-color: var(--neutral-blue-700);
     transition: all 0.2s ease;
-    box-sizing: border-box;
 }
 
 .search-input::placeholder {

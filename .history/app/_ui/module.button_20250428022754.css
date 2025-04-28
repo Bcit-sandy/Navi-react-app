@@ -241,33 +241,33 @@
     position: relative;
     width: 348px;
     height: 41px;
+    max-width: 400px;
     margin: 20px 0;
 }
 
 .search-input {
     width: 100%;
-    padding: 12px 16px 12px 40px;
+    padding: 12px 40px 12px 16px;
     border: 1px solid var(--neutral-blue-700);
     border-radius: 8px;
     font-size: var(--bodytext-font-size);
-    color: var(--primary-blue-100);
-    background-color: var(--neutral-blue-700);
+    color: var(--neutral-blue-700);
+    background-color: var(--white-color);
     transition: all 0.2s ease;
-    box-sizing: border-box;
 }
 
 .search-input::placeholder {
-    color: var(--primary-blue-100);
+    color: var(--secondary-beige-700);
 }
 
 .search-input:focus {
     outline: none;
-    border-color: var(--primary-blue-100);
+    border-color: var(--primary-blue-500);
 }
 
 .search-icon {
     position: absolute;
-    left: 12px;
+    right: 12px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;

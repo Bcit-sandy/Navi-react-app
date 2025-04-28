@@ -73,6 +73,8 @@ export default function Page() {
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
 
+        <SearchBar onChange={handleSearchChange} />
+
         <div className="signup-container">
             <SignUp onClick={handleSignUp} />
         </div>
@@ -116,8 +118,6 @@ export default function Page() {
         <div className="follow-container">
             <Follow isFollowing={isFollowing} onClick={handleFollowClick} />
         </div>
-
-        <SearchBar onChange={handleSearchChange} />
       </main>
     );
 }

@@ -174,21 +174,21 @@ export function Follow({ isFollowing = false, onClick }) {
 }
 
 // Search bar - sandy
-export function SearchBar({ placeholder = "Search here", onChange }) {
+export function SearchBar({ placeholder = "search here", onChange }) {
     return (
         <div className="search-container">
+            <input
+                type="text"
+                className="search-input"
+                placeholder={placeholder}
+                onChange={onChange}
+            />
             <Image 
                 src="/search.svg" 
                 alt="search icon"
                 width={20}
                 height={20}
                 className="search-icon"
-            />
-            <input
-                type="text"
-                className="search-input"
-                placeholder={placeholder}
-                onChange={onChange}
             />
         </div>
     );
