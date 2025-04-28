@@ -10,8 +10,7 @@ import {
     Elipses,
     Report,
     ImageAdd,
-    EventNotification,
-    RoundNext
+    EventNotification
 } from "./_ui/buttons";
 
 export default function Page() {
@@ -26,7 +25,6 @@ export default function Page() {
             <Report />
             <ImageAdd />
             <EventNotification />
-            <RoundNext />
         </main>
     );
 }

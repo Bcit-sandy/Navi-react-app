@@ -26,7 +26,6 @@ export default function Page() {
             <Report />
             <ImageAdd />
             <EventNotification />
-            <RoundNext />
         </main>
     );
 }

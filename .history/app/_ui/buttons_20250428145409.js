@@ -176,12 +176,13 @@ export function RoundNext() {
     };
     return (
         <button
-            className={`roundNext ${isActive ? "roundNext-active" : ""}`}
+            className={`next ${isActive ? "roundNext-active" : ""}`}
             onClick={handleClick}>
             <img
-                className='roundNext_icon'
-                src='/arrow_right.svg'
-                alt='next icon'></img>
+                className='event_icon'
+                src='/event.svg'
+                alt='event icon'></img>
+            Create Event Post
         </button>
     );
 }

@@ -56,9 +56,7 @@ export function Add() {
     };
 
     return (
-        <button
-            className={`add ${isActive ? "add-active" : ""}`}
-            onClick={handleClick}>
+        <button className={`add ${isActive ? "add-active" : ""}`} onClick={handleClick}>
             <img
                 className='add_button'
                 src='/add.svg'
@@ -74,11 +72,9 @@ export function Community() {
         console.log("communty button clicked, current state:", isActive);
         setIsActive(!isActive);
     };
-
+    
     return (
-        <button
-            className={`community ${isActive ? "community-active" : ""}`}
-            onClick={handleClick}>
+        <button className={`community ${isActive ? "community-active" : ""}`} onClick={handleClick}>
             <img
                 className='community_icon'
                 src='/community.svg'
@@ -97,9 +93,7 @@ export function Event() {
     };
 
     return (
-        <button
-            className={`event ${isActive ? "event-active" : ""}`}
-            onClick={handleClick}>
+        <button className={`event ${isActive ? "event-active" : ""}`} onClick={handleClick}>
             <img
                 className='event_icon'
                 src='/event.svg'
@@ -167,23 +161,8 @@ export function EventNotification() {
 // Profile
 
 // Create Event
-export function RoundNext() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        console.log("event button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
-    return (
-        <button
-            className={`roundNext ${isActive ? "roundNext-active" : ""}`}
-            onClick={handleClick}>
-            <img
-                className='roundNext_icon'
-                src='/arrow_right.svg'
-                alt='next icon'></img>
-        </button>
-    );
+export function roundNext() {
+    
 }
 
 // Setting

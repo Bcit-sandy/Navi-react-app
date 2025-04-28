@@ -219,12 +219,5 @@
 
 .roundNext {
     background-color: var(--primary-blue-500);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-}
-
-.roundNext-active {
-    background-color: var(--neutral-blue-100);
+    wid
 }
