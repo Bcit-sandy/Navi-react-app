@@ -148,29 +148,6 @@
 }
 
 /*Posting community post*/ 
-/* Send button */
-.send-button {
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
-    background-color: transparent;
-    transition: all 0.2s ease;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.send-button:active {
-    background-color: var(--primary-blue-100);
-}
-
-/* Send button container */
-.send-container {
-    margin-top: 20px;
-}
-
 
 /*Event information*/ 
 
@@ -245,4 +222,26 @@
 
 /*Setting*/
 
+/* Send button */
+.send-button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button:active {
+    background-color: var(--primary-blue-500);
+}
+
+/* Send button container */
+.send-container {
+    margin-top: 20px;
+}
 

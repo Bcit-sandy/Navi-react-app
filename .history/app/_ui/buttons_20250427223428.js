@@ -119,8 +119,8 @@ export function Send({ onClick }) {
             <Image 
                 src="/send.png" 
                 alt="send icon"
-                width={25}
-                height={25}
+                width={24}
+                height={24}
             />
         </button>
     );
