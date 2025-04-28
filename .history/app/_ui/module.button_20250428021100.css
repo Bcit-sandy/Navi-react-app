@@ -214,6 +214,7 @@
 
 .follow-text {
     font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
 }
 
 /* When not following */
@@ -222,13 +223,8 @@
 }
 
 /* When following */
-.follow-button.followed {
-    background-color: var(--white-color);
-    border: 1px solid var(--neutral-blue-500);
-}
-
 .follow-button.followed .follow-text {
-    color: var(--neutral-blue-500);
+    color: var(--primary-blue-700);
 }
 
 /* Follow button container */

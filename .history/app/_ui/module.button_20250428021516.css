@@ -224,7 +224,6 @@
 /* When following */
 .follow-button.followed {
     background-color: var(--white-color);
-    border: 1px solid var(--neutral-blue-500);
 }
 
 .follow-button.followed .follow-text {
