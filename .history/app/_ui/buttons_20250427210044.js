@@ -74,16 +74,7 @@ export function Heart({ size = "small", isLiked = false, onClick }) {
 // 3 dots button - daniel
 
 // short join button (event homepage) - 2 variants - sandy
-export function Join({ isJoined = false, onClick }) {
-    return (
-        <button 
-            className={`join-button ${isJoined ? 'join-button--joined' : ''}`}
-            onClick={onClick}
-        >
-            {isJoined ? "Joined" : "Join"}
-        </button>
-    );
-}
+
 
 //** POSTING COMMUNITY POST **//
 // toggle button 2var - angie
@@ -96,7 +87,16 @@ export function Join({ isJoined = false, onClick }) {
 // users joining circle (image holder) - angie
 
 // long join button - 2 variants - daniel
-
+export function Join({ isJoined = false, onClick }) {
+    return (
+        <button 
+            className={`join-button ${isJoined ? 'join-button--joined' : ''}`}
+            onClick={onClick}
+        >
+            {isJoined ? "Joined" : "Join"}
+        </button>
+    );
+}
 
 //** EVENT POST **//
 // send button - sandy

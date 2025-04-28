@@ -152,41 +152,6 @@
 /*Event information*/ 
 
 /*Event post*/  
-.join-button {
-    padding: 12px 24px;
-    border-radius: 8px;
-    border: 1px solid var(--secondary-beige-300);
-    background-color: var(--primary-blue-500);
-    color: var(--secondary-beige-100);
-    font-size: var(--bodytext-font-size);
-    transition: all 0.2s ease;
-    width: 70px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.join-button:active {
-    background-color: var(--primary-blue-700);
-}
-
-.join-button--joined {
-    background-color: var(--success-color);
-    color: var(--secondary-beige-100);
-}
-
-.join-button--joined:active {
-    background-color: var(--secondary-beige-300);
-    color: var(--primary-blue-500);
-}
-
-/* Join button container */
-.join-container {
-    margin-top: 20px;
-}
-
-
 
 /*Profile*/ 
 
@@ -199,3 +164,37 @@
 /*Edit Profile*/ 
 
 /*Setting*/
+
+/* Join button */
+.join-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-blue-500);
+    background-color: var(--white-color);
+    color: var(--primary-blue-500);
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 120px;
+    text-align: center;
+}
+
+.join-button:hover {
+    background-color: var(--primary-blue-100);
+}
+
+.join-button--joined {
+    background-color: var(--primary-blue-500);
+    color: var(--white-color);
+}
+
+.join-button--joined:hover {
+    background-color: var(--primary-blue-700);
+}
+
+/* Join button container */
+.join-container {
+    margin-top: 20px;
+}
+

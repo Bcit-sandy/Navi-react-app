@@ -71,7 +71,7 @@ export default function Page() {
             <Heart size="large" isLiked={largeHeartLiked} onClick={handleLargeHeartClick} />
         </div>
 
-        <div className="join-container">
+        <div style={{ marginTop: '20px' }}>
             <Join isJoined={isJoined} onClick={handleJoinClick} />
         </div>
       </main>

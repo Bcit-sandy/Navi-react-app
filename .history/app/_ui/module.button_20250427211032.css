@@ -172,13 +172,12 @@
 }
 
 .join-button--joined {
-    background-color: var(--success-color);
-    color: var(--secondary-beige-100);
+    background-color: var(--secondary-beige-100);
+    color: var(--primary-blue-500);
 }
 
 .join-button--joined:active {
     background-color: var(--secondary-beige-300);
-    color: var(--primary-blue-500);
 }
 
 /* Join button container */

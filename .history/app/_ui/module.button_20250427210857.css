@@ -167,18 +167,17 @@
     justify-content: center;
 }
 
-.join-button:active {
+.join-button:hover {
     background-color: var(--primary-blue-700);
 }
 
 .join-button--joined {
-    background-color: var(--success-color);
-    color: var(--secondary-beige-100);
+    background-color: var(--secondary-beige-100);
+    color: var(--primary-blue-500);
 }
 
-.join-button--joined:active {
+.join-button--joined:hover {
     background-color: var(--secondary-beige-300);
-    color: var(--primary-blue-500);
 }
 
 /* Join button container */

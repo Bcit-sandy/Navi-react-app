@@ -178,7 +178,7 @@
 
 .join-button--joined:active {
     background-color: var(--secondary-beige-300);
-    color: var(--primary-blue-500);
+    color: var(--primary-blue-900);
 }
 
 /* Join button container */
