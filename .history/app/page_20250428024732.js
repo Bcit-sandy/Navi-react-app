@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio } from "./_ui/buttons";
+import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton } from "./_ui/buttons";
 import { useState } from "react";
 
 export default function Page() {
@@ -11,7 +11,6 @@ export default function Page() {
     const [isJoined, setIsJoined] = useState(false);
     const [isFollowing, setIsFollowing] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
-    const [textSize, setTextSize] = useState("medium");
     const tags = ["Sports", "Outdoor Activities", "Movies", "Music", "Video Games","Cafe Hopping","Reading","Arts","Food","Dancing","Learning","Board Games"];
     
     const handleTagClick = (tag) => {
@@ -79,11 +78,6 @@ export default function Page() {
         // Add edit function later
     };
 
-    const handleTextSizeChange = (e) => {
-        setTextSize(e.target.value);
-        console.log("Text size changed to:", e.target.value);
-    };
-
     return (
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
@@ -99,8 +93,6 @@ export default function Page() {
         <div className="edit-container">
             <EditButton onClick={handleEditClick} />
         </div>
-
-        <TextSizeRadio value={textSize} onChange={handleTextSizeChange} />
 
         <div className="signup-container">
             <SignUp onClick={handleSignUp} />

@@ -421,11 +421,11 @@
 
 .radio-text {
     font-size: var(--h3-font-size);
-    color: var(--primary-blue-500);
-    font-weight: var(--bold-weight)
+    color: var(--primary -blue-500);
 }
 
 .radio-input:checked + .radio-text {
-    color: var(--primary-blue-500);
+    color: var(--primary-blue-100);
+    font-weight: var(--bold-weight);
 }
 

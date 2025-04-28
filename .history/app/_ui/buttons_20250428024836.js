@@ -246,32 +246,4 @@ export function EditButton({ onClick }) {
 // Blue buttons with graphics inside - daniel
 // Toggle Button - angie
 // Radio button - sandy
-export function TextSizeRadio({ value = "medium", onChange }) {
-    return (
-        <div className="text-size-radio-container">
-            <label className="radio-label">
-                <input
-                    type="radio"
-                    name="textSize"
-                    value="medium"
-                    checked={value === "medium"}
-                    onChange={onChange}
-                    className="radio-input"
-                />
-                <span className="radio-text">Medium (default) </span>
-            </label>
-            <label className="radio-label">
-                <input
-                    type="radio"
-                    name="textSize"
-                    value="large"
-                    checked={value === "large"}
-                    onChange={onChange}
-                    className="radio-input"
-                />
-                <span className="radio-text">Large</span>
-            </label>
-        </div>
-    );
-}
 

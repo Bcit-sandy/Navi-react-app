@@ -426,6 +426,6 @@
 }
 
 .radio-input:checked + .radio-text {
-    color: var(--primary-blue-500);
+    color: var(--primary-blue-100);
 }
 

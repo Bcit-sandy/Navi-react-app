@@ -411,6 +411,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    cursor: pointer;
 }
 
 .radio-input {
@@ -420,12 +421,12 @@
 }
 
 .radio-text {
-    font-size: var(--h3-font-size);
-    color: var(--primary-blue-500);
-    font-weight: var(--bold-weight)
+    font-size: var(--bodytext-font-size);
+    color: var(--neutral-blue-500);
 }
 
 .radio-input:checked + .radio-text {
     color: var(--primary-blue-500);
+    font-weight: var(--bold-weight);
 }
 

@@ -258,7 +258,7 @@ export function TextSizeRadio({ value = "medium", onChange }) {
                     onChange={onChange}
                     className="radio-input"
                 />
-                <span className="radio-text">Medium (default) </span>
+                <span className="radio-text">Medium</span>
             </label>
             <label className="radio-label">
                 <input
