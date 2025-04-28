@@ -155,6 +155,7 @@ export function Return({ onClick }) {
 //** BUTTONS **//
 // Calendar View - daniel
 
+// Follow - sandy 
 // Follow button - sandy
 export function Follow({ isFollowing = false, onClick }) {
     return (
