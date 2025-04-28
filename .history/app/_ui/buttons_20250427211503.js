@@ -91,7 +91,7 @@ export function Join({ isJoined = false, onClick }) {
 // image adding button - daniel
 
 // post button - sandy
-export function Post({ label = "Post →", onClick }) {
+export function Post({ label = "Post", onClick }) {
     return (
         <button 
             className="post-button"

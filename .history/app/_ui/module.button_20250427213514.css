@@ -206,15 +206,15 @@
     color: var(--white-color);
     font-size: var(--h3-font-size);
     transition: all 0.2s ease;
-    width: 114px;
-    height: 44px;
+    width: 100px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .post-button:active {
-    background-color: var(--primary-blue-500);
+    background-color: var(--primary-blue-700);
 }
 
 

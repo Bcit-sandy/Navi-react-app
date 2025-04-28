@@ -80,7 +80,7 @@ export default function Page() {
             <Join isJoined={isJoined} onClick={handleJoinClick} />
         </div>
 
-        <div className="post-container">
+        <div style={{ marginTop: '20px' }}>
             <Post onClick={handlePostClick} />
         </div>
       </main>
