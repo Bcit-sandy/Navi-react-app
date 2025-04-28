@@ -6,7 +6,6 @@ import "./globals.css";
 // One blue
 // One white
 
-
 //** ONBOARDING **//
 // radio button (description) - 2 variant (light-un, dark) - angie
 
