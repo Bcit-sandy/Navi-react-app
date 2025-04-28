@@ -197,13 +197,9 @@ export function LeaveEvent() {
         <div className='leaveEvent'>
             <p className='leaveEvent_text'>Do you want to leave this event?</p>
             <div className='leaveEvent_options'>
-                <button
-                    className={`leaveEvent_yes ${
-                        activeButton === "yes"
-                            ? "leaveEvent_yes-active"
-                            : "leaveEvent_yes-inactive"
-                    }`}
-                    onClick={() => handleClick("yes")}>
+            <button
+            className={`leaveEvent_yes ${isActive ? "leaveEvent_yes-active" : ""}`}
+            onClick={handleClick}>
                     Yes, I would like to leave
                 </button>
                 <button

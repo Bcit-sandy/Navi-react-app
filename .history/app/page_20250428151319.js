@@ -28,7 +28,7 @@ export default function Page() {
             <ImageAdd />
             <EventNotification />
             <RoundNext />
-            <LeaveEvent />
+            <
         </main>
     );
 }

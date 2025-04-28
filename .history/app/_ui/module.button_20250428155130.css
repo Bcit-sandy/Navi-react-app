@@ -274,6 +274,6 @@
 }
 
 .leaveEvent_no-active {
-    background-color: var(--analogous-blue-500);
+    background-color: var(--primary-blue-500);
     color: var(--white-color);
 }

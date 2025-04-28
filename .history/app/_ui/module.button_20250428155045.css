@@ -266,14 +266,9 @@
     border: none;
     font-weight: var(--bold-weight);
     transition: all 0.3s ease;
+
 }
 
 .leaveEvent_yes-active {
     background-color: var(--primary-blue-500);
-    color: var(--white-color);
-}
-
-.leaveEvent_no-active {
-    background-color: var(--analogous-blue-500);
-    color: var(--white-color);
 }

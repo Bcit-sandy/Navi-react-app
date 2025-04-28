@@ -187,7 +187,7 @@ export function RoundNext() {
 }
 
 export function LeaveEvent() {
-    const [activeButton, setActiveButton] = useState(null);
+    const [isActive, setIsActive] = useState(false);
 
     function handleClick(button) {
         setActiveButton(button);
