@@ -12,7 +12,7 @@ export function Explore() {
 
     return (
         <button
-            className={`explore ${isActive ? "explore-active" : ""}`}
+            className={`explore ${isActive ? "active" : ""}`}
             onMouseDown={() => setIsActive(true)}
             onMouseUp={() => setIsActive(false)}
             onMouseLeave={() => setIsActive(false)}

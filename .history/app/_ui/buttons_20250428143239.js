@@ -11,18 +11,12 @@ export function Explore() {
     const [isActive, setIsActive] = useState(false);
 
     return (
-        <button
-            className={`explore ${isActive ? "explore-active" : ""}`}
-            onMouseDown={() => setIsActive(true)}
-            onMouseUp={() => setIsActive(false)}
-            onMouseLeave={() => setIsActive(false)}
-        >
+        <button className='explore'>
             Let's go explore!
             <img
                 className='explore_arrow'
                 src='/arrow_right.svg'
-                alt='right arrow'
-            />
+                alt='right arrow'></img>
         </button>
     );
 }

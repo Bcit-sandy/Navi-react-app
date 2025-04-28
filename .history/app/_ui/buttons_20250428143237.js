@@ -8,21 +8,14 @@ import { useState } from "react";
 
 // Let's go Explore | big button
 export function Explore() {
-    const [isActive, setIsActive] = useState(false);
-
+    
     return (
-        <button
-            className={`explore ${isActive ? "explore-active" : ""}`}
-            onMouseDown={() => setIsActive(true)}
-            onMouseUp={() => setIsActive(false)}
-            onMouseLeave={() => setIsActive(false)}
-        >
+        <button className='explore'>
             Let's go explore!
             <img
                 className='explore_arrow'
                 src='/arrow_right.svg'
-                alt='right arrow'
-            />
+                alt='right arrow'></img>
         </button>
     );
 }
@@ -130,11 +123,13 @@ export function ImageAdd() {
     );
 }
 
-//Event notification
-export function EventNotification() {
+//Event notification 
+export function EventNotification(){
     return (
         <div className='eventNotification'>
-            <h3 className='eventNotification_text'>You have joined an event</h3>
+            <h3 className="eventNotification_text">
+                You have joined an event
+            </h3>
         </div>
     );
 }
