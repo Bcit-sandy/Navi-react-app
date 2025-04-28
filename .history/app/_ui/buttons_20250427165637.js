@@ -1,6 +1,5 @@
 import "./module.button.css";
 import "../globals.css";
-import Image from "next/image";
 
 // ** SIGN UP **//
 // Sign in/up button - sandy
@@ -53,18 +52,28 @@ export function Tags({label, onClick, isSelected = false }) {
 
 //** COMMUNITY POST **//
 // heart (4 variants) 2 sizes - sandy
-export function Heart({ size = "small", isLiked = false, onClick }) {
+export function Heart({ size = "small", state = "empty", onClick }) {
+    const getHeartIcon = () => {
+        switch(state) {
+            case "empty":
+                return "🤍";
+            case "hover":
+                return "❤️";
+            case "filled":
+                return "❤️";
+            case "loading":
+                return "💗";
+            default:
+                return "🤍";
+        }
+    };
+
     return (
         <button 
-            className={`heart-button heart-${size}`}
+            className={`heart-button heart-${size} heart-${state}`}
             onClick={onClick}
         >
-            <Image 
-                src={isLiked ? "/filledheart.png" : "/outlineheart.png"} 
-                alt={isLiked ? "filled heart icon" : "outline heart icon"}
-                width={size === "small" ? 24 : 32}
-                height={size === "small" ? 24 : 32}
-            />
+            {getHeartIcon()}
         </button>
     );
 }

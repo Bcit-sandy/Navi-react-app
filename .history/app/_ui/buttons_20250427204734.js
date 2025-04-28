@@ -1,6 +1,5 @@
 import "./module.button.css";
 import "../globals.css";
-import Image from "next/image";
 
 // ** SIGN UP **//
 // Sign in/up button - sandy
@@ -56,12 +55,12 @@ export function Tags({label, onClick, isSelected = false }) {
 export function Heart({ size = "small", isLiked = false, onClick }) {
     return (
         <button 
-            className={`heart-button heart-${size}`}
+            className={`heart-button heart-${size} ${isLiked ? 'heart-liked' : ''}`}
             onClick={onClick}
         >
             <Image 
-                src={isLiked ? "/filledheart.png" : "/outlineheart.png"} 
-                alt={isLiked ? "filled heart icon" : "outline heart icon"}
+                src="/outlineheart.png" 
+                alt="heart icon"
                 width={size === "small" ? 24 : 32}
                 height={size === "small" ? 24 : 32}
             />

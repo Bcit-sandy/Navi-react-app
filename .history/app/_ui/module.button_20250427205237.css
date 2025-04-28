@@ -137,10 +137,11 @@
     transition: transform 0.2s ease;
 }
 
-.heart-button:active {
+.heart-button:hover {
     transform: scale(1.1);
 }
 
+/* Heart buttons container */
 .heart-buttons-container {
     margin-top: 20px;
     display: flex;

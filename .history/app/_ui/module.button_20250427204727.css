@@ -137,15 +137,14 @@
     transition: transform 0.2s ease;
 }
 
-.heart-button:active {
+.heart-button:hover {
     transform: scale(1.1);
 }
 
-.heart-buttons-container {
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
+.heart-liked {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
+
 
 /*Posting community post*/ 
 

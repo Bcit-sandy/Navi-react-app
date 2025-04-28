@@ -1,13 +1,11 @@
 'use client'
 
 import Image from "next/image";
-import { Tags, SignUp, SignIn, Heart } from "./_ui/buttons";
+import { Tags, SignUp, SignIn } from "./_ui/buttons";
 import { useState } from "react";
 
 export default function Page() {
     const [selectedTags, setSelectedTags] = useState([]);
-    const [smallHeartLiked, setSmallHeartLiked] = useState(false);
-    const [largeHeartLiked, setLargeHeartLiked] = useState(false);
     const tags = ["Sports", "Outdoor Activities", "Movies", "Music", "Video Games","Cafe Hopping","Reading","Arts","Food","Dancing","Learning","Board Games"];
     
     const handleTagClick = (tag) => {
@@ -28,14 +26,6 @@ export default function Page() {
     const handleSignIn = () => {
         console.log("Sign In ...Loading...");
         // Add sign up function later
-    };
-
-    const handleSmallHeartClick = () => {
-        setSmallHeartLiked(!smallHeartLiked);
-    };
-
-    const handleLargeHeartClick = () => {
-        setLargeHeartLiked(!largeHeartLiked);
     };
 
     return (
@@ -59,11 +49,6 @@ export default function Page() {
                     onClick={() => handleTagClick(tag)}
                 />
             ))}
-        </div>
-
-        <div className="heart-buttons-container">
-            <Heart size="small" isLiked={smallHeartLiked} onClick={handleSmallHeartClick} />
-            <Heart size="large" isLiked={largeHeartLiked} onClick={handleLargeHeartClick} />
         </div>
       </main>
     );

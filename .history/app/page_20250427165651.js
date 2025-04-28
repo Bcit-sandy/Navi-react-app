@@ -5,9 +5,9 @@ import { Tags, SignUp, SignIn, Heart } from "./_ui/buttons";
 import { useState } from "react";
 
 export default function Page() {
+  
     const [selectedTags, setSelectedTags] = useState([]);
-    const [smallHeartLiked, setSmallHeartLiked] = useState(false);
-    const [largeHeartLiked, setLargeHeartLiked] = useState(false);
+    const [heartState, setHeartState] = useState("empty");
     const tags = ["Sports", "Outdoor Activities", "Movies", "Music", "Video Games","Cafe Hopping","Reading","Arts","Food","Dancing","Learning","Board Games"];
     
     const handleTagClick = (tag) => {
@@ -26,16 +26,15 @@ export default function Page() {
     };
 
     const handleSignIn = () => {
-        console.log("Sign In ...Loading...");
-        // Add sign up function later
-    };
+      console.log("Sign In ...Loading...");
+      // Add sign up function later
+  };
 
-    const handleSmallHeartClick = () => {
-        setSmallHeartLiked(!smallHeartLiked);
-    };
-
-    const handleLargeHeartClick = () => {
-        setLargeHeartLiked(!largeHeartLiked);
+    const handleHeartClick = () => {
+        setHeartState("loading");
+        setTimeout(() => {
+            setHeartState(prev => prev === "empty" ? "filled" : "empty");
+        }, 1000);
     };
 
     return (
@@ -61,9 +60,9 @@ export default function Page() {
             ))}
         </div>
 
-        <div className="heart-buttons-container">
-            <Heart size="small" isLiked={smallHeartLiked} onClick={handleSmallHeartClick} />
-            <Heart size="large" isLiked={largeHeartLiked} onClick={handleLargeHeartClick} />
+        <div style={{ marginTop: '20px', display: 'flex', gap: '20px' }}>
+            <Heart size="small" state={heartState} onClick={handleHeartClick} />
+            <Heart size="large" state={heartState} onClick={handleHeartClick} />
         </div>
       </main>
     );
