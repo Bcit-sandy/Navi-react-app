@@ -6,17 +6,23 @@ import { useState } from "react";
 
 // Onboarding small inputs - Sandy
 export function Username({ 
-    placeholder = "hi", 
-    onChange
+    placeholder = "@Type here", 
+    onChange,
+    error = "",
+    required = true
 }) {
+    const [isFocused, setIsFocused] = useState(false);
+
     return (
         <div className="username-field">
+            <div className={`username-container ${isFocused ? 'focused' : ''} ${error ? 'error' : ''}`}>
                 <input
                     type="text"
                     className="username-input"
                     placeholder={placeholder}
                     onChange={onChange}
                 />
+            </div>
         </div>
     );
 }

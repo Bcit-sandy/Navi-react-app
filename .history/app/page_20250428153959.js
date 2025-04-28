@@ -85,22 +85,9 @@ export default function Buttons() {
         console.log("Text size changed to:", e.target.value);
     };
 
-    const handleUsernameChange = (e) => {
-        console.log("Username:", e.target.value);
-    };
-
     return (
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
-
-        <div className="username-container">
-            <Username 
-                label="Username"
-                placeholder="Type here"
-                onChange={handleUsernameChange}
-                required={true}
-            />
-        </div>
 
         <div className="search-container">
             <SearchBar onChange={handleSearchChange} />
@@ -160,21 +147,5 @@ export default function Buttons() {
             <Follow isFollowing={isFollowing} onClick={handleFollowClick} />
         </div>
       </main>
-    );
-}
-
-
-export function Textfield () {
-    const [username, setUsername] = useState("");
-
-    const handleUsernameChange = (e) => {
-        setUsername(e.target.value);
-        console.log("Username:", e.target.value);
-    };
-
-    return (
-        <div className="textfield-container">
-            <Username />
-        </div>
     );
 }

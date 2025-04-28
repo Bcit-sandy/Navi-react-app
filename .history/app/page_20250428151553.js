@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio } from "./_ui/buttons";
-import{Username} from "./_ui/textfield";
+import{} from "./ui/textfield;"
 import { useState } from "react";
 
 export default function Buttons() {
@@ -85,22 +85,9 @@ export default function Buttons() {
         console.log("Text size changed to:", e.target.value);
     };
 
-    const handleUsernameChange = (e) => {
-        console.log("Username:", e.target.value);
-    };
-
     return (
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
-
-        <div className="username-container">
-            <Username 
-                label="Username"
-                placeholder="Type here"
-                onChange={handleUsernameChange}
-                required={true}
-            />
-        </div>
 
         <div className="search-container">
             <SearchBar onChange={handleSearchChange} />
@@ -164,17 +151,18 @@ export default function Buttons() {
 }
 
 
-export function Textfield () {
-    const [username, setUsername] = useState("");
-
-    const handleUsernameChange = (e) => {
-        setUsername(e.target.value);
-        console.log("Username:", e.target.value);
+export default function Textfield() {
+    const [UserQuery, setUserQuery] = useState("");
+    const handleUserChange = (e) => {
+        setUserQuery(e.target.value);
+        console.log("Searching:", e.target.value);
     };
 
-    return (
-        <div className="textfield-container">
-            <Username />
-        </div>
+
+
+    return(
+    <div className="search-container">
+            <Username onChange={handleUserChange} />
+    </div>
     );
 }

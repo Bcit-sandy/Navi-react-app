@@ -1,4 +1,5 @@
 import "./module.button.css";
+import "../globals.css";
 import Image from "next/image";
 
 // ** SIGN UP **//

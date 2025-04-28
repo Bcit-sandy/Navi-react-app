@@ -6,7 +6,7 @@ import { useState } from "react";
 
 // Onboarding small inputs - Sandy
 export function Username({ 
-    placeholder = "hi", 
+    placeholder = "@Type here", 
     onChange
 }) {
     return (

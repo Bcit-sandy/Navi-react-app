@@ -13,6 +13,7 @@ export default function Buttons() {
     const [isFollowing, setIsFollowing] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [textSize, setTextSize] = useState("medium");
+    const [username, setUsername] = useState("");
     const tags = ["Sports", "Outdoor Activities", "Movies", "Music", "Video Games","Cafe Hopping","Reading","Arts","Food","Dancing","Learning","Board Games"];
     
     const handleTagClick = (tag) => {
@@ -86,6 +87,7 @@ export default function Buttons() {
     };
 
     const handleUsernameChange = (e) => {
+        setUsername(e.target.value);
         console.log("Username:", e.target.value);
     };
 
@@ -96,7 +98,7 @@ export default function Buttons() {
         <div className="username-container">
             <Username 
                 label="Username"
-                placeholder="Type here"
+                placeholder="Enter your username"
                 onChange={handleUsernameChange}
                 required={true}
             />

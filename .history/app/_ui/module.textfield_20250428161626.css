@@ -1,13 +1,14 @@
 /* Email password inputs - Daniel*/
 /* Onboarding small inputs - Sandy*/
+
 /* Username field */
 .username-field {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 378px;
-    height: 40px;
-    background-color: var(--secondary-beige-100);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--secondary-beige-700);
     border-radius: 8px;
 }
 
@@ -18,11 +19,14 @@
     border: none;
     border-radius: 8px;
     font-size: var(--bodytext-font-size);
-    color: var(--secondary-beige-900);
+    color: var(--secondary-beige-700);
     background-color: transparent;
     outline: none;
 }
 
+.username-input::placeholder {
+    color: var(--secondary-beige-700);
+}
 
 /* Small input box*/
 

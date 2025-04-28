@@ -85,10 +85,6 @@ export default function Buttons() {
         console.log("Text size changed to:", e.target.value);
     };
 
-    const handleUsernameChange = (e) => {
-        console.log("Username:", e.target.value);
-    };
-
     return (
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
@@ -96,7 +92,7 @@ export default function Buttons() {
         <div className="username-container">
             <Username 
                 label="Username"
-                placeholder="Type here"
+                placeholder="Enter your username"
                 onChange={handleUsernameChange}
                 required={true}
             />

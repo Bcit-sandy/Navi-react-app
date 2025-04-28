@@ -96,7 +96,7 @@ export default function Buttons() {
         <div className="username-container">
             <Username 
                 label="Username"
-                placeholder="Type here"
+                placeholder="Enter your username"
                 onChange={handleUsernameChange}
                 required={true}
             />

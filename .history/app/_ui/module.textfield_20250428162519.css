@@ -1,5 +1,6 @@
 /* Email password inputs - Daniel*/
 /* Onboarding small inputs - Sandy*/
+
 /* Username field */
 .username-field {
     display: flex;
@@ -23,6 +24,9 @@
     outline: none;
 }
 
+.username-input::placeholder {
+    color: var(--secondary-beige-700);
+}
 
 /* Small input box*/
 
