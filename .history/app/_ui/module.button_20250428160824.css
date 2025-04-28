@@ -280,27 +280,5 @@
 
 .settings {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.darkMode, .fontSize, .contactUs, .terms, .logOut {
-    display: flex;
-    align-items: center;
-    width: 351px;
-    height: 60px;
-    background-color: var(--analogous-blue-100);
-    color: var(--primary-blue-500);
-    font-size: var(--h3-font-size);
-    font-weight: var(--bold-weight);
-    border-radius: 16px;
-    border: 2px solid var(--primary-blue-500);
-}
-
-.darkMode_icon, .fontSize_icon, .contactUs_icon, .terms_icon, .logOut_icon {
-    padding: 0 21px 0 21px;
-}
-
-.darkMode-active, .fontSize-active, .contactUs-active, .terms-active, .logOut-active {
-    background-color: var(--white-color);
+    flex
 }

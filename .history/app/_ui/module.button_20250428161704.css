@@ -300,7 +300,3 @@
 .darkMode_icon, .fontSize_icon, .contactUs_icon, .terms_icon, .logOut_icon {
     padding: 0 21px 0 21px;
 }
-
-.darkMode-active, .fontSize-active, .contactUs-active, .terms-active, .logOut-active {
-    background-color: var(--white-color);
-}

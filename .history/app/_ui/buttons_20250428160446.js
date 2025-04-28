@@ -222,81 +222,42 @@ export function LeaveEvent() {
 // Setting
 
 export function SettingsButton() {
-    const [activeButton, setActiveButton] = useState(null);
-
-    function handleClick(buttonName) {
-        if (activeButton === buttonName) {
-            setActiveButton(null); // if clicking again, deactivate
-        } else {
-            setActiveButton(buttonName); // otherwise, activate
-        }
-    }
-
     return (
         <div className='settings'>
-            <button
-                className={`darkMode ${
-                    activeButton === "darkMode" ? "darkMode-active" : ""
-                }`}
-                onClick={() => handleClick("darkMode")}>
+            <button className='darkMode'>
                 <img
                     className='darkMode_icon'
                     src='/dark.svg'
-                    alt='dark mode'
-                />
+                    alt='dark mode'></img>
                 Dark Mode
             </button>
-
-            <button
-                className={`fontSize ${
-                    activeButton === "fontSize" ? "fontSize-active" : ""
-                }`}
-                onClick={() => handleClick("fontSize")}>
+            <button className='darkMode'>
                 <img
-                    className='fontSize_icon'
-                    src='/font.svg'
-                    alt='font icon'
-                />
-                Font Size
+                    className='darkMode_icon'
+                    src='/dark.svg'
+                    alt='dark mode'></img>
+                Dark Mode
             </button>
-
-            <button
-                className={`contactUs ${
-                    activeButton === "contactUs" ? "contactUs-active" : ""
-                }`}
-                onClick={() => handleClick("contactUs")}>
+            <button className='darkMode'>
                 <img
-                    className='contactUs_icon'
-                    src='/contact.svg'
-                    alt='contact icon'
-                />
-                Contact Us
+                    className='darkMode_icon'
+                    src='/dark.svg'
+                    alt='dark mode'></img>
+                Dark Mode
             </button>
-
-            <button
-                className={`terms ${
-                    activeButton === "terms" ? "terms-active" : ""
-                }`}
-                onClick={() => handleClick("terms")}>
+            <button className='darkMode'>
                 <img
-                    className='terms_icon'
-                    src='/terms.svg'
-                    alt='terms'
-                />
-                Terms & Agreement
+                    className='darkMode_icon'
+                    src='/dark.svg'
+                    alt='dark mode'></img>
+                Dark Mode
             </button>
-
-            <button
-                className={`logOut ${
-                    activeButton === "logOut" ? "logOut-active" : ""
-                }`}
-                onClick={() => handleClick("logOut")}>
+            <button className='darkMode'>
                 <img
-                    className='logOut_icon'
-                    src='/logout.svg'
-                    alt='leave'
-                />
-                Log Out
+                    className='darkMode_icon'
+                    src='/dark.svg'
+                    alt='dark mode'></img>
+                Dark Mode
             </button>
         </div>
     );

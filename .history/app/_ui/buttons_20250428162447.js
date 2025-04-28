@@ -235,10 +235,9 @@ export function SettingsButton() {
     return (
         <div className='settings'>
             <button
-                className={`darkMode ${
-                    activeButton === "darkMode" ? "darkMode-active" : ""
-                }`}
-                onClick={() => handleClick("darkMode")}>
+                className={`darkMode ${activeButton === 'darkMode' ? 'darkMode-active' : ''}`}
+                onClick={() => handleClick('darkMode')}
+            >
                 <img
                     className='darkMode_icon'
                     src='/dark.svg'
@@ -248,10 +247,9 @@ export function SettingsButton() {
             </button>
 
             <button
-                className={`fontSize ${
-                    activeButton === "fontSize" ? "fontSize-active" : ""
-                }`}
-                onClick={() => handleClick("fontSize")}>
+                className={`fontSize ${activeButton === 'fontSize' ? 'fontSize-active' : ''}`}
+                onClick={() => handleClick('fontSize')}
+            >
                 <img
                     className='fontSize_icon'
                     src='/font.svg'
@@ -261,10 +259,9 @@ export function SettingsButton() {
             </button>
 
             <button
-                className={`contactUs ${
-                    activeButton === "contactUs" ? "contactUs-active" : ""
-                }`}
-                onClick={() => handleClick("contactUs")}>
+                className={`contactUs ${activeButton === 'contactUs' ? 'contactUs-active' : ''}`}
+                onClick={() => handleClick('contactUs')}
+            >
                 <img
                     className='contactUs_icon'
                     src='/contact.svg'
@@ -274,10 +271,9 @@ export function SettingsButton() {
             </button>
 
             <button
-                className={`terms ${
-                    activeButton === "terms" ? "terms-active" : ""
-                }`}
-                onClick={() => handleClick("terms")}>
+                className={`terms ${activeButton === 'terms' ? 'terms-active' : ''}`}
+                onClick={() => handleClick('terms')}
+            >
                 <img
                     className='terms_icon'
                     src='/terms.svg'
@@ -287,10 +283,9 @@ export function SettingsButton() {
             </button>
 
             <button
-                className={`logOut ${
-                    activeButton === "logOut" ? "logOut-active" : ""
-                }`}
-                onClick={() => handleClick("logOut")}>
+                className={`logOut ${activeButton === 'logOut' ? 'logOut-active' : ''}`}
+                onClick={() => handleClick('logOut')}
+            >
                 <img
                     className='logOut_icon'
                     src='/logout.svg'
@@ -298,8 +293,7 @@ export function SettingsButton() {
                 />
                 Log Out
             </button>
-        </div>
-    );
+        </div>    );
 }
 
 //Exports

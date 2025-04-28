@@ -19,7 +19,6 @@ import {
 export default function Page() {
     return (
         <main style={{ padding: "2rem", fontFamily: "Arial" }}>
-            <SettingsButton />
             <Explore />
             <Skip />
             <Add />
@@ -31,6 +30,7 @@ export default function Page() {
             <EventNotification />
             <RoundNext />
             <LeaveEvent />
+            <SettingsButton />
         </main>
     );
 }

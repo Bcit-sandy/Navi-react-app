@@ -225,11 +225,7 @@ export function SettingsButton() {
     const [activeButton, setActiveButton] = useState(null);
 
     function handleClick(buttonName) {
-        if (activeButton === buttonName) {
-            setActiveButton(null); // if clicking again, deactivate
-        } else {
-            setActiveButton(buttonName); // otherwise, activate
-        }
+        setActiveButton(buttonName);
     }
 
     return (
