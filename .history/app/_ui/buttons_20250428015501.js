@@ -60,7 +60,7 @@ export function Heart({ size = "small", isLiked = false, onClick }) {
             onClick={onClick}
         >
             <Image 
-                src={isLiked ? "/filledheart.svg" : "/outlineheart.svg"} 
+                src={isLiked ? "/filledheart.png" : "/outlineheart.png"} 
                 alt={isLiked ? "filled heart icon" : "outline heart icon"}
                 width={size === "small" ? 24 : 32}
                 height={size === "small" ? 24 : 32}
@@ -117,7 +117,7 @@ export function Send({ onClick }) {
             onClick={onClick}
         >
             <Image 
-                src="/send.svg" 
+                src="/send.png" 
                 alt="send icon"
                 width={25}
                 height={24}
@@ -140,7 +140,7 @@ export function Return({ onClick }) {
             onClick={onClick}
         >
             <Image 
-                src="/return.svg" 
+                src="/return.png" 
                 alt="return icon"
                 width={25}
                 height={25}

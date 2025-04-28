@@ -198,7 +198,7 @@
 .follow-button {
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid --secondary-beige-300;
+    border: none;
     background-color: var(--primary-blue-500);
     transition: all 0.2s ease;
     width: 98px;

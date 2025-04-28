@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow } from "./_ui/buttons";
+import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return } from "./_ui/buttons";
 import { useState } from "react";
 
 export default function Page() {
@@ -9,7 +9,6 @@ export default function Page() {
     const [smallHeartLiked, setSmallHeartLiked] = useState(false);
     const [largeHeartLiked, setLargeHeartLiked] = useState(false);
     const [isJoined, setIsJoined] = useState(false);
-    const [isFollowing, setIsFollowing] = useState(false);
     const tags = ["Sports", "Outdoor Activities", "Movies", "Music", "Video Games","Cafe Hopping","Reading","Arts","Food","Dancing","Learning","Board Games"];
     
     const handleTagClick = (tag) => {
@@ -59,10 +58,6 @@ export default function Page() {
         // Add return function later
     };
 
-    const handleFollowClick = () => {
-        setIsFollowing(!isFollowing);
-    };
-
     return (
       <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
@@ -105,10 +100,6 @@ export default function Page() {
 
         <div className="return-container">
             <Return onClick={handleReturnClick} />
-        </div>
-
-        <div className="follow-container">
-            <Follow isFollowing={isFollowing} onClick={handleFollowClick} />
         </div>
       </main>
     );
