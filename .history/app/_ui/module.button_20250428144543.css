@@ -138,9 +138,7 @@
 
 }
 
-.event-active {
-    background-color: var(--secondary-beige-100);
-}
+.eve
 
 .community_icon,
 .event_icon {
@@ -151,7 +149,6 @@
     border: none;
     background-color: transparent;
 }
-
 
 .report_heading {
     display: flex;

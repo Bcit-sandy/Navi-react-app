@@ -152,6 +152,9 @@
     background-color: transparent;
 }
 
+.elipses-active {
+    
+}
 
 .report_heading {
     display: flex;

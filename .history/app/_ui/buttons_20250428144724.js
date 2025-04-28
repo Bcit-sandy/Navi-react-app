@@ -105,8 +105,15 @@ export function Event() {
 
 // Elipses and Report
 export function Elipses() {
+    const [isActive, setIsActive] = useState(false);
+
+    const handleClick = () => {
+        console.log("elipses button clicked, current state:", isActive);
+        setIsActive(!isActive);
+    };
+
     return (
-        <button className='elipses'>
+        <button className={`elipses ${isActive ? "elipses-active" : ""}`} onClick={handleClick}>
             <img
                 className='elipses_icon'
                 src='/elipses.svg'

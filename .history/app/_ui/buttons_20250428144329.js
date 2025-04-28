@@ -74,7 +74,7 @@ export function Community() {
     };
     
     return (
-        <button className={`community ${isActive ? "community-active" : ""}`} onClick={handleClick}>
+        <button className='community'>
             <img
                 className='community_icon'
                 src='/community.svg'
@@ -85,15 +85,8 @@ export function Community() {
 }
 
 export function Event() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        console.log("event button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
-
     return (
-        <button className={`event ${isActive ? "event-active" : ""}`} onClick={handleClick}>
+        <button className='event'>
             <img
                 className='event_icon'
                 src='/event.svg'

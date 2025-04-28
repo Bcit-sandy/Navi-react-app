@@ -15,7 +15,8 @@ export function Explore() {
             className={`explore ${isActive ? "explore-active" : ""}`}
             onMouseDown={() => setIsActive(true)}
             onMouseUp={() => setIsActive(false)}
-            onMouseLeave={() => setIsActive(false)}>
+            onMouseLeave={() => setIsActive(false)}
+        >
             Let's go explore!
             <img
                 className='explore_arrow'
@@ -51,12 +52,12 @@ export function Add() {
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {
-        console.log("Add button clicked, current state:", isActive);
+        console.log("Skip button clicked, current state:", isActive);
         setIsActive(!isActive);
     };
-
+    
     return (
-        <button className={`add ${isActive ? "add-active" : ""}`} onClick={handleClick}>
+        <button className='add'>
             <img
                 className='add_button'
                 src='/add.svg'
@@ -66,15 +67,8 @@ export function Add() {
 }
 
 export function Community() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        console.log("communty button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
-    
     return (
-        <button className={`community ${isActive ? "community-active" : ""}`} onClick={handleClick}>
+        <button className='community'>
             <img
                 className='community_icon'
                 src='/community.svg'
@@ -85,15 +79,8 @@ export function Community() {
 }
 
 export function Event() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        console.log("event button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
-
     return (
-        <button className={`event ${isActive ? "event-active" : ""}`} onClick={handleClick}>
+        <button className='event'>
             <img
                 className='event_icon'
                 src='/event.svg'

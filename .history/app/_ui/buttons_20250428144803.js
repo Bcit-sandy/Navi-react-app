@@ -105,6 +105,7 @@ export function Event() {
 
 // Elipses and Report
 export function Elipses() {
+    
     return (
         <button className='elipses'>
             <img

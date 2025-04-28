@@ -93,7 +93,7 @@ export function Event() {
     };
 
     return (
-        <button className={`event ${isActive ? "event-active" : ""}`} onClick={handleClick}>
+        <button className='event'>
             <img
                 className='event_icon'
                 src='/event.svg'
