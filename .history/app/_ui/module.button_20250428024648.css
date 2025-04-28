@@ -390,7 +390,7 @@
 }
 
 .edit-button:active {
-    background-color: var(--primary-blue-300);
+    background-color: var(--primary-blue-700);
 }
 
 /* Edit button container */
