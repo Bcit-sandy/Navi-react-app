@@ -143,7 +143,7 @@ export function Return({ onClick }) {
                 src="/return.png" 
                 alt="return icon"
                 width={25}
-                height={25}
+                height={24}
             />
         </button>
     );
