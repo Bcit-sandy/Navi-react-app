@@ -1,0 +1,101 @@
+.student-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+    padding: 16px;
+}
+
+.category-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    flex: 1;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-image.highschool {
+    background-image: url("/student-categories/highschool.svg");
+}
+
+.card-image.postgrad {
+    background-image: url("/student-categories/postgrad.svg");
+}
+
+.card-image.break {
+    background-image: url("/student-categories/break.svg");
+}
+
+.card-image.other {
+    background-image: url("/student-categories/other.svg");
+}
+
+.category-card h3 {
+    margin: 0;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #152560;
+    text-align: center;
+    background: white;
+}
+
+/* Selection states */
+.student-categories.has-selected .category-card {
+    opacity: 0.5;
+    transform: scale(0.98);
+}
+
+.category-card.selected {
+    opacity: 1 !important;
+    transform: scale(1.02) !important;
+    border: 2px solid #506bae;
+    background-color: #f4f6fa;
+}
+
+.category-card.selected h3 {
+    color: #394c7c;
+    font-weight: 600;
+    background-color: #f4f6fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .student-categories {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .category-card {
+        aspect-ratio: 16/9;
+    }
+}
