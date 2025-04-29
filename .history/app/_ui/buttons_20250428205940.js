@@ -126,18 +126,9 @@ export function AnonymousToggle() {
 //** EVENT INFO **//
 // users joining circle (image holder) - angie
 export function UserCircles({ users = [] }) {
+    // Default to empty array if no users provided
     return (
         <div className='user-circles'>
-            {/* More indicator circle */}
-            <div className='circle more-circle'>
-                <div className='dots'>
-                    <span className='dot'></span>
-                    <span className='dot'></span>
-                    <span className='dot'></span>
-                </div>
-            </div>
-
-            {/* User circles */}
             {users &&
                 users.map((user, index) => (
                     <div

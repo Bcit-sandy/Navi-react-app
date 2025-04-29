@@ -165,7 +165,7 @@ html {
     border-radius: 50%;
     background: var(--secondary-beige-300);
     margin-left: -8px;
-    box-shadow: -15px 0px 4px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: -15px 0px 9px 0px rgba(0, 0, 0, 0.09);
 }
 
 .circle:first-child {

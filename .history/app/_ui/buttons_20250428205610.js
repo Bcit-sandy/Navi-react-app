@@ -125,26 +125,26 @@ export function AnonymousToggle() {
 
 //** EVENT INFO **//
 // users joining circle (image holder) - angie
-export function UserCircles({ users = [] }) {
+export function UserCircles({ users }) {
     return (
         <div className='user-circles'>
-            {/* More indicator circle */}
-            <div className='circle more-circle'>
-                <div className='dots'>
-                    <span className='dot'></span>
-                    <span className='dot'></span>
-                    <span className='dot'></span>
+            {users.map((user, index) => (
+                <div
+                    key={user.id}
+                    className='user-circle'
+                    style={{
+                        marginLeft: index > 0 ? "-8px" : "0", // Overlap effect
+                    }}
+                >
+                    <Image
+                        src={user.imageUrl}
+                        alt={user.name}
+                        width={32}
+                        height={32}
+                        className='user-image'
+                    />
                 </div>
-            </div>
-
-            {/* User circles */}
-            {users &&
-                users.map((user, index) => (
-                    <div
-                        key={index}
-                        className='circle'
-                    ></div>
-                ))}
+            ))}
         </div>
     );
 }

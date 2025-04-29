@@ -32,7 +32,7 @@ export default function Home() {
             <HomePageNav />
             <TakePhotoButton />
             <ChoosePhotoButton />
-            <UserCircles users={users} />
+            <UserCircles />
         </main>
     );
 }

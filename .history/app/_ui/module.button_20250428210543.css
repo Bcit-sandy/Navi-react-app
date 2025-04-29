@@ -160,12 +160,12 @@ html {
 }
 
 .circle {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     background: var(--secondary-beige-300);
     margin-left: -8px;
-    box-shadow: -15px 0px 4px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: -15px 0px 9px 0px rgba(0, 0, 0, 0.09);
 }
 
 .circle:first-child {
@@ -173,7 +173,7 @@ html {
 }
 
 .more-circle {
-    background-color: var(--primary-blue-300);
+    background-color: var(--primary-blue-700);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,10 +185,10 @@ html {
 }
 
 .dot {
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     border-radius: 50%;
-    background-color: var(--neutral-blue-700);
+    background-color: var(--white-color);
 }
 
 /*Profile*/
