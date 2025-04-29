@@ -66,6 +66,7 @@ html {
 .delete-button {
     background: none;
     border: none;
+    cursor: pointer;
     padding: 0;
 }
 
@@ -77,6 +78,7 @@ html {
     width: 60px;
     height: 28px;
     transition: background-color 0.1s ease, border-color 0.2s ease;
+    cursor: pointer;
     position: relative;
     padding: 0;
 }
@@ -127,30 +129,6 @@ html {
     filter: brightness(0) invert(1); /* Keep the white filter when toggled */
 }
 
-/* start community and events navbar style */
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-link {
-    color: var(--primary-blue-700);
-    text-decoration: none;
-    font-size: var(--bodytext-font-size);
-    transition: background-color 0.2s ease;
-    background: none;
-    border: none;
-}
-
-.nav-link.active {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-    font-weight: var(--bold-weight);
-}
-
-/* end community and events navbar style */
-
 /*Event information*/
 
 /*Event post*/
@@ -167,7 +145,7 @@ html {
 
 /*Setting*/
 
-/* On-Off Toggle */
+/* starting toggle style */
 .on-off-toggle-btn {
     background-color: #fff;
     border: 2px solid var(--primary-blue-700);
@@ -181,6 +159,7 @@ html {
 }
 
 .on-off-toggle-btn .on-off-thumb {
+    /* circle button */
     height: 25px;
     width: 25px;
     background-color: var(--primary-blue-700);
@@ -190,10 +169,27 @@ html {
     top: 50%;
     transform: translateY(-50%);
     transition: left 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.on-off-toggle-btn.on-offtoggled .on-off-thumb {
-    left: calc(100% - 24px);
+.on-off-toggled .on-off-thumb {
+    background-color: var(--secondary-beige-900);
 }
 
+/* when toggled */
+.on-off-toggle-btn {
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-blue-700);
+}
+
+.on-off-toggled {
+    background-color: var(--secondary-beige-300);
+    border: 2px solid var(--secondary-beige-900);
+}
+
+.on-off-toggle-btn.on-off-toggled .on-off-thumb {
+    left: calc(100% - 24px); /* 50px width - 25px = moves thumb to right */
+}
 /* starting toggle style */

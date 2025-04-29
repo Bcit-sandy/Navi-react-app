@@ -66,6 +66,7 @@ html {
 .delete-button {
     background: none;
     border: none;
+    cursor: pointer;
     padding: 0;
 }
 
@@ -77,6 +78,7 @@ html {
     width: 60px;
     height: 28px;
     transition: background-color 0.1s ease, border-color 0.2s ease;
+    cursor: pointer;
     position: relative;
     padding: 0;
 }
@@ -131,22 +133,26 @@ html {
 .nav-links {
     display: flex;
     gap: 2rem;
+    justify-content: center;
 }
 
 .nav-link {
     color: var(--primary-blue-700);
     text-decoration: none;
     font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
     transition: background-color 0.2s ease;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .nav-link.active {
     text-decoration: underline;
     text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-    font-weight: var(--bold-weight);
+    /* text-underline-offset: 4px; */
 }
 
 /* end community and events navbar style */

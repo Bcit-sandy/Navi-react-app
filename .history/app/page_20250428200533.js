@@ -9,7 +9,7 @@ import {
     Edit,
     Delete,
     Toggle,
-    HomePageNav,
+    homePageNav,
 } from "./_ui/buttons";
 import { useState } from "react";
 
@@ -25,7 +25,7 @@ export default function Home() {
             <Edit />
             <Delete />
             <Toggle />
-            <HomePageNav />
+            <homePageNav />
         </main>
     );
 }

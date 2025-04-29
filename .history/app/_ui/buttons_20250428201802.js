@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import "./module.button.css";
 
 // ** SIGN UP **//
@@ -182,27 +183,21 @@ export function Delete({ onClick }) {
 //** NAVBAR **//
 // 2 buttons (community and events) - angie
 export function HomePageNav() {
-    const [activeLink, setActiveLink] = useState("");
-
     return (
         <nav className='navbar'>
             <div className='nav-links'>
-                <button
-                    className={`nav-link ${
-                        activeLink === "community" ? "active" : ""
-                    }`}
-                    onClick={() => setActiveLink("community")}
+                <Link
+                    href='/community'
+                    className='nav-link'
                 >
                     Community
-                </button>
-                <button
-                    className={`nav-link ${
-                        activeLink === "events" ? "active" : ""
-                    }`}
-                    onClick={() => setActiveLink("events")}
+                </Link>
+                <Link
+                    href='/events'
+                    className='nav-link'
                 >
                     Events
-                </button>
+                </Link>
             </div>
         </nav>
     );

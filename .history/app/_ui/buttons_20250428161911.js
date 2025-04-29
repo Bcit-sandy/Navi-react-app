@@ -92,10 +92,10 @@ export function AnonymousToggle() {
     return (
         <div className='anonymousToggle'>
             <button
-                className={`toggle-btn ${toggled ? "toggled" : ""}`}
-                onClick={() => setToggled(!toggled)}
+                className={`anony-toggle-btn ${toggled ? "anony-toggled" : ""}`}
+                onClick={() => setToggled(toggled)}
             >
-                <div className='thumb'>
+                <div className='anony-thumb'>
                     {toggled ? (
                         <Image
                             src='/anonymous.svg'
@@ -181,32 +181,6 @@ export function Delete({ onClick }) {
 
 //** NAVBAR **//
 // 2 buttons (community and events) - angie
-export function HomePageNav() {
-    const [activeLink, setActiveLink] = useState("");
-
-    return (
-        <nav className='navbar'>
-            <div className='nav-links'>
-                <button
-                    className={`nav-link ${
-                        activeLink === "community" ? "active" : ""
-                    }`}
-                    onClick={() => setActiveLink("community")}
-                >
-                    Community
-                </button>
-                <button
-                    className={`nav-link ${
-                        activeLink === "events" ? "active" : ""
-                    }`}
-                    onClick={() => setActiveLink("events")}
-                >
-                    Events
-                </button>
-            </div>
-        </nav>
-    );
-}
 
 //** BUTTONS **//
 // Calendar View - daniel
@@ -229,20 +203,24 @@ export function HomePageNav() {
 // Blue buttons with graphics inside - daniel
 // Toggle Button - angie
 export function Toggle() {
-    const [onOffToggled, setonOffToggled] = useState(false);
+    const [toggled, setToggled] = useState(false);
 
     return (
-        <div className='on-off-Toggle'>
+        <div className='Toggle'>
             <button
-                className={`on-off-toggle-btn ${
-                    onOffToggled ? "on-offtoggled" : ""
-                }`}
-                onClick={() => setonOffToggled(!onOffToggled)}
+                className={`toggle-btn ${toggled ? "toggled" : ""}`}
+                onClick={() => setToggled(!toggled)}
             >
-                <div className='on-off-thumb'></div>
+                <div className='thumb'></div>
             </button>
         </div>
     );
 }
+
+// {toggled ? (
+//     <h3>ON</h3>
+// ) : (
+//     <h3>OFF</h3>
+// )}
 
 // Tog button - sandy

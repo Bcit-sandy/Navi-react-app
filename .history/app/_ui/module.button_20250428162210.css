@@ -66,10 +66,81 @@ html {
 .delete-button {
     background: none;
     border: none;
+    cursor: pointer;
     padding: 0;
 }
 
 /* Posting community post on/off toggle */
+.anony-toggle-btn {
+    background-color: #fff;
+    border: 2px solid var(--primary-blue-700);
+    border-radius: 99px;
+    width: 60px;
+    height: 28px;
+    transition: background-color 0.1s ease, border-color 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+}
+
+.anony-toggle-btn .anony-thumb {
+    /* circle button */
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-blue-700);
+    border-radius: 99px;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anony-toggled .anony-thumb {
+    background-color: var(--secondary-beige-900);
+}
+
+/* when toggled */
+.anony-toggle-btn {
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-blue-700);
+}
+
+.anony-toggle-btn.anony-toggled .anony-thumb {
+    left: calc(100% - 24px); /* 50px width - 25px = moves thumb to right */
+}
+
+.anony-toggle-btn .anony-thumb .icon {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* This makes the icon white */
+}
+
+.anony-toggle-btn .anony-toggled .anony-thumb .icon {
+    filter: brightness(0) invert(1); /* Keep the white filter when toggled */
+}
+
+/*Event information*/
+
+/*Event post*/
+
+/*Profile*/
+
+/*NavBar*/
+
+/*Buttons*/
+
+/*Create Event*/
+
+/*Edit Profile*/
+
+/*Setting*/
+
+/* starting toggle style */
 .toggle-btn {
     background-color: #fff;
     border: 2px solid var(--primary-blue-700);
@@ -77,6 +148,7 @@ html {
     width: 60px;
     height: 28px;
     transition: background-color 0.1s ease, border-color 0.2s ease;
+    cursor: pointer;
     position: relative;
     padding: 0;
 }
@@ -115,85 +187,4 @@ html {
 .toggle-btn.toggled .thumb {
     left: calc(100% - 24px); /* 50px width - 25px = moves thumb to right */
 }
-
-.toggle-btn .thumb .icon {
-    width: 15px;
-    height: 15px;
-    object-fit: contain;
-    filter: brightness(0) invert(1); /* This makes the icon white */
-}
-
-.toggle-btn.toggled .thumb .icon {
-    filter: brightness(0) invert(1); /* Keep the white filter when toggled */
-}
-
-/* start community and events navbar style */
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-link {
-    color: var(--primary-blue-700);
-    text-decoration: none;
-    font-size: var(--bodytext-font-size);
-    transition: background-color 0.2s ease;
-    background: none;
-    border: none;
-}
-
-.nav-link.active {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-    font-weight: var(--bold-weight);
-}
-
-/* end community and events navbar style */
-
-/*Event information*/
-
-/*Event post*/
-
-/*Profile*/
-
-/*NavBar*/
-
-/*Buttons*/
-
-/*Create Event*/
-
-/*Edit Profile*/
-
-/*Setting*/
-
-/* On-Off Toggle */
-.on-off-toggle-btn {
-    background-color: #fff;
-    border: 2px solid var(--primary-blue-700);
-    border-radius: 99px;
-    width: 60px;
-    height: 28px;
-    transition: background-color 0.1s ease, border-color 0.2s ease;
-    cursor: pointer;
-    position: relative;
-    padding: 0;
-}
-
-.on-off-toggle-btn .on-off-thumb {
-    height: 25px;
-    width: 25px;
-    background-color: var(--primary-blue-700);
-    border-radius: 99px;
-    position: absolute;
-    left: -1px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: left 0.15s ease;
-}
-
-.on-off-toggle-btn.on-offtoggled .on-off-thumb {
-    left: calc(100% - 24px);
-}
-
 /* starting toggle style */

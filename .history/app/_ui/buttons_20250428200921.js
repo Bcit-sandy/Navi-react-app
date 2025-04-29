@@ -181,30 +181,9 @@ export function Delete({ onClick }) {
 
 //** NAVBAR **//
 // 2 buttons (community and events) - angie
-export function HomePageNav() {
-    const [activeLink, setActiveLink] = useState("");
-
+export function homePageNav(onClick) {
     return (
-        <nav className='navbar'>
-            <div className='nav-links'>
-                <button
-                    className={`nav-link ${
-                        activeLink === "community" ? "active" : ""
-                    }`}
-                    onClick={() => setActiveLink("community")}
-                >
-                    Community
-                </button>
-                <button
-                    className={`nav-link ${
-                        activeLink === "events" ? "active" : ""
-                    }`}
-                    onClick={() => setActiveLink("events")}
-                >
-                    Events
-                </button>
-            </div>
-        </nav>
+<Button href="#text-buttons">Link</Button><Button href="#text-buttons">Link</Button>
     );
 }
 
