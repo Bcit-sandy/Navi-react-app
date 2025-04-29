@@ -156,34 +156,8 @@ html {
 /*Event post*/
 
 /*Profile*/
-/* Start coding profile photo edit pop up */
-.photo-button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px;
-    background: none;
-    border: none;
-    border-radius: 8px;
-    width: 100%;
-}
 
-.photo-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: var(--primary-blue-100);
-    fill: var(--primary-blue-900);
-    border-radius: 50%;
-}
-
-.photo-button span {
-    color: var(--black-color);
-    font-size: var(--bodytext-font-size);
-}
-/* End coding profile photo edit pop up */
+/*NavBar*/
 
 /*Buttons*/
 

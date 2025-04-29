@@ -11,7 +11,6 @@ import {
     Toggle,
     HomePageNav,
     TakePhotoButton,
-    ChoosePhotoButton,
 } from "./_ui/buttons";
 import { useState } from "react";
 
@@ -29,7 +28,6 @@ export default function Home() {
             <Toggle />
             <HomePageNav />
             <TakePhotoButton />
-            <ChoosePhotoButton />
         </main>
     );
 }
