@@ -7,11 +7,19 @@ import { useState } from "react";
 
 //** Small input box**//
 // Event name - Angie
+
+// Participant limit - Daniel
+
+// ** Medium input box **//
+// Description - Sandy
+// Community post - Angie
 export function CommunityPostTextField({
     value,
     onChange,
     placeholder = "Type here",
 }) {
+    const [eventName, setEventName] = useState("");
+
     return (
         <div className='community-post-textfield-wrapper'>
             <label className='community-post-label'>Event Name</label>
@@ -25,10 +33,5 @@ export function CommunityPostTextField({
         </div>
     );
 }
-// Participant limit - Daniel
-
-// ** Medium input box **//
-// Description - Sandy
-// Community post - Angie
 
 // Edit Bio - Daniel

@@ -7,6 +7,12 @@ import { useState } from "react";
 
 //** Small input box**//
 // Event name - Angie
+
+// Participant limit - Daniel
+
+// ** Medium input box **//
+// Description - Sandy
+// Community post - Angie
 export function CommunityPostTextField({
     value,
     onChange,
@@ -25,10 +31,5 @@ export function CommunityPostTextField({
         </div>
     );
 }
-// Participant limit - Daniel
-
-// ** Medium input box **//
-// Description - Sandy
-// Community post - Angie
 
 // Edit Bio - Daniel

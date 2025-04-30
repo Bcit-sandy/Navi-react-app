@@ -41,7 +41,10 @@ export default function Home() {
             <ChoosePhotoButton />
             <UserCircles users={users} />
             <StudentCategories onSelect={handleCategorySelect} />
-            <CommunityPostTextField />
+            <CommunityPostTextField
+                value={eventName}
+                onChange={(e) => setEventName(e.target.value)}
+            />
         </main>
     );
 }

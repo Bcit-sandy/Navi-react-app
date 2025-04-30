@@ -54,6 +54,8 @@
 /* Onboarding small inputs - Sandy*/
 
 /* Small input box*/
+
+/* Medium input box */
 .community-post-textfield-wrapper {
     margin-top: 1.5rem;
 }
@@ -84,4 +86,3 @@
 .community-post-textfield:focus {
     border-color: var(--primary-blue-500);
 }
-/* Medium input box */

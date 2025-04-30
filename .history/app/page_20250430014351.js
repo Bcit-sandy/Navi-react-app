@@ -41,7 +41,6 @@ export default function Home() {
             <ChoosePhotoButton />
             <UserCircles users={users} />
             <StudentCategories onSelect={handleCategorySelect} />
-            <CommunityPostTextField />
         </main>
     );
 }
