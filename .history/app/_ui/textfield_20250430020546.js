@@ -33,7 +33,7 @@ export function EventsPostTextField({
 export function CommunityPostTextField({
     value,
     onChange,
-    placeholder = "What do you think...",
+    placeholder = "Type here",
 }) {
     return (
         <input

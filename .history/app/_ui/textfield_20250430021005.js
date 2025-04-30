@@ -33,16 +33,20 @@ export function EventsPostTextField({
 export function CommunityPostTextField({
     value,
     onChange,
+    label = "Community Post",
     placeholder = "What do you think...",
 }) {
     return (
-        <input
-            className='community-post-textfield'
-            type='text'
-            value={value}
-            onChange={onChange}
-            placeholder={placeholder}
-        />
+        <div className='community-post-textfield-wrapper'>
+            <label className='community-post-label'>{label}</label>
+            <input
+                className='community-post-textfield'
+                type='text'
+                value={value}
+                onChange={onChange}
+                placeholder={placeholder}
+            />
+        </div>
     );
 }
 

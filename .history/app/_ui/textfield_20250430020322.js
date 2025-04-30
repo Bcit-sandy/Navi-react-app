@@ -13,10 +13,10 @@ export function EventsPostTextField({
     placeholder = "Type here",
 }) {
     return (
-        <div className='events-post-textfield-wrapper'>
-            <label className='events-post-label'>Event Name</label>
+        <div className='community-post-textfield-wrapper'>
+            <label className='community-post-label'>Event Name</label>
             <input
-                className='events-post-textfield'
+                className='community-post-textfield'
                 type='text'
                 value={value}
                 onChange={onChange}
@@ -33,16 +33,19 @@ export function EventsPostTextField({
 export function CommunityPostTextField({
     value,
     onChange,
-    placeholder = "What do you think...",
+    placeholder = "Type here",
 }) {
     return (
-        <input
-            className='community-post-textfield'
-            type='text'
-            value={value}
-            onChange={onChange}
-            placeholder={placeholder}
-        />
+        <div className='community-post-textfield-wrapper'>
+            <label className='community-post-label'>Event Name</label>
+            <input
+                className='community-post-textfield'
+                type='text'
+                value={value}
+                onChange={onChange}
+                placeholder={placeholder}
+            />
+        </div>
     );
 }
 

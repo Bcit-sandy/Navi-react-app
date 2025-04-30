@@ -23,7 +23,6 @@ export default function Home() {
     const [onOffToggled, setonOffToggled] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState("");
     const users = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
-    const [post, setPost] = useState("");
     const handleCategorySelect = (category) => {
         setSelectedCategory(category);
         console.log("Selected category:", category);
@@ -43,8 +42,10 @@ export default function Home() {
             <UserCircles users={users} />
             <StudentCategories onSelect={handleCategorySelect} />
             <CommunityPostTextField
-                value={post}
+                value={value}
                 onChange={(e) => setPost(e.target.value)}
+                label='Community Post'
+                placeholder='What do you think...'
             />
             <EventsPostTextField />
         </main>

@@ -105,7 +105,7 @@
     color: var(--analogous-blue-700);
     opacity: 1;
     position: relative;
-    top: -45%;
+    top: -20px;
     left: 0;
 }
 .community-post-textfield:focus {

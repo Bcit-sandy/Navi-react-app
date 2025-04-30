@@ -34,6 +34,7 @@ export function CommunityPostTextField({
     value,
     onChange,
     placeholder = "What do you think...",
+    rows = 8,
 }) {
     return (
         <input

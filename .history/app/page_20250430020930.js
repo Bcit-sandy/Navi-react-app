@@ -23,7 +23,6 @@ export default function Home() {
     const [onOffToggled, setonOffToggled] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState("");
     const users = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
-    const [post, setPost] = useState("");
     const handleCategorySelect = (category) => {
         setSelectedCategory(category);
         console.log("Selected category:", category);
@@ -42,11 +41,28 @@ export default function Home() {
             <ChoosePhotoButton />
             <UserCircles users={users} />
             <StudentCategories onSelect={handleCategorySelect} />
-            <CommunityPostTextField
-                value={post}
-                onChange={(e) => setPost(e.target.value)}
-            />
+            <CommunityPostTextField />
             <EventsPostTextField />
         </main>
+    );
+}
+
+export function CommunityPostTextField({
+    value,
+    onChange,
+    label = "Community Post",
+    placeholder = "What do you think...",
+}) {
+    return (
+        <div className='community-post-textfield-wrapper'>
+            <label className='community-post-label'>{label}</label>
+            <input
+                className='community-post-textfield'
+                type='text'
+                value={value}
+                onChange={onChange}
+                placeholder={placeholder}
+            />
+        </div>
     );
 }

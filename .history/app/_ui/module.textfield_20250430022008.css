@@ -90,7 +90,7 @@
 .community-post-textfield {
     width: 398px;
     height: 398px;
-    padding: 10px;
+    padding-left: 1%;
     border: 1px solid var(--primary-blue-500);
     border-radius: 8px;
     font-size: var(--bodytext-font-size);
@@ -104,9 +104,6 @@
 .community-post-textfield::placeholder {
     color: var(--analogous-blue-700);
     opacity: 1;
-    position: relative;
-    top: -45%;
-    left: 0;
 }
 .community-post-textfield:focus {
     border-color: var(--primary-blue-500);

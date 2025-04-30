@@ -78,36 +78,10 @@
 }
 
 .events-post-textfield::placeholder {
-    color: var(--analogous-blue-700);
+    color: var(--analogous-blue-700); /* Subtle blue-grey */
     opacity: 1;
 }
 .events-post-textfield:focus {
     border-color: var(--primary-blue-500);
 }
-
 /* Medium input box */
-
-.community-post-textfield {
-    width: 398px;
-    height: 398px;
-    padding: 10px;
-    border: 1px solid var(--primary-blue-500);
-    border-radius: 8px;
-    font-size: var(--bodytext-font-size);
-    transition: border-color 0.2s;
-    margin-top: 1.5rem;
-    outline: none;
-    resize: none;
-    box-sizing: border-box;
-}
-
-.community-post-textfield::placeholder {
-    color: var(--analogous-blue-700);
-    opacity: 1;
-    position: relative;
-    top: -45%;
-    left: 0;
-}
-.community-post-textfield:focus {
-    border-color: var(--primary-blue-500);
-}
