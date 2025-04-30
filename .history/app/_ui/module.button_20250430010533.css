@@ -322,22 +322,9 @@ html {
     position: absolute;
     font-size: 12px;
     font-weight: 500;
+    color: var(--primary-blue-700);
     z-index: 1;
     pointer-events: none;
-    transition: color 0.15s ease;
-}
-
-/* OFF state styles */
-.on-off-toggle-btn .toggle-label {
-    color: var(--primary-blue-700);
-    right: 9%;
-    font-weight: var(--bold-weight);
-}
-
-/* ON state styles */
-.on-off-toggle-btn.on-offtoggled .toggle-label {
-    color: var(--white-color);
-    left: -15px;
 }
 
 .on-off-toggle-btn .on-off-thumb {
@@ -349,16 +336,15 @@ html {
     left: -1px;
     top: 50%;
     transform: translateY(-50%);
-    transition: left 0.5s ease;
+    transition: left 0.15s ease;
 }
 
 .on-off-toggle-btn.on-offtoggled .on-off-thumb {
     left: calc(100% - 24px);
-    background-color: var(--white-color);
 }
 
-.on-off-toggle-btn.on-offtoggled {
-    background-color: var(--primary-blue-700);
+.toggle-label {
+    left: 2px;
 }
 
 /* starting toggle style */
