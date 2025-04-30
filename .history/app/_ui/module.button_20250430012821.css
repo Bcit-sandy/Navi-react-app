@@ -352,7 +352,6 @@ html {
     position: absolute;
     left: -1px;
     top: 50%;
-    transform: translateY(-50%);
     transition: left 0.5s ease;
 }
 
@@ -363,7 +362,6 @@ html {
 
 .on-off-toggle-btn.on-offtoggled {
     background-color: var(--primary-blue-100);
-    border: 2px solid var(--primary-blue-300);
 }
 
 /* starting toggle style */

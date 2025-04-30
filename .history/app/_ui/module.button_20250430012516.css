@@ -340,7 +340,7 @@ html {
 
 /* ON state styles */
 .on-off-toggle-btn.on-offtoggled .toggle-label {
-    color: var(--primary-blue-300);
+    color: var(--white-color);
     left: -15px;
 }
 
@@ -358,12 +358,11 @@ html {
 
 .on-off-toggle-btn.on-offtoggled .on-off-thumb {
     left: calc(100% - 24px);
-    background-color: var(--primary-blue-300);
+    background-color: var(--white-color);
 }
 
 .on-off-toggle-btn.on-offtoggled {
-    background-color: var(--primary-blue-100);
-    border: 2px solid var(--primary-blue-300);
+    background-color: var(--primary-blue-700);
 }
 
 /* starting toggle style */

@@ -363,7 +363,6 @@ html {
 
 .on-off-toggle-btn.on-offtoggled {
     background-color: var(--primary-blue-100);
-    border: 2px solid var(--primary-blue-300);
 }
 
 /* starting toggle style */

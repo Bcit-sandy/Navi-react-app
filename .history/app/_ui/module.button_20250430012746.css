@@ -347,7 +347,6 @@ html {
 .on-off-toggle-btn .on-off-thumb {
     height: 25px;
     width: 25px;
-    background-color: var(--primary-blue-500);
     border-radius: 99px;
     position: absolute;
     left: -1px;
@@ -363,7 +362,6 @@ html {
 
 .on-off-toggle-btn.on-offtoggled {
     background-color: var(--primary-blue-100);
-    border: 2px solid var(--primary-blue-300);
 }
 
 /* starting toggle style */
