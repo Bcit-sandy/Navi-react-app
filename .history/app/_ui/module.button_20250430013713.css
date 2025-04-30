@@ -223,6 +223,7 @@ html {
 .nav-link:first-child {
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
+    font-weight: var(--bold-weight);
 }
 
 .nav-link.active {

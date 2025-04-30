@@ -221,8 +221,10 @@ html {
 }
 
 .nav-link:first-child {
+    text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
+    font-weight: var(--bold-weight);
 }
 
 .nav-link.active {
@@ -230,12 +232,6 @@ html {
     text-decoration-thickness: 1px;
     text-underline-offset: 2px;
     font-weight: var(--bold-weight);
-}
-
-/* Remove underline from Community when Events is active */
-.nav-link.active + .nav-link {
-    text-decoration: none;
-    font-weight: normal;
 }
 
 /* end community and events navbar style */
