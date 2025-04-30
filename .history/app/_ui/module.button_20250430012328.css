@@ -156,7 +156,7 @@ html {
 /* Posting community post on/off toggle */
 .toggle-btn {
     background-color: #fff;
-    border: 2px solid var(--primary-blue-500);
+    border: 2px solid var(--primary-blue-700);
     border-radius: 99px;
     width: 60px;
     height: 28px;

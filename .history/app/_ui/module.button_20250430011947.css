@@ -156,7 +156,7 @@ html {
 /* Posting community post on/off toggle */
 .toggle-btn {
     background-color: #fff;
-    border: 2px solid var(--primary-blue-500);
+    border: 2px solid var(--primary-blue-700);
     border-radius: 99px;
     width: 60px;
     height: 28px;
@@ -169,7 +169,7 @@ html {
     /* circle button */
     height: 25px;
     width: 25px;
-    background-color: var(--primary-blue-500);
+    background-color: var(--primary-blue-700);
     border-radius: 99px;
     position: absolute;
     left: -1px;
@@ -182,10 +182,6 @@ html {
 }
 
 .toggled .thumb {
-    background-color: var(--secondary-beige-900);
-}
-
-.toggled {
     background-color: var(--secondary-beige-300);
     border: 2px solid var(--secondary-beige-900);
 }
