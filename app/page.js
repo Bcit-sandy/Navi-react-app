@@ -13,12 +13,16 @@ import {
     EventNotification,
     RoundNext,
     LeaveEvent,
-    SettingsButton
+    SettingsButton,
+    ParticipantField,
+    EditBioText
 } from "./_ui/buttons";
 
 export default function Page() {
     return (
         <main style={{ padding: "2rem", fontFamily: "Arial" }}>
+            <EditBioText />
+            <ParticipantField />
             <SettingsButton />
             <Explore />
             <Skip />
@@ -28,6 +32,7 @@ export default function Page() {
             <Elipses />
             <Report />
             <ImageAdd />
+            <br></br>
             <EventNotification />
             <RoundNext />
             <LeaveEvent />

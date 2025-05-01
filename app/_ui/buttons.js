@@ -2,6 +2,7 @@
 import "./module.button.css";
 import "../globals.css";
 import { useEffect, useState, useRef } from "react";
+import Form from 'next/form'
 
 // Sign up
 // Onboarding
@@ -352,6 +353,30 @@ export function SettingsButton() {
         </div>
     );
 }
+
+// text field
+export function ParticipantField() {
+    return (
+        <input
+            type="number"
+            placeholder="Enter number here"
+            className="participantField"
+            min="0"
+            inputMode="numeric"
+            pattern="[0-9]*"
+        />
+    );
+}
+
+export function EditBioText() {
+    return (
+        <textarea
+        type="text"
+        placeholder="Describe yourself here..."
+        className="editBio"></textarea>
+    );
+}
+
 
 //Exports
 // buttons.js
