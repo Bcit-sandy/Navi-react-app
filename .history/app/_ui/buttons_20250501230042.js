@@ -104,7 +104,7 @@ export function LocationDropdown() {
     ];
 
     return (
-        <div className={`location-dropdown ${isOpen ? "open" : ""}`}>
+        <div className='location-dropdown'>
             <div className='dropdown-trigger'>
                 <div className='search-icon'>
                     <Image
@@ -123,7 +123,7 @@ export function LocationDropdown() {
                     onFocus={() => setIsOpen(true)}
                 />
                 <button
-                    className={`dropdown-button ${isOpen ? "open" : ""}`}
+                    className={`chevron-button ${isOpen ? "open" : ""}`}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <Image

@@ -157,15 +157,10 @@ html {
     padding: 8px 12px;
     background: var(--secondary-beige-100);
     border: 1px solid var(--secondary-beige-700);
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: border-radius 0.2s ease;
-}
-
-.location-dropdown.open .dropdown-trigger {
-    border-radius: 8px 8px 0 0;
 }
 
 .search-icon {
@@ -175,8 +170,6 @@ html {
 }
 
 .search-icon img {
-    width: 25px;
-    height: 25px;
     filter: brightness(0) saturate(100%) invert(55%) sepia(8%) saturate(654%)
         hue-rotate(7deg) brightness(91%) contrast(87%);
 }
@@ -188,7 +181,7 @@ html {
     font-size: var(--bodytext-font-size);
     color: var(--analogous-blue-900);
     background: transparent;
-    padding: 3px 0;
+    padding: 4px 0;
 }
 
 .search-input::placeholder {
@@ -211,7 +204,7 @@ html {
 
 .dropdown-content {
     position: absolute;
-    width: 402px;
+    width: 378px;
     top: calc(100% + 8px);
     left: 0;
     right: 0;
@@ -224,7 +217,7 @@ html {
 
 .location-option {
     padding: 10px 12px;
-    color: var(--secondary-beige-700);
+    color: var(--analogous-blue-700);
     font-size: var(--bodytext-font-size);
     transition: all 0.2s ease;
 }

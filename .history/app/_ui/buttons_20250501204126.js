@@ -83,84 +83,6 @@ export function StudentCategories({ onSelect }) {
     );
 }
 
-// drop down location button
-export function LocationDropdown() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [searchValue, setSearchValue] = useState("");
-    const [selectedLocation, setSelectedLocation] = useState("");
-
-    const handleOptionClick = (location) => {
-        setSelectedLocation(location);
-        setSearchValue(location);
-        setIsOpen(false);
-    };
-
-    const locations = [
-        "Vancouver, BC",
-        "Burnaby, BC",
-        "Coquitlam, BC",
-        "Surrey, BC",
-        "Richmond, BC",
-    ];
-
-    return (
-        <div className={`location-dropdown ${isOpen ? "open" : ""}`}>
-            <div className='dropdown-trigger'>
-                <div className='search-icon'>
-                    <Image
-                        src='/search.svg'
-                        alt='search'
-                        width={20}
-                        height={20}
-                    />
-                </div>
-                <input
-                    type='text'
-                    className='search-input'
-                    placeholder='Search here'
-                    value={searchValue}
-                    onChange={(e) => setSearchValue(e.target.value)}
-                    onFocus={() => setIsOpen(true)}
-                />
-                <button
-                    className={`dropdown-button ${isOpen ? "open" : ""}`}
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    <Image
-                        src={isOpen ? "/dropdown.svg" : "/dropdown-right.svg"}
-                        alt='expand'
-                        width={18}
-                        height={18}
-                    />
-                </button>
-            </div>
-            {isOpen && (
-                <div className='dropdown-content'>
-                    {locations
-                        .filter((location) =>
-                            location
-                                .toLowerCase()
-                                .includes(searchValue.toLowerCase())
-                        )
-                        .map((location, index) => (
-                            <div
-                                key={index}
-                                className={`location-option ${
-                                    selectedLocation === location
-                                        ? "selected"
-                                        : ""
-                                }`}
-                                onClick={() => handleOptionClick(location)}
-                            >
-                                {location}
-                            </div>
-                        ))}
-                </div>
-            )}
-        </div>
-    );
-}
-
 // button (Let's go explore - skip) - daniel
 
 // button (tags) - sandy
@@ -266,22 +188,23 @@ export function CommentWithReply() {
                 <Image
                     src='/profile.svg'
                     alt='profile'
-                    width={32}
-                    height={32}
+                    width={26}
+                    height={26}
                     className='author-image'
                 />
                 <div className='comment-content'>
                     <div className='author-details'>
-                        <span className='author-name'>Gwen Stacy</span>
+                        <span className='author-name'>Sasu.uchi21</span>
                         <span className='comment-date'>May 1, 2025</span>
                     </div>
-                    <p className='comment-text'>Wow very nice haha!</p>
+                    <p className='comment-text'>
+                        Sorry to hear that broo!! You will be fine...
+                    </p>
                 </div>
             </div>
 
             <div className='reply-comment'>
                 <div className='reply-line'></div>
-                <div className='reply-line-horizontal'></div>
                 <div className='single-comment'>
                     <Image
                         src='/profile.svg'
@@ -292,10 +215,10 @@ export function CommentWithReply() {
                     />
                     <div className='comment-content'>
                         <div className='author-details'>
-                            <span className='author-name'>John Adam </span>
+                            <span className='author-name'>Saku_21a</span>
                             <span className='comment-date'>2m</span>
                         </div>
-                        <p className='comment-text'>WOWOWOW</p>
+                        <p className='comment-text'>...</p>
                     </div>
                 </div>
             </div>

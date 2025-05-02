@@ -87,24 +87,9 @@ export function StudentCategories({ onSelect }) {
 export function LocationDropdown() {
     const [isOpen, setIsOpen] = useState(false);
     const [searchValue, setSearchValue] = useState("");
-    const [selectedLocation, setSelectedLocation] = useState("");
-
-    const handleOptionClick = (location) => {
-        setSelectedLocation(location);
-        setSearchValue(location);
-        setIsOpen(false);
-    };
-
-    const locations = [
-        "Vancouver, BC",
-        "Burnaby, BC",
-        "Coquitlam, BC",
-        "Surrey, BC",
-        "Richmond, BC",
-    ];
 
     return (
-        <div className={`location-dropdown ${isOpen ? "open" : ""}`}>
+        <div className='location-dropdown'>
             <div className='dropdown-trigger'>
                 <div className='search-icon'>
                     <Image
@@ -123,7 +108,7 @@ export function LocationDropdown() {
                     onFocus={() => setIsOpen(true)}
                 />
                 <button
-                    className={`dropdown-button ${isOpen ? "open" : ""}`}
+                    className={`chevron-button ${isOpen ? "open" : ""}`}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <Image
@@ -136,25 +121,10 @@ export function LocationDropdown() {
             </div>
             {isOpen && (
                 <div className='dropdown-content'>
-                    {locations
-                        .filter((location) =>
-                            location
-                                .toLowerCase()
-                                .includes(searchValue.toLowerCase())
-                        )
-                        .map((location, index) => (
-                            <div
-                                key={index}
-                                className={`location-option ${
-                                    selectedLocation === location
-                                        ? "selected"
-                                        : ""
-                                }`}
-                                onClick={() => handleOptionClick(location)}
-                            >
-                                {location}
-                            </div>
-                        ))}
+                    <div className='location-option'>Vancouver, BC</div>
+                    <div className='location-option'>Burnaby, BC</div>
+                    <div className='location-option'>Coquitlam, BC</div>
+                    <div className='location-option'>Surrey, BC</div>
                 </div>
             )}
         </div>

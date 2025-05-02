@@ -16,7 +16,6 @@ import {
     StudentCategories,
     SingleComment,
     CommentWithReply,
-    LocationDropdown,
 } from "./_ui/buttons";
 import { EventsPostTextField, CommunityPostTextField } from "./_ui/textfield";
 import { useState } from "react";
@@ -56,7 +55,6 @@ export default function Home() {
                 content="I would say Granville Island. I'd have a lot of fun!!"
             />
             <CommentWithReply />
-            <LocationDropdown />
         </main>
     );
 }

@@ -188,7 +188,7 @@ html {
     font-size: var(--bodytext-font-size);
     color: var(--analogous-blue-900);
     background: transparent;
-    padding: 3px 0;
+    padding: 10px 0;
 }
 
 .search-input::placeholder {
@@ -224,7 +224,7 @@ html {
 
 .location-option {
     padding: 10px 12px;
-    color: var(--secondary-beige-700);
+    color: var(--analogous-blue-700);
     font-size: var(--bodytext-font-size);
     transition: all 0.2s ease;
 }

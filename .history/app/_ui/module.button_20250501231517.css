@@ -224,7 +224,7 @@ html {
 
 .location-option {
     padding: 10px 12px;
-    color: var(--secondary-beige-700);
+    color: var(--analogous-blue-700);
     font-size: var(--bodytext-font-size);
     transition: all 0.2s ease;
 }

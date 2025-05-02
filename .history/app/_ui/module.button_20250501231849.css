@@ -193,6 +193,7 @@ html {
 
 .search-input::placeholder {
     color: var(--secondary-beige-700);
+    font-weight: var(--bold-weight);
 }
 
 .dropdown-button {

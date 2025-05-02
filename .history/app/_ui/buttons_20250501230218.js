@@ -104,7 +104,7 @@ export function LocationDropdown() {
     ];
 
     return (
-        <div className={`location-dropdown ${isOpen ? "open" : ""}`}>
+        <div className='location-dropdown'>
             <div className='dropdown-trigger'>
                 <div className='search-icon'>
                     <Image

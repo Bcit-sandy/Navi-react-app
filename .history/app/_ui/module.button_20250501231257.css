@@ -175,8 +175,6 @@ html {
 }
 
 .search-icon img {
-    width: 25px;
-    height: 25px;
     filter: brightness(0) saturate(100%) invert(55%) sepia(8%) saturate(654%)
         hue-rotate(7deg) brightness(91%) contrast(87%);
 }
@@ -188,7 +186,7 @@ html {
     font-size: var(--bodytext-font-size);
     color: var(--analogous-blue-900);
     background: transparent;
-    padding: 3px 0;
+    padding: 4px 0;
 }
 
 .search-input::placeholder {
@@ -224,7 +222,7 @@ html {
 
 .location-option {
     padding: 10px 12px;
-    color: var(--secondary-beige-700);
+    color: var(--analogous-blue-700);
     font-size: var(--bodytext-font-size);
     transition: all 0.2s ease;
 }
