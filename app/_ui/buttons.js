@@ -457,7 +457,14 @@ export function PlaceholderImg_sm(){
     );
 }
 
-
+export function PopupSlider(){
+    return (
+            <img
+                className='popupSlider'
+                src='/popup_slider.svg'
+                alt='popup slider'></img>
+    );
+}
 //Exports
 // buttons.js
 // export const Navbar = () => <nav>Navbar</nav>;

@@ -21,12 +21,14 @@ import {
     PlaceholderImg_event,
     PlaceholderImg_featured,
     PlaceholderImg_profile,
-    Share
+    Share,
+    PopupSlider
 } from "./_ui/buttons";
 
 export default function Page() {
     return (
         <main style={{ padding: "2rem", fontFamily: "Arial" }}>
+            <PopupSlider />
             <Share />
             <PlaceholderImg_profile />
             <PlaceholderImg_event />
