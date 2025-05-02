@@ -530,7 +530,7 @@
 
 .success-message {
     color: var(--success-color);
-    font-size: var(--h3-font-size);
-    font-weight: bold;
+    font-size: var(--bodytext-font-size);
+    font-weight: 500;
 }
 

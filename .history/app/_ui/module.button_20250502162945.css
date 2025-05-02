@@ -524,13 +524,15 @@
     background-color: var(--white-color);
     border-radius: 8px;
     width: fit-content;
-    border: 3px solid var(--success-color);
-    flex-direction: row-reverse;
+}
+
+.success-icon {
+    flex-shrink: 0;
 }
 
 .success-message {
-    color: var(--success-color);
-    font-size: var(--h3-font-size);
-    font-weight: bold;
+    color: var(--white-color);
+    font-size: var(--bodytext-font-size);
+    font-weight: 500;
 }
 

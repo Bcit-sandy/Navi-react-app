@@ -108,12 +108,6 @@ export default function Page() {
       <main>
         <h1>TESTING COMPONENTS</h1>
 
-        <div className="success-container">
-            <SuccessStatusBar 
-                message="Successfully created event!"
-            />
-        </div>
-
         <div className="search-container">
             <SearchBar onChange={handleSearchChange} />
         </div>
@@ -198,6 +192,12 @@ export default function Page() {
             <CalendarViewButton
                 onClick={handleCalendarClick}
                 text="Calendar View →"
+            />
+        </div>
+
+        <div className="success-container">
+            <SuccessStatusBar 
+                message="Successfully created event!"
             />
         </div>
         
