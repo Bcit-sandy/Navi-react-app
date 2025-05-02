@@ -386,3 +386,12 @@
     height: 130px;
     border-radius: 50%;
 }
+
+.share {
+    background-color: transparent;
+    border: none;
+}
+
+.share-active {
+    background-color: var(--analogous-blue-100);
+}
