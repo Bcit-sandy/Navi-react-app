@@ -429,3 +429,49 @@
     color: var(--primary-blue-500);
 }
 
+/* Profile tag */
+.profile-tag {
+    width: auto;
+    height: 36px;
+    background-color: var(--white-color);
+    border: none;
+    padding: 0 8px;
+    display: flex;
+    align-items: left; 
+    gap: 8px;
+}
+
+.profile-image-container .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.profile-tag-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-tag-title {
+    font-size: var(--bodytext-font-size);
+    color: var(--neutral-blue-900);
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.profile-tag-subtitle {
+    font-size: var(--smalltext-font-size);
+    color: var(--neutral-blue-900);
+    margin: 0;
+    text-align: left;
+    line-height: 1;
+}
+

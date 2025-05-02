@@ -274,3 +274,24 @@ export function TextSizeRadio({ value = "medium", onChange }) {
     );
 }
 
+// Profile tag with image and text - Sandy
+export function ProfileTag({ onClick, title, subtitle, imageSrc }) {
+    return (
+        <button className="profile-tag" onClick={onClick}>
+            <div className="profile-image-container">
+                <Image 
+                    src={imageSrc}
+                    alt="profile image"
+                    width={48}
+                    height={48}
+                    className="profile-image"
+                />
+            </div>
+            <div className="profile-tag-content">
+                <p className="profile-tag-title">{title}</p>
+                <p className="profile-tag-subtitle">{subtitle}</p>
+            </div>
+        </button>
+    );
+}
+

@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio } from "./_ui/buttons";
+import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio, ProfileTag } from "./_ui/buttons";
 import { Username, Comment } from "./_ui/textfield";
 import { useState } from "react";
 
@@ -13,6 +13,7 @@ export default function Page() {
     const [isFollowing, setIsFollowing] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [textSize, setTextSize] = useState("medium");
+    const [userQuery, setUserQuery] = useState("");
     const tags = ["Sports", "Outdoor Activities", "Movies", "Music", "Video Games","Cafe Hopping","Reading","Arts","Food","Dancing","Learning","Board Games"];
     
     const handleTagClick = (tag) => {
@@ -85,6 +86,15 @@ export default function Page() {
         console.log("Text size changed to:", e.target.value);
     };
 
+    const handleEllipseClick = () => {
+        console.log("Ellipse button clicked");
+    };
+
+    const handleUserChange = (e) => {
+        setUserQuery(e.target.value);
+        console.log("USERNAME:", e.target.value);
+    };
+
     return (
       <main>
         <h1>TESTING COMPONENTS</h1>
@@ -147,7 +157,22 @@ export default function Page() {
             <Follow isFollowing={isFollowing} onClick={handleFollowClick} />
         </div>
 
-        <Textfield />
+        <div className="profile-tag-container">
+            <ProfileTag 
+                onClick={handleEllipseClick}
+                title="Username"
+                subtitle="Date"
+                imageSrc="/image.svg"
+            />
+        </div>
+
+        <div className="username-container">
+            <Username onChange={handleUserChange} />
+        </div>
+
+        <div className="comment-container">
+            <Comment onChange={handleUserChange} />
+        </div>
       </main>
     );
 }
