@@ -1,0 +1,7 @@
+import Image from "next/image";
+import AnonymousToggle from "./_ui/buttons";
+import "./_ui/module.button.css";
+
+export default function Home() {
+    return <AnonymousToggle />;
+}
