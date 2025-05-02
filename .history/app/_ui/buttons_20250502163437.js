@@ -123,6 +123,7 @@ export function Follow({ isFollowing = false, onClick }) {
     );
 }
 
+// Search bar - sandy
 export function SearchBar({ placeholder = "Search here", onChange }) {
     return (
         <div className="search-container">
@@ -143,6 +144,7 @@ export function SearchBar({ placeholder = "Search here", onChange }) {
     );
 }
 
+// Search button - sandy
 export function SearchButton({ onClick }) {
     return (
         <button 
@@ -161,6 +163,18 @@ export function SearchButton({ onClick }) {
     );
 }
 
+//** CREATE EVENT **//
+// Tags - same as onboarding - angie
+
+// Round Next button - daniel
+
+// Back button - angie
+
+// Pop Up leave buttons - Use buttons from Sign up page - daniel
+
+// ** EDIT PROFILE **//
+// edit circle button - sandy
+// Edit button - sandy
 export function EditButton({ onClick }) {
     return (
         <button 
@@ -176,7 +190,12 @@ export function EditButton({ onClick }) {
         </button>
     );
 }
+// pop-up - 2 buttons, take photo, choose from library - angie
 
+// ** SETTINGS **//
+// Blue buttons with graphics inside - daniel
+// Toggle Button - angie
+// Radio button - sandy
 export function TextSizeRadio({ value = "medium", onChange }) {
     return (
         <div className="text-size-radio-container">
@@ -206,6 +225,7 @@ export function TextSizeRadio({ value = "medium", onChange }) {
     );
 }
 
+// Profile tag with image and text - Sandy
 export function ProfileTag({ onClick, title, subtitle, imageSrc }) {
     return (
         <button className="profile-tag" onClick={onClick}>
@@ -252,6 +272,7 @@ export function CalendarViewButton({ onClick, text }) {
     );
 }
 
+// Success status bar - Sandy
 export function SuccessStatusBar({ message }) {
     return (
         <div className="success-status-bar">
@@ -266,3 +287,5 @@ export function SuccessStatusBar({ message }) {
         </div>
     );
 }
+
+

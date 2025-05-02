@@ -176,7 +176,12 @@ export function EditButton({ onClick }) {
         </button>
     );
 }
+// pop-up - 2 buttons, take photo, choose from library - angie
 
+// ** SETTINGS **//
+// Blue buttons with graphics inside - daniel
+// Toggle Button - angie
+// Radio button - sandy
 export function TextSizeRadio({ value = "medium", onChange }) {
     return (
         <div className="text-size-radio-container">
@@ -206,6 +211,7 @@ export function TextSizeRadio({ value = "medium", onChange }) {
     );
 }
 
+// Profile tag with image and text - Sandy
 export function ProfileTag({ onClick, title, subtitle, imageSrc }) {
     return (
         <button className="profile-tag" onClick={onClick}>
@@ -252,6 +258,7 @@ export function CalendarViewButton({ onClick, text }) {
     );
 }
 
+// Success status bar - Sandy
 export function SuccessStatusBar({ message }) {
     return (
         <div className="success-status-bar">
@@ -266,3 +273,5 @@ export function SuccessStatusBar({ message }) {
         </div>
     );
 }
+
+

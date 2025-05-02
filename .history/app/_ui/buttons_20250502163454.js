@@ -206,6 +206,7 @@ export function TextSizeRadio({ value = "medium", onChange }) {
     );
 }
 
+// Profile tag with image and text - Sandy
 export function ProfileTag({ onClick, title, subtitle, imageSrc }) {
     return (
         <button className="profile-tag" onClick={onClick}>
@@ -252,6 +253,7 @@ export function CalendarViewButton({ onClick, text }) {
     );
 }
 
+// Success status bar - Sandy
 export function SuccessStatusBar({ message }) {
     return (
         <div className="success-status-bar">
@@ -266,3 +268,5 @@ export function SuccessStatusBar({ message }) {
         </div>
     );
 }
+
+
