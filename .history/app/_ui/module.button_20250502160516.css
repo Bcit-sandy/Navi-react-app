@@ -512,5 +512,4 @@
 .calendar-view{
     font-size: var(--bodytext-font-size);
     border-bottom: 1px solid var(--neutral-blue-700);
-    font-weight: bold;
 }

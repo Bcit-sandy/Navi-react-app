@@ -488,29 +488,15 @@
 }
 
 .event-tag-month {
+    font-weight: bold;
     font-size:var(--h2-font-size) ;
-    margin-top: 15px;
-    margin-bottom: 2px;
+    margin: 0;
     color: var(--white-color);
-    border-bottom: 1px solid var(--white-color) ;
 }
 
 .event-tag-date {
-    font-size: var(--h2-font-size);
-    color: var(--white-color);
-    margin-top: 0;
-}
-
-.calendar-view-button{
-    width:auto;
-    height:19px;
-    border: none;
-    background-color: transparent;
-    color:var(--primary-blue-700);
-}
-
-.calendar-view{
-    font-size: var(--bodytext-font-size);
-    border-bottom: 1px solid var(--neutral-blue-700);
     font-weight: bold;
+    font-size: ;
+    margin: 0;
+    color: var(--neutral-blue-700);
 }

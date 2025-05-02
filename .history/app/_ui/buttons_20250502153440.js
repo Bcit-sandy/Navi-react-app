@@ -297,26 +297,22 @@ export function ProfileTag({ onClick, title, subtitle, imageSrc }) {
 
 export function EventDateTag({ onClick, month, date}) {
     return (
-        <button className="event-date-tag" onClick={onClick}>
-            <div className="event-date-container">
-            <div className="event-tag-content">
-                <p className="event-tag-month">{month}</p>
-                <br></br>
-                <p className="event-tag-date">{date}</p>
+        <button className="profile-tag" onClick={onClick}>
+            <div className="profile-image-container">
+                <Image 
+                    src={imageSrc}
+                    alt="profile image"
+                    width={48}
+                    height={48}
+                    className="profile-image"
+                />
             </div>
+            <div className="profile-tag-content">
+                <p className="profile-tag-title">{title}</p>
+                <p className="profile-tag-subtitle">{subtitle}</p>
             </div>
         </button>
     );
 }
 
 
-export function CalendarViewButton({ onClick, text }) {
-    return (
-        <button 
-            className="calendar-view-button"
-            onClick={onClick}
-        >
-            <span className="calendar-view"> {text}</span>
-        </button>
-    );
-}

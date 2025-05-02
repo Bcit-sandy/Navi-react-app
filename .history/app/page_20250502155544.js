@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio, ProfileTag, EventDateTag, CalendarViewButton } from "./_ui/buttons";
+import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio, ProfileTag, EventDateTag, CalendarButton } from "./_ui/buttons";
 import { Username, Comment } from "./_ui/textfield";
 import { useState } from "react";
 
@@ -189,9 +189,10 @@ export default function Page() {
         date="08"/>
 
         <div className="calendar-container">
-            <CalendarViewButton
+            <CalendarButton 
                 onClick={handleCalendarClick}
-                text="Calendar View →"
+                month="APR"
+                date="08"
             />
         </div>
         

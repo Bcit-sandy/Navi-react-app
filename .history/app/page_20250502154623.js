@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio, ProfileTag, EventDateTag, CalendarViewButton } from "./_ui/buttons";
+import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio, ProfileTag, EventDateTag } from "./_ui/buttons";
 import { Username, Comment } from "./_ui/textfield";
 import { useState } from "react";
 
@@ -100,10 +100,6 @@ export default function Page() {
         console.log("USERNAME:", e.target.value);
     };
 
-    const handleCalendarClick = () => {
-        console.log("Calendar clicked");
-    };
-
     return (
       <main>
         <h1>TESTING COMPONENTS</h1>
@@ -187,14 +183,6 @@ export default function Page() {
         onClick={handleEventDate}
         month="APR"
         date="08"/>
-
-        <div className="calendar-container">
-            <CalendarViewButton
-                onClick={handleCalendarClick}
-                text="Calendar View →"
-            />
-        </div>
-        
       </main>
     );
 }

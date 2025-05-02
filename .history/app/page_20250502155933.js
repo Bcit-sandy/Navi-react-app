@@ -189,7 +189,7 @@ export default function Page() {
         date="08"/>
 
         <div className="calendar-container">
-            <CalendarViewButton
+            <CCalendarViewButton
                 onClick={handleCalendarClick}
                 text="Calendar View →"
             />

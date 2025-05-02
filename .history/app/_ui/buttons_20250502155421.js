@@ -309,14 +309,17 @@ export function EventDateTag({ onClick, month, date}) {
     );
 }
 
-
-export function CalendarViewButton({ onClick, text }) {
+// Calendar button - Sandy
+export function CalendarButton({ onClick, month, date }) {
     return (
-        <button 
-            className="calendar-view-button"
-            onClick={onClick}
-        >
-            <span className="calendar-view"> {text}</span>
+        <button className="calendar-button" onClick={onClick}>
+            <div className="calendar-content">
+                <p className="calendar-month">{month}</p>
+                <p className="calendar-date">{date}</p>
+            </div>
         </button>
     );
 }
+
+
+

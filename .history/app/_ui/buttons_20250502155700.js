@@ -313,10 +313,17 @@ export function EventDateTag({ onClick, month, date}) {
 export function CalendarViewButton({ onClick, text }) {
     return (
         <button 
-            className="calendar-view-button"
+            className="search-button"
             onClick={onClick}
         >
-            <span className="calendar-view"> {text}</span>
+            <Image 
+                src="/search.svg" 
+                alt="search icon"
+                width={20}
+                height={20}
+                className="search-button-icon"
+            />
+            <span>Search</span>
         </button>
     );
 }

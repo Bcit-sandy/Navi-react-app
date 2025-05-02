@@ -316,7 +316,7 @@ export function CalendarViewButton({ onClick, text }) {
             className="calendar-view-button"
             onClick={onClick}
         >
-            <span className="calendar-view"> {text}</span>
+            <p classname="calendar-view">Search</p>
         </button>
     );
 }

@@ -502,15 +502,8 @@
 }
 
 .calendar-view-button{
-    width:auto;
+    width:134px;
     height:19px;
     border: none;
-    background-color: transparent;
-    color:var(--primary-blue-700);
-}
 
-.calendar-view{
-    font-size: var(--bodytext-font-size);
-    border-bottom: 1px solid var(--neutral-blue-700);
-    font-weight: bold;
 }

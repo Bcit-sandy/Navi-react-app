@@ -300,9 +300,8 @@ export function EventDateTag({ onClick, month, date}) {
         <button className="event-date-tag" onClick={onClick}>
             <div className="event-date-container">
             <div className="event-tag-content">
-                <p className="event-tag-month">{month}</p>
-                <br></br>
-                <p className="event-tag-date">{date}</p>
+                <p className="profile-tag-title">{title}</p>
+                <p className="profile-tag-subtitle">{subtitle}</p>
             </div>
             </div>
         </button>
@@ -310,13 +309,3 @@ export function EventDateTag({ onClick, month, date}) {
 }
 
 
-export function CalendarViewButton({ onClick, text }) {
-    return (
-        <button 
-            className="calendar-view-button"
-            onClick={onClick}
-        >
-            <span className="calendar-view"> {text}</span>
-        </button>
-    );
-}
