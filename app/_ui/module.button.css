@@ -161,6 +161,7 @@
     width: 212px;
     height: 34px;
     border-radius: 8px 8px 0 0;
+    font-family: var(--font-family);
 }
 
 .report_icon {
@@ -260,6 +261,7 @@
     background-color: var(--white-color);
     border-radius: 8px;
     font-weight: var(--bold-weight);
+    font-family: var(--font-family);
 }
 
 .leaveEvent_options {
@@ -345,6 +347,8 @@
     border: 1px solid var(--primary-blue-500);
     border-radius: 8px;
     padding-left: 16px;
+    font-family: var(--font-family);
+    font-size: var(--bodytext-font-size);
 }
 
 .editBio {
@@ -355,6 +359,7 @@
     border: 1px solid var(--primary-blue-500);
     border-radius: 8px;
     padding: 16px 0 0 16px;
+    font-size: var(--bodytext-font-size);
 }
 
 .placeholderImg_sm{
@@ -395,3 +400,45 @@
 .share-active {
     background-color: var(--analogous-blue-100);
 }
+
+.signUp_input {
+    font-family: var(--font-family);
+    position: relative;
+    margin-bottom: 24px;
+  }
+  
+  .signUp_input input {
+    width: 280px;
+    height: 30px;
+    padding: 16px 12px 8px;
+    font-size: var(--bodytext-font-size);
+    border: 1px solid #b8a999;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    color: #6a5e52;
+  }
+  
+  .signUp_input label {
+    position: absolute;
+    left: 8px;
+    top: -8px;
+    font-size: var(--caption-font-size);
+    color: #b8a999;
+    background: white;
+    padding: 0 4px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+  }
+  
+  .signUp_input input:focus + label,
+  .signUp_input input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    color: #6a5e52;
+  }
+  
+  .signUp_input input::placeholder {
+    color: #d4c4b3;
+  }

@@ -465,6 +465,16 @@ export function PopupSlider(){
                 alt='popup slider'></img>
     );
 }
+
+export const SignUp_Input = ({ label, type, name, placeholder }) => {
+    return (
+      <div className="signUp_input">
+        <input type={type} name={name} placeholder={placeholder} required />
+        <label>{label}</label>
+      </div>
+    );
+  };
+
 //Exports
 // buttons.js
 // export const Navbar = () => <nav>Navbar</nav>;
