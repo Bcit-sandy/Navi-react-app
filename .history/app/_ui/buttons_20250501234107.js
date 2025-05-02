@@ -541,11 +541,6 @@ export function StudentTypeDropdown() {
 
     const options = [
         {
-            id: "post-grad",
-            label: "Post-Grad",
-            icon: "/education.svg",
-        },
-        {
             id: "high-school",
             label: "High School",
             icon: "/education.svg",
@@ -562,8 +557,11 @@ export function StudentTypeDropdown() {
         },
     ];
 
-    const selectedOption =
-        options.find((opt) => opt.id === selected) || options[0];
+    const mainOption = {
+        id: "post-grad",
+        label: "Post-Grad",
+        icon: "/education.svg",
+    };
 
     return (
         <div className='student-type-dropdown'>
@@ -573,12 +571,12 @@ export function StudentTypeDropdown() {
             >
                 <div className='selected-option'>
                     <Image
-                        src={selectedOption.icon}
-                        alt={selectedOption.label}
+                        src={mainOption.icon}
+                        alt={mainOption.label}
                         width={20}
                         height={20}
                     />
-                    <span>{selectedOption.label}</span>
+                    <span>{mainOption.label}</span>
                 </div>
                 <Image
                     src={

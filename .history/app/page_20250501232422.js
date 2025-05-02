@@ -17,7 +17,7 @@ import {
     SingleComment,
     CommentWithReply,
     LocationDropdown,
-    StudentTypeDropdown,
+    StudentTypeRadio,
 } from "./_ui/buttons";
 import { EventsPostTextField, CommunityPostTextField } from "./_ui/textfield";
 import { useState } from "react";
@@ -58,7 +58,6 @@ export default function Home() {
             />
             <CommentWithReply />
             <LocationDropdown />
-            <StudentTypeDropdown />
         </main>
     );
 }

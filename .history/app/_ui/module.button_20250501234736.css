@@ -307,6 +307,7 @@ html {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 400px;
 }
 
 .comment-thread .single-comment {
@@ -621,7 +622,7 @@ html {
 .student-type-dropdown {
     position: relative;
     width: 253px;
-    margin-top: 25vh;
+    margin-top: 20px;
 }
 
 .student-type-dropdown .dropdown-trigger {

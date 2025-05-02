@@ -534,89 +534,57 @@ export function Toggle() {
 
 // Tog button - sandy
 
-// Student type dropdown component
-export function StudentTypeDropdown() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState("post-grad");
+// Student type radio component
+export function StudentTypeRadio() {
+    const [selected, setSelected] = useState("");
 
     const options = [
         {
             id: "post-grad",
             label: "Post-Grad",
-            icon: "/education.svg",
+            icon: "/post-grad-icon.svg",
         },
         {
             id: "high-school",
             label: "High School",
-            icon: "/education.svg",
+            icon: "/high-school-icon.svg",
         },
         {
             id: "taking-break",
             label: "Taking a break",
-            icon: "/away.svg",
+            icon: "/break-icon.svg",
         },
         {
             id: "others",
             label: "Others",
-            icon: "/others.svg",
+            icon: "/others-icon.svg",
         },
     ];
 
-    const selectedOption =
-        options.find((opt) => opt.id === selected) || options[0];
-
     return (
-        <div className='student-type-dropdown'>
-            <button
-                className={`dropdown-trigger ${isOpen ? "open" : ""}`}
-                onClick={() => setIsOpen(!isOpen)}
-            >
-                <div className='selected-option'>
-                    <Image
-                        src={selectedOption.icon}
-                        alt={selectedOption.label}
-                        width={20}
-                        height={20}
-                    />
-                    <span>{selectedOption.label}</span>
-                </div>
-                <Image
-                    src={
-                        isOpen
-                            ? "/arrow-drop-down.svg"
-                            : "/arrow-drop-down-right.svg"
-                    }
-                    alt='expand'
-                    width={18}
-                    height={18}
-                />
-            </button>
-            {isOpen && (
-                <div className='dropdown-options'>
-                    {options.map((option) => (
-                        <button
-                            key={option.id}
-                            className={`dropdown-option ${
-                                selected === option.id ? "selected" : ""
-                            }`}
-                            onClick={() => {
-                                setSelected(option.id);
-                                setIsOpen(false);
-                            }}
-                        >
-                            <div className='option-content'>
-                                <Image
-                                    src={option.icon}
-                                    alt={option.label}
-                                    width={20}
-                                    height={20}
-                                />
-                                <span>{option.label}</span>
-                            </div>
-                        </button>
-                    ))}
-                </div>
-            )}
+        <div className='student-type-radio'>
+            {options.map((option) => (
+                <button
+                    key={option.id}
+                    className={`radio-option ${
+                        selected === option.id ? "selected" : ""
+                    }`}
+                    onClick={() => setSelected(option.id)}
+                >
+                    <div className='option-content'>
+                        <Image
+                            src={option.icon}
+                            alt={option.label}
+                            width={24}
+                            height={24}
+                        />
+                        <span className='option-label'>{option.label}</span>
+                    </div>
+                    <div className='radio-circle'>
+                        <div className='radio-inner'></div>
+                    </div>
+                </button>
+            ))}
         </div>
     );
 }

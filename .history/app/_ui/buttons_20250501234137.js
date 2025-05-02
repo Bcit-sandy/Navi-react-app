@@ -541,11 +541,6 @@ export function StudentTypeDropdown() {
 
     const options = [
         {
-            id: "post-grad",
-            label: "Post-Grad",
-            icon: "/education.svg",
-        },
-        {
             id: "high-school",
             label: "High School",
             icon: "/education.svg",
@@ -562,23 +557,49 @@ export function StudentTypeDropdown() {
         },
     ];
 
-    const selectedOption =
-        options.find((opt) => opt.id === selected) || options[0];
+    const mainOption = {
+        id: "post-grad",
+        label: "Post-Grad",
+        icon: "/education.svg",
+    };
 
     return (
         <div className='student-type-dropdown'>
+            <div className='main-option'>
+                <Image
+                    src={mainOption.icon}
+                    alt={mainOption.label}
+                    width={20}
+                    height={20}
+                />
+                <span>{mainOption.label}</span>
+            </div>
             <button
                 className={`dropdown-trigger ${isOpen ? "open" : ""}`}
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <div className='selected-option'>
                     <Image
-                        src={selectedOption.icon}
-                        alt={selectedOption.label}
+                        src={
+                            selected === "post-grad"
+                                ? mainOption.icon
+                                : options.find((opt) => opt.id === selected)
+                                      ?.icon
+                        }
+                        alt={
+                            selected === "post-grad"
+                                ? mainOption.label
+                                : options.find((opt) => opt.id === selected)
+                                      ?.label
+                        }
                         width={20}
                         height={20}
                     />
-                    <span>{selectedOption.label}</span>
+                    <span>
+                        {selected === "post-grad"
+                            ? mainOption.label
+                            : options.find((opt) => opt.id === selected)?.label}
+                    </span>
                 </div>
                 <Image
                     src={

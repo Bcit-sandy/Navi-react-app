@@ -537,7 +537,7 @@ export function Toggle() {
 // Student type dropdown component
 export function StudentTypeDropdown() {
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState("post-grad");
+    const [selected, setSelected] = useState("");
 
     const options = [
         {

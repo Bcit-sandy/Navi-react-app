@@ -621,7 +621,7 @@ html {
 .student-type-dropdown {
     position: relative;
     width: 253px;
-    margin-top: 25vh;
+    margin-top: 50px;
 }
 
 .student-type-dropdown .dropdown-trigger {

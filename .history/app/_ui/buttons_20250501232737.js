@@ -537,28 +537,28 @@ export function Toggle() {
 // Student type dropdown component
 export function StudentTypeDropdown() {
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState("post-grad");
+    const [selected, setSelected] = useState("");
 
     const options = [
         {
             id: "post-grad",
             label: "Post-Grad",
-            icon: "/education.svg",
+            icon: "/post-grad-icon.svg",
         },
         {
             id: "high-school",
             label: "High School",
-            icon: "/education.svg",
+            icon: "/high-school-icon.svg",
         },
         {
             id: "taking-break",
             label: "Taking a break",
-            icon: "/away.svg",
+            icon: "/break-icon.svg",
         },
         {
             id: "others",
             label: "Others",
-            icon: "/others.svg",
+            icon: "/others-icon.svg",
         },
     ];
 
@@ -581,11 +581,7 @@ export function StudentTypeDropdown() {
                     <span>{selectedOption.label}</span>
                 </div>
                 <Image
-                    src={
-                        isOpen
-                            ? "/arrow-drop-down.svg"
-                            : "/arrow-drop-down-right.svg"
-                    }
+                    src={isOpen ? "/dropdown.svg" : "/dropdown-right.svg"}
                     alt='expand'
                     width={18}
                     height={18}
