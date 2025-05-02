@@ -15,12 +15,22 @@ import {
     LeaveEvent,
     SettingsButton,
     ParticipantField,
-    EditBioText
+    EditBioText,
+    PlaceholderImg_sm, 
+    PlaceholderImg_lg,
+    PlaceholderImg_event,
+    PlaceholderImg_featured,
+    PlaceholderImg_profile
 } from "./_ui/buttons";
 
 export default function Page() {
     return (
         <main style={{ padding: "2rem", fontFamily: "Arial" }}>
+            <PlaceholderImg_profile />
+            <PlaceholderImg_event />
+            <PlaceholderImg_featured />
+            <PlaceholderImg_lg />
+            <PlaceholderImg_sm />
             <EditBioText />
             <ParticipantField />
             <SettingsButton />

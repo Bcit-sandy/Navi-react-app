@@ -356,3 +356,33 @@
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
+
+.placeholderImg_sm{
+    width: 341px;
+    height: 254px;
+    border-radius: 8px;
+}
+
+.placeholderImg_lg{
+    width: 398px;
+    height: 298px;
+    border-radius: 8px;
+}
+
+.placeholderImg_event{
+    width: 398px;
+    height: 183x;
+    border-radius: 8px;
+}
+
+.placeholderImg_featured{
+    width: 337px;
+    height: 134px;
+    border-radius: 8px;
+}
+
+.placeholderImg_profile{
+    width: 140px;
+    height: 130px;
+    border-radius: 50%;
+}

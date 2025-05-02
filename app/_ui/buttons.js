@@ -377,6 +377,65 @@ export function EditBioText() {
     );
 }
 
+export function PlaceholderImg_sm(){
+    return (
+      <div className="image-placeholder">
+        <img
+          src="/placeholder.webp"
+          alt="Placeholder image"
+          className="placeholderImg_sm"
+        />
+      </div>
+    );
+  }
+
+  export function PlaceholderImg_lg(){
+    return (
+      <div className="image-placeholder">
+        <img
+          src="/placeholder.webp"
+          alt="Placeholder image"
+          className="placeholderImg_lg"
+        />
+      </div>
+    );
+  }
+
+  export function PlaceholderImg_event(){
+    return (
+      <div className="image-placeholder">
+        <img
+          src="/placeholder.webp"
+          alt="Placeholder image"
+          className="placeholderImg_event"
+        />
+      </div>
+    );
+  }
+
+  export function PlaceholderImg_featured(){
+    return (
+      <div className="image-placeholder">
+        <img
+          src="/placeholder.webp"
+          alt="Placeholder image"
+          className="placeholderImg_featured"
+        />
+      </div>
+    );
+  }
+
+  export function PlaceholderImg_profile(){
+    return (
+      <div className="image-placeholder">
+        <img
+          src="/placeholder.webp"
+          alt="Placeholder image"
+          className="placeholderImg_profile"
+        />
+      </div>
+    );
+  }
 
 //Exports
 // buttons.js
