@@ -14,7 +14,6 @@ import {
     ChoosePhotoButton,
     UserCircles,
     StudentCategories,
-    SingleComment,
 } from "./_ui/buttons";
 import { EventsPostTextField, CommunityPostTextField } from "./_ui/textfield";
 import { useState } from "react";
@@ -48,11 +47,6 @@ export default function Home() {
                 onChange={(e) => setPost(e.target.value)}
             />
             <EventsPostTextField />
-            <SingleComment
-                author='Jenny Pham'
-                date='Mar 31, 2025'
-                content="I would say Granville Island. I'd have a lot of fun!!"
-            />
         </main>
     );
 }

@@ -54,7 +54,6 @@
 html {
     background-color: #cad6ff;
     height: 200vh;
-    font-family: var(--font-family);
 }
 /* Sign up*/
 
@@ -162,17 +161,15 @@ html {
     display: flex;
     gap: 4px;
     align-items: flex-start;
-    margin-top: 10px;
+    font-family: var(--font-family);
 }
 
 /* Profile image styling */
 .author-image {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
-    background-color: var(--analogous-blue-700);
     object-fit: cover;
-    padding: 2px;
 }
 
 /* Comment content layout */
@@ -210,14 +207,14 @@ html {
 /* Comment text */
 .comment-text {
     color: #1f2937;
-    line-height: 1.25;
+    line-height: 1;
     margin: 0;
     font-size: var(--label-font-size);
 }
 
 /* Posting community post on/off toggle */
 .toggle-btn {
-    background-color: var(--white-color);
+    background-color: #fff;
     border: 2px solid var(--primary-blue-500);
     border-radius: 99px;
     width: 60px;

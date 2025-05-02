@@ -54,7 +54,6 @@
 html {
     background-color: #cad6ff;
     height: 200vh;
-    font-family: var(--font-family);
 }
 /* Sign up*/
 
@@ -162,17 +161,16 @@ html {
     display: flex;
     gap: 4px;
     align-items: flex-start;
-    margin-top: 10px;
+    font-family: var(--font-family);
+    font-size: var(--bodytext-font-size);
 }
 
 /* Profile image styling */
 .author-image {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
-    background-color: var(--analogous-blue-700);
     object-fit: cover;
-    padding: 2px;
 }
 
 /* Comment content layout */
@@ -196,28 +194,27 @@ html {
 }
 
 .author-name {
-    font-weight: var(--bold-weight);
-    color: #1f2937;
-    font-size: var(--bodytext-font-size);
+    font-weight: 700;
+    color: #1f2937; /* dark text */
+    font-size: 1rem;
 }
 
 .comment-date {
-    font-size: var(--label-font-size);
-    font-weight: var(--thin-weight);
-    color: var(--neutral-blue-900);
+    font-size: 0.875rem;
+    color: #6b7280; /* muted gray */
 }
 
 /* Comment text */
 .comment-text {
     color: #1f2937;
-    line-height: 1.25;
+    line-height: 1.5;
     margin: 0;
-    font-size: var(--label-font-size);
+    font-size: 0.95rem;
 }
 
 /* Posting community post on/off toggle */
 .toggle-btn {
-    background-color: var(--white-color);
+    background-color: #fff;
     border: 2px solid var(--primary-blue-500);
     border-radius: 99px;
     width: 60px;

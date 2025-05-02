@@ -52,6 +52,7 @@ export default function Home() {
                 author='Jenny Pham'
                 date='Mar 31, 2025'
                 content="I would say Granville Island. I'd have a lot of fun!!"
+                profileImage='/path-to-profile-image.jpg' // Optional, defaults to profile.svg
             />
         </main>
     );

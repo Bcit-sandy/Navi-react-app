@@ -54,7 +54,6 @@
 html {
     background-color: #cad6ff;
     height: 200vh;
-    font-family: var(--font-family);
 }
 /* Sign up*/
 
@@ -162,13 +161,13 @@ html {
     display: flex;
     gap: 4px;
     align-items: flex-start;
-    margin-top: 10px;
+    font-family: var(--font-family);
 }
 
 /* Profile image styling */
 .author-image {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     background-color: var(--analogous-blue-700);
     object-fit: cover;

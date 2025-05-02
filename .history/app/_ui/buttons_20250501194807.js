@@ -160,25 +160,29 @@ export function SingleComment({
 }) {
     return (
         <div className='single-comment'>
-            <Image
-                src={profileImage}
-                alt='profile icon'
-                width={26}
-                height={26}
-                className='author-image'
-            />
             <div className='comment-content'>
                 <div className='comment-header'>
-                    <div className='author-details'>
-                        <span className='author-name'>{author}</span>
-                        <span className='comment-date'>{date}</span>
+                    <div className='comment-author-info'>
+                        <Image
+                            src={profileImage}
+                            alt='profile icon'
+                            width={32}
+                            height={32}
+                            className='author-image'
+                        />
+                        <div className='author-details'>
+                            <span className='author-name'>{author}</span>
+                            <span className='comment-date'>{date}</span>
+                        </div>
                     </div>
+                    <span className='comment-date'>{date}</span>
                 </div>
                 <p className='comment-text'>{content}</p>
             </div>
         </div>
     );
 }
+s;
 
 // 3 dots button - daniel
 

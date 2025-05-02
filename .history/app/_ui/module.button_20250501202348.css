@@ -162,13 +162,12 @@ html {
     display: flex;
     gap: 4px;
     align-items: flex-start;
-    margin-top: 10px;
 }
 
 /* Profile image styling */
 .author-image {
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: var(--analogous-blue-700);
     object-fit: cover;

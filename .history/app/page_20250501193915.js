@@ -48,11 +48,7 @@ export default function Home() {
                 onChange={(e) => setPost(e.target.value)}
             />
             <EventsPostTextField />
-            <SingleComment
-                author='Jenny Pham'
-                date='Mar 31, 2025'
-                content="I would say Granville Island. I'd have a lot of fun!!"
-            />
+            <SingleComment />
         </main>
     );
 }

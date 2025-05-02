@@ -163,8 +163,8 @@ export function SingleComment({
             <Image
                 src={profileImage}
                 alt='profile icon'
-                width={26}
-                height={26}
+                width={40}
+                height={40}
                 className='author-image'
             />
             <div className='comment-content'>
