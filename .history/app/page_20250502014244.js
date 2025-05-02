@@ -154,20 +154,15 @@ export default function Page() {
 
 
 export function Textfield() {
-    const [UserQuery, setUserQuery] = useState("");
+    const [setUserQuery] = useState("");
     const handleUserChange = (e) => {
         setUserQuery(e.target.value);
-        console.log("USERNAME:", e.target.value);
+        console.log("Searching:", e.target.value);
     };
     return(
-    <main>
-        <div className="username-container">
-                <Username onChange={handleUserChange} />
-        </div>
-
-        <div className="comment-container">
+    <div className="search-container">
+            <Username onChange={handleUserChange} />
             <Comment onChange={handleUserChange} />
-        </div>  
-    </main>
+    </div>
     );
 }

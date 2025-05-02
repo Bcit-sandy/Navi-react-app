@@ -13,6 +13,7 @@
     
 }
 
+
 .username-input {
     width: 100%;
     padding: 12px 16px;
@@ -29,11 +30,10 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 398px;
-    height: 40px;
-    background-color: var(--white-color);
+    width: 100%;
+    background-color: var(--secondary-beige-100);
     border-radius: 8px;
-    border: 1px solid var(--neutral-blue-500);
+    margin-bottom: 20px;
 }
 
 .comment-input {
@@ -42,7 +42,7 @@
     border: none;
     border-radius: 8px;
     font-size: var(--bodytext-font-size);
-    color: var(--neutral-blue-500);
+    color: var(--secondary-beige-900);
     background-color: transparent;
     outline: none;
     resize: vertical;

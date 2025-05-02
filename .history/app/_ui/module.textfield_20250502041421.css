@@ -30,7 +30,6 @@
     flex-direction: column;
     gap: 8px;
     width: 398px;
-    height: 40px;
     background-color: var(--white-color);
     border-radius: 8px;
     border: 1px solid var(--neutral-blue-500);

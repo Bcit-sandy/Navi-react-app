@@ -18,13 +18,14 @@ export function Username({ placeholder = "Type here", onChange }) {
 }
 
 // Comment textfield - Sandy
-export function Comment({ placeholder = "Comment...", onChange }) {
+export function Comment({ placeholder = "Write a comment...", onChange }) {
     return (
         <div className="comment-container">
             <textarea
                 className="comment-input"
                 placeholder={placeholder}
                 onChange={onChange}
+                rows={3}
             />
         </div>
     );

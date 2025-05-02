@@ -17,17 +17,18 @@ export function Username({ placeholder = "Type here", onChange }) {
     );
 }
 
-// Comment textfield - Sandy
-export function Comment({ placeholder = "Comment...", onChange }) {
-    return (
-        <div className="comment-container">
-            <textarea
-                className="comment-input"
-                placeholder={placeholder}
-                onChange={onChange}
-            />
-        </div>
-    );
-}
+
+//** Small input box**// 
+// Event name - Angie
+// Participant limit - Daniel
 
 
+// ** Medium input box **//
+// Description - Sandy
+
+
+
+
+
+// Community post - Angie
+// Edit Bio - Daniel

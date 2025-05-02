@@ -25,6 +25,7 @@ export function Comment({ placeholder = "Comment...", onChange }) {
                 className="comment-input"
                 placeholder={placeholder}
                 onChange={onChange}
+                rows={3}
             />
         </div>
     );

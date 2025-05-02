@@ -157,7 +157,7 @@ export function Textfield() {
     const [UserQuery, setUserQuery] = useState("");
     const handleUserChange = (e) => {
         setUserQuery(e.target.value);
-        console.log("USERNAME:", e.target.value);
+        console.log("Searching:", e.target.value);
     };
     return(
     <main>

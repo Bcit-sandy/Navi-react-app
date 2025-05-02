@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio } from "./_ui/buttons";
-import { Username, Comment } from "./_ui/textfield";
+import{} from "./ui/textfield;"
 import { useState } from "react";
 
-export default function Page() {
+export default function Buttons() {
     const [selectedTags, setSelectedTags] = useState([]);
     const [smallHeartLiked, setSmallHeartLiked] = useState(false);
     const [largeHeartLiked, setLargeHeartLiked] = useState(false);
@@ -86,7 +86,7 @@ export default function Page() {
     };
 
     return (
-      <main>
+      <main style={{ padding: '2rem', fontFamily: 'Arial' }}>
         <h1>TESTING COMPONENTS</h1>
 
         <div className="search-container">
@@ -146,28 +146,20 @@ export default function Page() {
         <div className="follow-container">
             <Follow isFollowing={isFollowing} onClick={handleFollowClick} />
         </div>
-
-        <Textfield />
       </main>
     );
 }
 
 
-export function Textfield() {
+export default function Textfield() {
     const [UserQuery, setUserQuery] = useState("");
     const handleUserChange = (e) => {
         setUserQuery(e.target.value);
-        console.log("USERNAME:", e.target.value);
+        console.log("Searching:", e.target.value);
     };
     return(
-    <main>
-        <div className="username-container">
-                <Username onChange={handleUserChange} />
-        </div>
-
-        <div className="comment-container">
-            <Comment onChange={handleUserChange} />
-        </div>  
-    </main>
+    <div className="search-container">
+            <Username onChange={handleUserChange} />
+    </div>
     );
 }
