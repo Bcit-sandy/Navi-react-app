@@ -443,7 +443,7 @@ export function PlaceholderImg_sm(){
         <img
           src="/placeholder.webp"
           alt="Placeholder image"
-          className="placeholderImg_profile_sm"
+          className="placeholderImg_profile"
         />
       </div>
     );

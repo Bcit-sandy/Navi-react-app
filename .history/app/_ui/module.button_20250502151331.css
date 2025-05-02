@@ -392,12 +392,6 @@
     border-radius: 50%;
 }
 
-.placeholderImg_profile_sm{
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-}
-
 .share {
     background-color: transparent;
     border: none;
@@ -439,7 +433,7 @@
   
   .signUp_input input:focus + label,
   .signUp_input input:not(:placeholder-shown) + label {
-    top: -8px;
+    top: -10px;
     left: 8px;
     font-size: 12px;
     color: #6a5e52;

@@ -437,13 +437,13 @@ export function PlaceholderImg_sm(){
     );
   }
 
-  export function PlaceholderImg_profile_sm(){
+  export function PlaceholderImg_profile(){
     return (
       <div className="image-placeholder">
         <img
           src="/placeholder.webp"
           alt="Placeholder image"
-          className="placeholderImg_profile_sm"
+          className="placeholderImg_profile"
         />
       </div>
     );

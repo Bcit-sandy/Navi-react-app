@@ -39,7 +39,7 @@ export default function Page() {
           placeholder="Re-enter password"
         />
             <Share />
-            <PlaceholderImg_profile_sm />
+            <
             <PlaceholderImg_profile />
             <PlaceholderImg_event />
             <PlaceholderImg_featured />
