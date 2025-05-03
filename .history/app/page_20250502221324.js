@@ -1,4 +1,5 @@
 'use client'
+import "./_ui/module.button.css";
 import Image from "next/image";
 import { Tags, SignUp, SignIn, Heart, Join, Post, Send, Return, Follow, SearchBar, SearchButton, EditButton, TextSizeRadio, ProfileTag, EventDateTag, CalendarViewButton, SuccessStatusBar } from "./_ui/buttons";
 import { Username, Comment } from "./_ui/textfield";
