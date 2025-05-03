@@ -1,0 +1,195 @@
+:root {
+    /* colours and typography*/
+
+    /* basic colours */
+    --white-color: #fff;
+    --black-color: #000;
+    --success-color: #7dbe57;
+    --warning-color: #f18f01;
+    --error-color: #e62121;
+
+    /* primary colours */
+    --primary-blue-100: #c9d1e6;
+    --primary-blue-300: #8a9cc9;
+    --primary-blue-500: #506bae;
+    --primary-blue-700: #394c7c;
+    --primary-blue-900: #222d49;
+
+    /* secondary colours */
+    --secondary-beige-100: #f4f0ea;
+    --secondary-beige-300: #e7dfd1;
+    --secondary-beige-500: #dbcfbb;
+    --secondary-beige-700: #9b9385;
+    --secondary-beige-900: #5c574f;
+
+    /* analogous colours */
+    --analogous-blue-100: #e4ebf0;
+    --analogous-blue-300: #c5d5e0;
+    --analogous-blue-500: #a8c0d0;
+    --analogous-blue-700: #778894;
+    --analogous-blue-900: #475157;
+
+    /* neutral */
+    --neutral-blue-100: #b6bbce;
+    --neutral-blue-300: #626d94;
+    --neutral-blue-500: #152560;
+    --neutral-blue-700: #0f1a44;
+    --neutral-blue-900: #091028;
+
+    --font-family: Helvetica, sans-serif;
+
+    /* Font weight */
+    --bold-weight: 700;
+    --thin-weight: 400;
+
+    /* font size */
+    --h1-font-size: 32px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --bodytext-font-size: 16px;
+    --caption-font-size: 14px;
+    --label-font-size: 12px;
+}
+
+html {
+    background-color: #cad6ff;
+}
+/* Sign up*/
+
+/* Onboarding*/
+
+/*HomePage*/
+.search-button,
+.profile-button,
+.comment-button,
+.edit-button,
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Posting community post on/off toggle */
+.toggle-btn {
+    background-color: #fff;
+    border: 2px solid var(--primary-blue-700);
+    border-radius: 99px;
+    width: 60px;
+    height: 28px;
+    transition: background-color 0.1s ease, border-color 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+}
+
+.toggle-btn .thumb {
+    /* circle button */
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-blue-700);
+    border-radius: 99px;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggled .thumb {
+    background-color: var(--secondary-beige-900);
+}
+
+/* when toggled */
+.toggle-btn {
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-blue-700);
+}
+
+.toggled {
+    background-color: var(--secondary-beige-300);
+    border: 2px solid var(--secondary-beige-900);
+}
+
+.toggle-btn.toggled .thumb {
+    left: calc(100% - 24px); /* 50px width - 25px = moves thumb to right */
+}
+
+.toggle-btn .thumb .icon {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* This makes the icon white */
+}
+
+.toggle-btn.toggled .thumb .icon {
+    filter: brightness(0) invert(1); /* Keep the white filter when toggled */
+}
+
+/*Event information*/
+
+/*Event post*/
+
+/*Profile*/
+
+/*NavBar*/
+
+/*Buttons*/
+
+/*Create Event*/
+
+/*Edit Profile*/
+
+/*Setting*/
+
+/* starting toggle style */
+.toggle-btn {
+    background-color: #fff;
+    border: 1px solid var(--primary-blue-700);
+    border-radius: 99px;
+    width: 60px;
+    height: 28px;
+    transition: background-color 0.1s ease, border-color 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+}
+
+.toggle-btn .thumb {
+    /* circle button */
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-blue-700);
+    border-radius: 99px;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggled .thumb {
+    background-color: var(--secondary-beige-900);
+}
+
+/* when toggled */
+.toggle-btn {
+    background-color: var(--primary-blue-100);
+    border: 2px solid var(--primary-blue-700);
+}
+
+.toggled {
+    background-color: var(--secondary-beige-300);
+    border: 2px solid var(--secondary-beige-900);
+}
+
+.toggle-btn.toggled .thumb {
+    left: calc(100% - 24px); /* 50px width - 25px = moves thumb to right */
+}
+/* ending toggle style */

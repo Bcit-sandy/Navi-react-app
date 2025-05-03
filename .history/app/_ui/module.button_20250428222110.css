@@ -1,0 +1,407 @@
+:root {
+    /* colours and typography*/
+
+    /* basic colours */
+    --white-color: #fff;
+    --black-color: #000;
+    --success-color: #7dbe57;
+    --warning-color: #f18f01;
+    --error-color: #e62121;
+
+    /* primary colours */
+    --primary-blue-100: #c9d1e6;
+    --primary-blue-300: #8a9cc9;
+    --primary-blue-500: #506bae;
+    --primary-blue-700: #394c7c;
+    --primary-blue-900: #222d49;
+
+    /* secondary colours */
+    --secondary-beige-100: #f4f0ea;
+    --secondary-beige-300: #e7dfd1;
+    --secondary-beige-500: #dbcfbb;
+    --secondary-beige-700: #9b9385;
+    --secondary-beige-900: #5c574f;
+
+    /* analogous colours */
+    --analogous-blue-100: #e4ebf0;
+    --analogous-blue-300: #c5d5e0;
+    --analogous-blue-500: #a8c0d0;
+    --analogous-blue-700: #778894;
+    --analogous-blue-900: #475157;
+
+    /* neutral */
+    --neutral-blue-100: #b6bbce;
+    --neutral-blue-300: #626d94;
+    --neutral-blue-500: #152560;
+    --neutral-blue-700: #0f1a44;
+    --neutral-blue-900: #091028;
+
+    --font-family: Helvetica, sans-serif;
+
+    /* Font weight */
+    --bold-weight: 700;
+    --thin-weight: 400;
+
+    /* font size */
+    --h1-font-size: 32px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --bodytext-font-size: 16px;
+    --caption-font-size: 14px;
+    --label-font-size: 12px;
+}
+
+html {
+    background-color: #cad6ff;
+}
+/* Sign up*/
+
+/* Onboarding*/
+.student-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.category-card {
+    position: relative;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    flex: 1;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-image.highschool {
+    background-image: url("/highschool-button.png");
+}
+
+.card-image.postgrad {
+    background-image: url("/post-grad-button.png");
+}
+
+.card-image.break {
+    background-image: url("/student-break-button.png");
+}
+
+.card-image.other {
+    background-image: url("/others-button.png");
+}
+
+.category-card h3 {
+    margin: 0;
+    padding: 15px 50px;
+    font-size: var(--bodytext-font-size);
+    color: var(--white-color);
+    text-align: center;
+    background: var(--primary-blue-500);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-weight: var(--thin-weight);
+}
+
+/* Selection states */
+.student-categories.has-selected .category-card {
+    opacity: 0.5;
+}
+
+.category-card.selected {
+    opacity: 1 !important;
+}
+
+.category-card.selected h3 {
+    color: var(--white-color);
+    background-color: var(--primary-blue-500);
+}
+
+.category-btn span {
+    color: var(--primary-blue-700);
+    font-size: var(--bodytext-font-size);
+}
+
+/*HomePage*/
+.search-button,
+.profile-button,
+.comment-button,
+.edit-button,
+.delete-button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Posting community post on/off toggle */
+.toggle-btn {
+    background-color: #fff;
+    border: 2px solid var(--primary-blue-700);
+    border-radius: 99px;
+    width: 60px;
+    height: 28px;
+    transition: background-color 0.1s ease, border-color 0.2s ease;
+    position: relative;
+    padding: 0;
+}
+
+.toggle-btn .thumb {
+    /* circle button */
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-blue-700);
+    border-radius: 99px;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggled .thumb {
+    background-color: var(--secondary-beige-900);
+}
+
+/* when toggled */
+.toggle-btn {
+    background-color: var(--white-color);
+    border: 2px solid var(--primary-blue-700);
+}
+
+.toggled {
+    background-color: var(--secondary-beige-300);
+    border: 2px solid var(--secondary-beige-900);
+}
+
+.toggle-btn.toggled .thumb {
+    left: calc(100% - 24px); /* 50px width - 25px = moves thumb to right */
+}
+
+.toggle-btn .thumb .icon {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* This makes the icon white */
+}
+
+.toggle-btn.toggled .thumb .icon {
+    filter: brightness(0) invert(1); /* Keep the white filter when toggled */
+}
+
+/* start community and events navbar style */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--primary-blue-700);
+    text-decoration: none;
+    font-size: var(--bodytext-font-size);
+    transition: background-color 0.2s ease;
+    background: none;
+    border: none;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    font-weight: var(--bold-weight);
+}
+
+/* end community and events navbar style */
+
+/*Event information*/
+
+/*Event post*/
+.user-circles {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--secondary-beige-300);
+    margin-left: -8px;
+    box-shadow: -15px 0px 4px 0px rgba(0, 0, 0, 0.03);
+}
+
+.circle:first-child {
+    margin-left: 0;
+}
+
+.more-circle {
+    background-color: var(--primary-blue-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dots {
+    display: flex;
+    gap: 2px;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--neutral-blue-700);
+}
+
+/*Profile*/
+/* Start coding profile photo edit pop up */
+.photo-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.photo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-blue-100);
+    fill: var(--primary-blue-900);
+    border-radius: 50%;
+}
+
+.photo-button span {
+    color: var(--black-color);
+    font-size: var(--bodytext-font-size);
+}
+/* End coding profile photo edit pop up */
+
+/*Buttons*/
+
+/*Create Event*/
+
+/*Edit Profile*/
+
+/*Setting*/
+
+/* On-Off Toggle */
+.on-off-toggle-btn {
+    background-color: #fff;
+    border: 2px solid var(--primary-blue-700);
+    border-radius: 99px;
+    width: 60px;
+    height: 28px;
+    transition: background-color 0.1s ease, border-color 0.2s ease;
+    position: relative;
+    padding: 0;
+}
+
+.on-off-toggle-btn .on-off-thumb {
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-blue-700);
+    border-radius: 99px;
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.15s ease;
+}
+
+.on-off-toggle-btn.on-offtoggled .on-off-thumb {
+    left: calc(100% - 24px);
+}
+
+/* starting toggle style */
+
+/* Student Categories */
+.student-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.category-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category-btn:hover {
+    transform: translateY(-2px);
+}
+
+.category-img {
+    width: 100%;
+    height: 160px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.highschool-img {
+    background-image: url("/highschool.png");
+}
+
+.postgrad-img {
+    background-image: url("/postgrad.png");
+}
+
+.break-img {
+    background-image: url("/break.png");
+}
+
+.other-img {
+    background-image: url("/other.png");
+}
+
+.category-btn span {
+    color: var(--primary-blue-700);
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+}
+
+.category-btn.selected {
+    border: 2px solid var(--primary-blue-700);
+    background-color: var(--primary-blue-100);
+    transform: scale(1.02);
+}
+
+.category-btn.selected span {
+    color: var(--primary-blue-900);
+}
