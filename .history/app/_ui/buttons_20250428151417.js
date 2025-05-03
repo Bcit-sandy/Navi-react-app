@@ -1,201 +1,146 @@
 "use client";
-import "./module.button.css";
-import "../globals.css";
 import { useState } from "react";
+import Image from "next/image";
+import "./module.button.css";
 
-// Sign up
-// Onboarding
+// ** SIGN UP **//
+// Sign in/up button - sandy
+// One blue
+// One white
 
-// Let's go Explore | big button
-export function Explore() {
-    const [isActive, setIsActive] = useState(false);
+//** ONBOARDING **//
+// radio button (description) - 2 variant (light-un, dark) - angie
 
+// button (Let's go explore - skip) - daniel
+
+// button (tags) - sandy
+
+// ** HOMEPAGE **//
+// Navbar (search button and profile button) - angie
+export function Search({ onClick }) {
     return (
         <button
-            className={`explore ${isActive ? "explore-active" : ""}`}
-            onMouseDown={() => setIsActive(true)}
-            onMouseUp={() => setIsActive(false)}
-            onMouseLeave={() => setIsActive(false)}>
-            Let's go explore!
-            <img
-                className='explore_arrow'
-                src='/arrow_right.svg'
-                alt='right arrow'
+            className='search-button'
+            onClick={onClick}
+        >
+            <Image
+                src='/search.svg'
+                alt='search icon'
+                width={32}
+                height={32}
             />
         </button>
     );
 }
 
-// small skip
-export function Skip() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        console.log("Skip button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
-
+export function Profile({ onClick }) {
     return (
         <button
-            className={`skip ${isActive ? "skip-active" : ""}`}
-            onClick={handleClick}>
-            Skip
+            className='profile-button'
+            onClick={onClick}
+        >
+            <Image
+                src='/search.svg'
+                alt='search icon'
+                width={32}
+                height={32}
+            />
         </button>
     );
 }
 
-// HomePage
+// Plus button - daniel
+// 2 buttons, same style, different colors
 
-// Add post
-export function Add() {
-    const [isActive, setIsActive] = useState(false);
+//** COMMUNITY POST **//
+// heart (4 variants) 2 sizes - sandy
 
-    const handleClick = () => {
-        console.log("Add button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
+// comment button  2 sizes - angie
 
-    return (
-        <button
-            className={`add ${isActive ? "add-active" : ""}`}
-            onClick={handleClick}>
-            <img
-                className='add_button'
-                src='/add.svg'
-                alt='add button'></img>
-        </button>
-    );
-}
+// 3 dots button - daniel
 
-export function Community() {
-    const [isActive, setIsActive] = useState(false);
+// short join button (event homepage) - 2 variants - sandy
 
-    const handleClick = () => {
-        console.log("communty button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
+//** POSTING COMMUNITY POST **//
+// toggle button 2var - angie
+
+export function AnonymousToggle() {
+    const [toggled, setToggled] = useState(false);
 
     return (
-        <button
-            className={`community ${isActive ? "community-active" : ""}`}
-            onClick={handleClick}>
-            <img
-                className='community_icon'
-                src='/community.svg'
-                alt='community icon'></img>
-            Create Community Post
-        </button>
-    );
-}
-
-export function Event() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        console.log("event button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
-
-    return (
-        <button
-            className={`event ${isActive ? "event-active" : ""}`}
-            onClick={handleClick}>
-            <img
-                className='event_icon'
-                src='/event.svg'
-                alt='event icon'></img>
-            Create Event Post
-        </button>
-    );
-}
-
-// Elipses and Report
-export function Elipses() {
-    return (
-        <button className='elipses'>
-            <img
-                className='elipses_icon'
-                src='/elipses.svg'
-                alt='three dots'></img>
-        </button>
-    );
-}
-
-export function Report() {
-    return (
-        <div className='report'>
-            <div className='report_heading'>
-                <p className='report_headingText'>Report</p>
-                <img
-                    className='report_icon'
-                    src='report.svg'
-                    alt='report icon'></img>
-            </div>
-            <div className='report_options'>
-                <button className='report_button'>Not interested</button>
-                <button className='report_button'>Spam</button>
-                <button className='report_button'>Inappropriate content</button>
-                <button className='report_button'>False information</button>
-                <button className='report_buttonLast'>
-                    Hate speech, discrimination
-                </button>
-            </div>
+        <div className='anonymousToggle'>
+            <button
+                className={`toggle-btn ${toggled ? "toggled" : ""}`}
+                onClick={() => setToggled(!toggled)}
+            >
+                <div className='thumb'>
+                    {toggled ? (
+                        <Image
+                            src='/Anonymous Icon.svg'
+                            alt='anonymous on'
+                            width={12}
+                            height={12}
+                            className='icon'
+                        />
+                    ) : (
+                        <Image
+                            src='/Anonymous-off Icon.svg'
+                            alt='anonymous off'
+                            width={12}
+                            height={12}
+                            className='icon'
+                        />
+                    )}
+                </div>
+            </button>
         </div>
     );
 }
 
-//Image add
-export function ImageAdd() {
-    return (
-        <button className='imageAdd'>
-            <img
-                className='imageAdd_button'
-                src='/add.svg'
-                alt='add button'></img>
-        </button>
-    );
-}
+// image adding button - daniel
 
-//Event notification
-export function EventNotification() {
-    return (
-        <div className='eventNotification'>
-            <h3 className='eventNotification_text'>You have joined an event</h3>
-        </div>
-    );
-}
-// Profile
+// post button - sandy
 
-// Create Event
-export function RoundNext() {
-    const [isActive, setIsActive] = useState(false);
+//** EVENT INFO **//
+// users joining circle (image holder) - angie
 
-    const handleClick = () => {
-        console.log("event button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
-    return (
-        <button
-            className={`roundNext ${isActive ? "roundNext-active" : ""}`}
-            onClick={handleClick}>
-            <img
-                className='roundNext_icon'
-                src='/arrow_right.svg'
-                alt='next icon'></img>
-        </button>
-    );
-}
+// long join button - 2 variants - daniel
 
-export function LeaveEvent() {
-    return (
-    <div className='leaveEvent_box'>
-        <h3 className='leaveEvent_text'>Do you want to leave this event?</h3>
-        function Add
-    </div>
-    );
-}
-// Setting
+//** EVENT POST **//
+// send button - sandy
 
-//Exports
-// buttons.js
-// export const Navbar = () => <nav>Navbar</nav>;
+// ** PROFILE **//
+// Small Button
+// Edit - angie
+
+// Settings - daniel
+
+// return - sandy
+
+//** NAVBAR **//
+// 2 buttons (community and events) - angie
+
+//** BUTTONS **//
+// Calendar View - daniel
+
+// Follow - sandy
+
+// ** CREATE EVENT **//
+// Tags - same as onboarding - angie
+
+// Round Next button - daniel
+
+// Search button - sandy
+
+// Back button - angie
+
+// Pop Up leave buttons - Use buttons from Sign up page - daniel
+
+// ** EDIT PROFILE **//
+// edit circle button - sandy
+// pop-up - 2 buttons, take photo, choose from library - angie
+
+// ** SETTINGS **//
+// Blue buttons with graphics inside - daniel
+// Toggle Button - sandy
+// Radio button - angie
