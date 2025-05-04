@@ -1,0 +1,511 @@
+:root {
+    /* colours and typography*/
+    
+        /* basic colours */
+        --white-color: #fff;
+        --black-color: #000;
+        --success-color: #7DBE57;
+        --warning-color: #F18F01;
+        --error-color: #E62121;
+  
+        /* primary colours */
+        --primary-blue-100: #c9d1e6;
+        --primary-blue-300: #8a9cc9;
+        --primary-blue-500: #506bae;
+        --primary-blue-700: #394c7c;
+        --primary-blue-900: #222d49;
+  
+        /* secondary colours */
+        --secondary-beige-100: #f4f0ea;
+        --secondary-beige-300: #e7dfd1;
+        --secondary-beige-500: #dbcfbb;
+        --secondary-beige-700: #9b9385;
+        --secondary-beige-900: #5c574f;
+  
+        /* analogous colours */
+            --analogous-blue-100: #e4ebf0;
+            --analogous-blue-300: #c5d5e0;
+            --analogous-blue-500: #a8c0d0;
+            --analogous-blue-700: #778894;
+            --analogous-blue-900: #475157;
+          
+  
+        /* neutral */
+        --neutral-blue-100: #b6bbce;
+        --neutral-blue-300: #626d94;
+        --neutral-blue-500: #152560;
+        --neutral-blue-700: #0f1a44;
+        --neutral-blue-900: #091028;
+  
+        --font-family: Helvetica, sans-serif;
+  
+    /* Font weight */
+    --bold-weight: 700;
+    --thin-weight: 400;
+  
+    /* font size */
+    --h1-font-size: 32px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --bodytext-font-size: 16px;
+    --caption-font-size: 14px;
+    --label-font-size: 12px; 
+
+  }
+
+/* Sign up*/
+
+/* Sign up button */
+.signup-container, .signin-container {
+    margin-top: 20px;
+}
+
+.signup-button, .signin-button {
+    width: 281px;
+    height: 40px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    transition: all 0.2s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-button {
+    background-color: var(--primary-blue-500);
+    color: var(--white-color);
+    border: none;
+}
+
+.signin-button {
+    background-color: var(--white-color);
+    color: var(--analogous-blue-700);
+    border: 2px solid var(--analogous-blue-700);
+}
+
+.signup-button:active {
+    background-color: var(--primary-blue-300);
+}
+
+.signin-button:active {
+    background-color: var(--analogous-blue-300);
+}
+
+/* Onboarding*/
+.tag {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 4px solid var(--primary-blue-300);
+    background-color: var(--white-color);
+    color: var(--analogous-blue-700);
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--thin-weight);
+    transition: all 0.2s ease;
+}
+
+.tag:active {
+    background-color: var(--primary-blue-100);
+}
+
+.tag--selected {
+    background-color: var(--primary-blue-500);
+    color: var(--white-color);
+    border-color: var(--primary-blue-500);
+}
+
+.tag--selected:active {
+    background-color: var(--primary-blue-700);
+}
+
+.tags-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/*HomePage*/ 
+.heart-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.heart-button:active {
+    transform: scale(1.1);
+}
+
+.heart-buttons-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/*Posting community post*/ 
+/* Send button */
+.send-button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button:active {
+    background-color: var(--primary-blue-100);
+}
+
+/* Send button container */
+.send-container {
+    margin-top: 20px;
+}
+
+/* Return button */
+.return-button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    width: 13px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.return-button:active {
+    background-color: var(--primary-blue-500);
+}
+
+/* Return button container */
+.return-container {
+    margin-top: 20px;
+}
+
+/* Follow button */
+.follow-button {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-beige-300);
+    background-color: var(--primary-blue-500);
+    transition: all 0.2s ease;
+    width: auto;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.follow-button:active {
+    opacity: 0.7;
+}
+
+.follow-text {
+    font-size: var(--bodytext-font-size);
+}
+
+/* When not following */
+.follow-button:not(.followed) .follow-text {
+    color: var(--secondary-beige-100);
+}
+
+/* When following */
+.follow-button.followed {
+    background-color: var(--white-color);
+    border: 1px solid var(--neutral-blue-500);
+}
+
+.follow-button.followed .follow-text {
+    color: var(--neutral-blue-500);
+}
+
+/* Follow button container */
+.follow-container {
+    margin-top: 20px;
+}
+
+/* Search bar */
+.search-container {
+    position: relative;
+    width: 348px;
+    height: 41px;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px 12px 40px;
+    border: 1px solid var(--neutral-blue-700);
+    border-radius: 8px;
+    font-size: var(--bodytext-font-size);
+    color: var(--primary-blue-100);
+    background-color: var(--neutral-blue-700);
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.search-input::placeholder {
+    color: var(--primary-blue-100);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary-blue-100);
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Search button */
+.search-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-blue-500);
+    color: var(--white-color);
+    font-size: var(--bodytext-font-size);
+    transition: all 0.2s ease;
+    width: 100px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 8px;
+}
+
+.search-button:active {
+    background-color: var(--primary-blue-700);
+    color: var(--white-color);
+}
+
+.search-button-icon {
+    margin-right: 4px;
+}
+
+/* Search button container */
+.search-button-container {
+    margin-top: 20px;
+}
+
+/*Event information*/ 
+
+/*Event post*/  
+.join-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-beige-300);
+    background-color: var(--primary-blue-500);
+    color: var(--secondary-beige-100);
+    font-size: var(--bodytext-font-size);
+    transition: all 0.2s ease;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-button:active {
+    background-color: var(--primary-blue-700);
+}
+
+.join-button--joined {
+    background-color: var(--success-color);
+    color: var(--secondary-beige-100);
+}
+
+.join-button--joined:active {
+    background-color: var(--secondary-beige-300);
+    color: var(--primary-blue-500);
+}
+
+/* Join button container */
+.join-container {
+    margin-top: 20px;
+}
+
+/* Post button container */
+.post-container {
+    margin-top: 20px;
+}
+
+/*Profile*/ 
+
+/*NavBar*/ 
+
+/*Buttons*/ 
+
+/*Create Event*/
+.post-button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-blue-700);
+    color: var(--white-color);
+    font-size: var(--h3-font-size);
+    transition: all 0.2s ease;
+    width: 114px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-button:active {
+    background-color: var(--primary-blue-500);
+}
+
+
+/*Edit Profile*/ 
+/* Edit button */
+.edit-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--neutral-blue-500);
+    background-color: var(--primary-blue-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    padding: 0;
+}
+
+.edit-button:active {
+    background-color: var(--primary-blue-300);
+}
+
+/* Edit button container */
+.edit-container {
+    margin-top: 20px;
+}
+
+/*Setting*/
+/* Text Size Radio */
+.text-size-radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.radio-input {
+    width: 37px;
+    height: 37px;
+    margin: 0;
+}
+
+.radio-text {
+    font-size: var(--h3-font-size);
+    color: var(--primary-blue-500);
+    font-weight: var(--bold-weight)
+}
+
+.radio-input:checked + .radio-text {
+    color: var(--primary-blue-500);
+}
+
+/* Profile tag */
+.profile-tag {
+    width: auto;
+    height: 36px;
+    background-color: var(--white-color);
+    border: none;
+    padding: 0 8px;
+    display: flex;
+    align-items: left; 
+    gap: 8px;
+}
+
+.profile-image-container .profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.profile-tag-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-tag-title {
+    font-size: var(--bodytext-font-size);
+    color: var(--neutral-blue-900);
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.profile-tag-subtitle {
+    font-size: var(--smalltext-font-size);
+    color: var(--neutral-blue-900);
+    margin: 0;
+    text-align: left;
+    line-height: 1;
+}
+
+
+.event-date-tag{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 11px;
+    align-items: center; 
+    background-color: var(--neutral-blue-500);
+    width: 90px;
+    height: 107px;
+}
+
+.event-tag-month {
+    font-size:var(--h2-font-size) ;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color) ;
+}
+
+.event-tag-date {
+    font-size: var(--h2-font-size);
+    color: var(--white-color);
+    margin-top: 0;
+}
+
+.calendar-view-button{
+    width:134px;
+    height:19px;
+    border: none;
+    background-color: transparent;
+    color:var(--primary-blue-700
+
+}

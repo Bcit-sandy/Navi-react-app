@@ -1,0 +1,30 @@
+/* Email password inputs - Daniel*/
+/* Onboarding small inputs - Sandy*/
+
+/* Username field */
+.username-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 378px;
+    height: 40px;
+    background-color: var(--secondary-beige-100);
+    border-radius: 8px;
+}
+
+
+.username-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--bodytext-font-size);
+    color: var(--secondary-beige-900);
+    background-color: transparent;
+    outline: none;
+}
+
+
+/* Small input box*/
+
+/* Medium input box */
