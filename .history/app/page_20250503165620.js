@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import * as UI from "./_ui/buttons";
-
 import {
   Username,
   Comment,
