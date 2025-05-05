@@ -1,0 +1,79 @@
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.toggleInput {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggleSlider {
+    position: relative;
+    display: inline-block;
+    background-color: var(--primary-blue-100);
+    border-radius: 9999px;
+    transition: background-color 0.2s ease;
+}
+
+.toggleSlider::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.small .toggleSlider {
+    width: 32px;
+    height: 16px;
+}
+
+.small .toggleSlider::before {
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    left: 2px;
+}
+
+.medium .toggleSlider {
+    width: 40px;
+    height: 20px;
+}
+
+.medium .toggleSlider::before {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+}
+
+.large .toggleSlider {
+    width: 48px;
+    height: 24px;
+}
+
+.large .toggleSlider::before {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+}
+
+.toggleInput:checked + .toggleSlider {
+    background-color: var(--primary-blue-500);
+}
+
+.toggleInput:checked + .toggleSlider::before {
+    transform: translateX(100%);
+}
+
+.toggleLabel {
+    font-size: 14px;
+    color: var(--primary-blue-900);
+    user-select: none;
+} 

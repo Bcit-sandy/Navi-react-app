@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.progress {
+    height: 8px;
+    background: #dee2e6;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    background: #007bff;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.label {
+    margin-top: 8px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+} 

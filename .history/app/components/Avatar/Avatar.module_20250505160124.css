@@ -1,0 +1,35 @@
+.avatar {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.avatarImage {
+    object-fit: cover;
+}
+
+.small {
+    width: 32px;
+    height: 32px;
+}
+
+.medium {
+    width: 48px;
+    height: 48px;
+}
+
+.large {
+    width: 64px;
+    height: 64px;
+}
+
+.xlarge {
+    width: 96px;
+    height: 96px;
+} 

@@ -1,0 +1,21 @@
+.heart {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.heart:hover {
+    transform: scale(1.1);
+}
+
+.small .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.large .icon {
+    width: 32px;
+    height: 32px;
+} 

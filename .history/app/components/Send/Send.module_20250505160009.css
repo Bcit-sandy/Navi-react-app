@@ -1,0 +1,17 @@
+.sendButton {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sendButton:active {
+    background-color: var(--primary-blue-100);
+} 

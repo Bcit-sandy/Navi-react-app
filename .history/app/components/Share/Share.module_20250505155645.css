@@ -1,0 +1,15 @@
+.share {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shareActive {
+    background-color: var(--analogous-blue-100);
+}
+
+.shareIcon {
+    width: 24px;
+    height: 24px;
+} 

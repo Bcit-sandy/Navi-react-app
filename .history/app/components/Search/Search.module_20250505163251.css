@@ -1,0 +1,31 @@
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: white;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+} 

@@ -1,0 +1,27 @@
+.badge {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.badge:hover {
+    border-color: #ffc107;
+    background-color: #f8f9fa;
+}
+
+.badge.active {
+    border-color: #ffc107;
+    background-color: #e9ecef;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+} 

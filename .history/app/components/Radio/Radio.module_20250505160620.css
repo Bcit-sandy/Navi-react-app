@@ -1,0 +1,81 @@
+.radio {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radioInput {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radioButton {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid var(--primary-blue-300);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.radioButton::after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-blue-500);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s ease;
+}
+
+.small .radioButton {
+    width: 16px;
+    height: 16px;
+}
+
+.small .radioButton::after {
+    width: 8px;
+    height: 8px;
+    top: 2px;
+    left: 2px;
+}
+
+.medium .radioButton {
+    width: 20px;
+    height: 20px;
+}
+
+.medium .radioButton::after {
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    left: 3px;
+}
+
+.large .radioButton {
+    width: 24px;
+    height: 24px;
+}
+
+.large .radioButton::after {
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 4px;
+}
+
+.radioInput:checked + .radioButton {
+    border-color: var(--primary-blue-500);
+}
+
+.radioInput:checked + .radioButton::after {
+    transform: scale(1);
+}
+
+.radioLabel {
+    font-size: 14px;
+    color: var(--primary-blue-900);
+    user-select: none;
+} 

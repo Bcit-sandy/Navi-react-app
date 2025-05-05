@@ -1,0 +1,21 @@
+.signinButton {
+    width: 281px;
+    height: 40px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    transition: all 0.2s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    color: var(--analogous-blue-700);
+    border: 2px solid var(--analogous-blue-700);
+    cursor: pointer;
+}
+
+.signinButton:active {
+    background-color: var(--analogous-blue-300);
+} 
