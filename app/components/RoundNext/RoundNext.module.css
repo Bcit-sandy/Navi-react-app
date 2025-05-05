@@ -1,0 +1,21 @@
+.roundNext {
+    background-color: var(--primary-blue-500);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.roundNextActive {
+    background-color: var(--neutral-blue-100);
+}
+
+.roundNextIcon {
+    width: 24px;
+    height: 24px;
+} 

@@ -1,0 +1,21 @@
+.editBio {
+    display: flex;
+    font-family: var(--font-family);
+    width: 398px;
+    height: 212px;
+    border: 1px solid var(--primary-blue-500);
+    border-radius: 8px;
+    padding: 16px;
+    font-size: var(--bodytext-font-size);
+    color: var(--neutral-blue-900);
+    resize: none;
+}
+
+.editBio::placeholder {
+    color: var(--analogous-blue-700);
+}
+
+.editBio:focus {
+    outline: none;
+    border-color: var(--primary-blue-300);
+} 

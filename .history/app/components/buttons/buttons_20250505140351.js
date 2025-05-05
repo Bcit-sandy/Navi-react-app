@@ -2,11 +2,6 @@
 import "./module.button.css";
 import { useEffect, useState, useRef } from "react";
 
-// Common button styles
-const buttonStyles = {
-    marginBottom: '1rem'
-};
-
 // Sign up
 // Onboarding
 
@@ -17,7 +12,6 @@ export function Explore() {
     return (
         <button
             className={`explore ${isActive ? "explore-active" : ""}`}
-            style={buttonStyles}
             onMouseDown={() => setIsActive(true)}
             onMouseUp={() => setIsActive(false)}
             onMouseLeave={() => setIsActive(false)}>
@@ -43,7 +37,6 @@ export function Skip() {
     return (
         <button
             className={`skip ${isActive ? "skip-active" : ""}`}
-            style={buttonStyles}
             onClick={handleClick}>
             Skip
         </button>
@@ -64,7 +57,6 @@ export function Add() {
     return (
         <button
             className={`add ${isActive ? "add-active" : ""}`}
-            style={buttonStyles}
             onClick={handleClick}>
             <img
                 className='add_button'
@@ -85,7 +77,6 @@ export function Community() {
     return (
         <button
             className={`community ${isActive ? "community-active" : ""}`}
-            style={buttonStyles}
             onClick={handleClick}>
             <img
                 className='community_icon'
@@ -107,7 +98,6 @@ export function Event() {
     return (
         <button
             className={`event ${isActive ? "event-active" : ""}`}
-            style={buttonStyles}
             onClick={handleClick}>
             <img
                 className='event_icon'
@@ -121,7 +111,7 @@ export function Event() {
 // Elipses and Report
 export function Elipses() {
     return (
-        <button className='elipses' style={buttonStyles}>
+        <button className='elipses'>
             <img
                 className='elipses_icon'
                 src='/elipses.svg'
@@ -132,7 +122,7 @@ export function Elipses() {
 
 export function Report() {
     return (
-        <div className='report' style={buttonStyles}>
+        <div className='report'>
             <div className='report_heading'>
                 <p className='report_headingText'>Report</p>
                 <img
@@ -165,7 +155,6 @@ export function ImageAdd() {
 
     return (
         <button className={`imageAdd ${isActive ? "imageAdd-active" : ""}`}
-        style={buttonStyles}
         onClick={handleClick}>
             <img
                 className='imageAdd_button'
@@ -217,7 +206,7 @@ export function EventNotification() {
     if (!isVisible) return null;
 
     return (
-        <div className="notification-container" style={buttonStyles}>
+        <div className="notification-container">
             <div className="eventNotification">
                 <h3 className="eventNotification_text">You have joined an event</h3>
                 <div className="progress-bar" style={{ width: `${progress}%` }} />
@@ -238,7 +227,6 @@ export function RoundNext() {
     return (
         <button
             className={`roundNext ${isActive ? "roundNext-active" : ""}`}
-            style={buttonStyles}
             onClick={handleClick}>
             <img
                 className='roundNext_icon'
@@ -256,7 +244,7 @@ export function LeaveEvent() {
     }
 
     return (
-        <div className='leaveEvent' style={buttonStyles}>
+        <div className='leaveEvent'>
             <p className='leaveEvent_text'>Do you want to leave this event?</p>
             <div className='leaveEvent_options'>
                 <button
@@ -265,7 +253,6 @@ export function LeaveEvent() {
                             ? "leaveEvent_yes-active"
                             : "leaveEvent_yes-inactive"
                     }`}
-                    style={buttonStyles}
                     onClick={() => handleClick("yes")}>
                     Yes, I would like to leave
                 </button>
@@ -275,7 +262,6 @@ export function LeaveEvent() {
                             ? "leaveEvent_no-active"
                             : "leaveEvent_no-inactive"
                     }`}
-                    style={buttonStyles}
                     onClick={() => handleClick("no")}>
                     No, I would like to stay
                 </button>
@@ -297,12 +283,11 @@ export function SettingsButton() {
     }
 
     return (
-        <div className='settings' style={buttonStyles}>
+        <div className='settings'>
             <button
                 className={`darkMode ${
                     activeButton === "darkMode" ? "darkMode-active" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleClick("darkMode")}>
                 <img
                     className='darkMode_icon'
@@ -316,7 +301,6 @@ export function SettingsButton() {
                 className={`fontSize ${
                     activeButton === "fontSize" ? "fontSize-active" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleClick("fontSize")}>
                 <img
                     className='fontSize_icon'
@@ -330,7 +314,6 @@ export function SettingsButton() {
                 className={`contactUs ${
                     activeButton === "contactUs" ? "contactUs-active" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleClick("contactUs")}>
                 <img
                     className='contactUs_icon'
@@ -344,7 +327,6 @@ export function SettingsButton() {
                 className={`terms ${
                     activeButton === "terms" ? "terms-active" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleClick("terms")}>
                 <img
                     className='terms_icon'
@@ -358,7 +340,6 @@ export function SettingsButton() {
                 className={`logOut ${
                     activeButton === "logOut" ? "logOut-active" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleClick("logOut")}>
                 <img
                     className='logOut_icon'
@@ -477,7 +458,6 @@ export function PlaceholderImg_sm(){
     return (
         <button
             className={`share ${isActive ? "share-active" : ""}`}
-            style={buttonStyles}
             onClick={handleClick}>
             <img
                 className='share_icon'
@@ -492,9 +472,7 @@ export function PopupSlider(){
             <img
                 className='popupSlider'
                 src='/popup_slider.svg'
-                alt='popup slider'
-                style={buttonStyles}
-            ></img>
+                alt='popup slider'></img>
     );
 }
 
@@ -518,7 +496,6 @@ export function SignUp({ label = "Sign Up", onClick }) {
     return (
         <button 
             className="signup-button"
-            style={buttonStyles}
             onClick={onClick}
         >
             {label}
@@ -530,7 +507,6 @@ export function SignIn({ label = "Sign In", onClick }) {
     return (
         <button 
             className="signin-button"
-            style={buttonStyles}
             onClick={onClick}
         >
             {label}
@@ -542,7 +518,6 @@ export function Tags({label, onClick, isSelected = false }) {
     return (
         <button 
             className={`tag ${isSelected ? 'tag--selected' : ''}`}
-            style={buttonStyles}
             onClick={onClick}
         >
             {label}
@@ -554,7 +529,6 @@ export function Heart({ size = "small", isLiked = false, onClick }) {
     return (
         <button 
             className={`heart-button heart-${size}`}
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image 
@@ -571,7 +545,6 @@ export function Join({ isJoined = false, onClick }) {
     return (
         <button 
             className={`join-button ${isJoined ? 'join-button--joined' : ''}`}
-            style={buttonStyles}
             onClick={onClick}
         >
             {isJoined ? "Joined" : "Join"}
@@ -583,7 +556,6 @@ export function Post({ label = "Post →", onClick }) {
     return (
         <button 
             className="post-button"
-            style={buttonStyles}
             onClick={onClick}
         >
             {label}
@@ -595,7 +567,6 @@ export function Send({ onClick }) {
     return (
         <button 
             className="send-button"
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image 
@@ -612,7 +583,6 @@ export function Return({ onClick }) {
     return (
         <button 
             className="return-button"
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image 
@@ -629,7 +599,6 @@ export function Follow({ isFollowing = false, onClick }) {
     return (
         <button 
             className={`follow-button ${isFollowing ? 'followed' : ''}`}
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image 
@@ -667,7 +636,6 @@ export function SearchButton({ onClick }) {
     return (
         <button 
             className="search-button"
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image 
@@ -686,7 +654,6 @@ export function EditButton({ onClick }) {
     return (
         <button 
             className="edit-button"
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image 
@@ -730,7 +697,7 @@ export function TextSizeRadio({ value = "medium", onChange }) {
 
 export function ProfileTag({ onClick, title, subtitle, imageSrc }) {
     return (
-        <button className="profile-tag" style={buttonStyles} onClick={onClick}>
+        <button className="profile-tag" onClick={onClick}>
             <div className="profile-image-container">
                 <Image 
                     src={imageSrc}
@@ -750,7 +717,7 @@ export function ProfileTag({ onClick, title, subtitle, imageSrc }) {
 
 export function EventDateTag({ onClick, month, date}) {
     return (
-        <button className="event-date-tag" style={buttonStyles} onClick={onClick}>
+        <button className="event-date-tag" onClick={onClick}>
             <div className="event-date-container">
             <div className="event-tag-content">
                 <p className="event-tag-month">{month}</p>
@@ -767,7 +734,6 @@ export function CalendarViewButton({ onClick, text }) {
     return (
         <button 
             className="calendar-view-button"
-            style={buttonStyles}
             onClick={onClick}
         >
             <span className="calendar-view"> {text}</span>
@@ -811,7 +777,6 @@ export function StudentCategories({ onSelect }) {
                 className={`category-card ${
                     selectedCategory === "highschool" ? "selected" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleSelect("highschool")}
             >
                 <div className='card-content'>
@@ -826,7 +791,6 @@ export function StudentCategories({ onSelect }) {
                 className={`category-card ${
                     selectedCategory === "postgrad" ? "selected" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleSelect("postgrad")}
             >
                 <div className='card-content'>
@@ -841,7 +805,6 @@ export function StudentCategories({ onSelect }) {
                 className={`category-card ${
                     selectedCategory === "break" ? "selected" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleSelect("break")}
             >
                 <div className='card-content'>
@@ -856,7 +819,6 @@ export function StudentCategories({ onSelect }) {
                 className={`category-card ${
                     selectedCategory === "other" ? "selected" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => handleSelect("other")}
             >
                 <div className='card-content'>
@@ -909,7 +871,6 @@ export function LocationDropdown() {
                 />
                 <button
                     className={`dropdown-button ${isOpen ? "open" : ""}`}
-                    style={buttonStyles}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <Image
@@ -936,7 +897,6 @@ export function LocationDropdown() {
                                         ? "selected"
                                         : ""
                                 }`}
-                                style={buttonStyles}
                                 onClick={() => handleOptionClick(location)}
                             >
                                 {location}
@@ -958,7 +918,6 @@ export function Search({ onClick }) {
     return (
         <button
             className='search-button'
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image
@@ -975,7 +934,6 @@ export function Profile({ onClick }) {
     return (
         <button
             className='profile-button'
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image
@@ -999,7 +957,6 @@ export function Comment({ onClick }) {
     return (
         <button
             className='comment-button'
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image
@@ -1027,7 +984,7 @@ export function SingleComment({
     profileImage = "/profile.svg",
 }) {
     return (
-        <div className='single-comment' style={buttonStyles}>
+        <div className='single-comment'>
             <Image
                 src={profileImage}
                 alt='profile icon'
@@ -1051,7 +1008,7 @@ export function SingleComment({
 // comment with reply component
 export function CommentWithReply() {
     return (
-        <div className='comment-thread' style={buttonStyles}>
+        <div className='comment-thread'>
             <div className='single-comment'>
                 <Image
                     src='/profile.svg'
@@ -1104,10 +1061,9 @@ export function AnonymousToggle() {
     const [toggled, setToggled] = useState(false);
 
     return (
-        <div className='anonymousToggle' style={buttonStyles}>
+        <div className='anonymousToggle'>
             <button
                 className={`toggle-btn ${toggled ? "toggled" : ""}`}
-                style={buttonStyles}
                 onClick={() => setToggled(!toggled)}
             >
                 <div className='thumb'>
@@ -1142,7 +1098,7 @@ export function AnonymousToggle() {
 // users joining circle (image holder) - angie
 export function UserCircles({ users = [] }) {
     return (
-        <div className='user-circles' style={buttonStyles}>
+        <div className='user-circles'>
             {/* More indicator circle */}
             <div className='circle more-circle'>
                 <div className='dots'>
@@ -1176,7 +1132,6 @@ export function Edit({ onClick }) {
     return (
         <button
             className='edit-button'
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image
@@ -1195,7 +1150,6 @@ export function Delete({ onClick }) {
     return (
         <button
             className='delete-button'
-            style={buttonStyles}
             onClick={onClick}
         >
             <Image
@@ -1225,13 +1179,12 @@ export function HomePageNav() {
     const [activeLink, setActiveLink] = useState("community");
 
     return (
-        <nav className='navbar' style={buttonStyles}>
+        <nav className='navbar'>
             <div className='nav-links'>
                 <button
                     className={`nav-link ${
                         activeLink === "community" ? "active" : ""
                     }`}
-                    style={buttonStyles}
                     onClick={() => setActiveLink("community")}
                 >
                     Community
@@ -1240,7 +1193,6 @@ export function HomePageNav() {
                     className={`nav-link ${
                         activeLink === "events" ? "active" : ""
                     }`}
-                    style={buttonStyles}
                     onClick={() => setActiveLink("events")}
                 >
                     Events
@@ -1270,7 +1222,6 @@ export function TakePhotoButton({ onClick }) {
     return (
         <button
             className='photo-button'
-            style={buttonStyles}
             onClick={onClick}
         >
             <div className='photo-icon'>
@@ -1290,7 +1241,6 @@ export function ChoosePhotoButton({ onClick }) {
     return (
         <button
             className='photo-button'
-            style={buttonStyles}
             onClick={onClick}
         >
             <div className='photo-icon'>
@@ -1313,12 +1263,11 @@ export function Toggle() {
     const [onOffToggled, setonOffToggled] = useState(false);
 
     return (
-        <div className='on-off-Toggle' style={buttonStyles}>
+        <div className='on-off-Toggle'>
             <button
                 className={`on-off-toggle-btn ${
                     onOffToggled ? "on-offtoggled" : ""
                 }`}
-                style={buttonStyles}
                 onClick={() => setonOffToggled(!onOffToggled)}
             >
                 <span className='toggle-label'>
@@ -1364,10 +1313,9 @@ export function StudentTypeDropdown() {
         options.find((opt) => opt.id === selected) || options[0];
 
     return (
-        <div className='student-type-dropdown' style={buttonStyles}>
+        <div className='student-type-dropdown'>
             <button
                 className={`dropdown-trigger ${isOpen ? "open" : ""}`}
-                style={buttonStyles}
                 onClick={() => setIsOpen(!isOpen)}
             >
                 <div className='selected-option'>
@@ -1398,7 +1346,6 @@ export function StudentTypeDropdown() {
                             className={`dropdown-option ${
                                 selected === option.id ? "selected" : ""
                             }`}
-                            style={buttonStyles}
                             onClick={() => {
                                 setSelected(option.id);
                                 setIsOpen(false);

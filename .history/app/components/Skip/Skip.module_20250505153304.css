@@ -1,0 +1,19 @@
+.skip {
+    font-size: var(--bodytext-font-size);
+    font-weight: bold;
+    color: var(--primary-blue-300);
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    /* Add your existing skip button styles here */
+}
+
+.skipActive {
+    color: var(--primary-blue-500);
+    background-color: transparent;
+    border-radius: 4px;
+    /* Add your existing skip-active styles here */
+} 

@@ -1,5 +1,5 @@
 "use client";
-import "./module.button.css";
+import "./module.button.module.css";
 import { useEffect, useState, useRef } from "react";
 
 // Common button styles
