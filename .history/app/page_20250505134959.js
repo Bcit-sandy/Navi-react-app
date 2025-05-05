@@ -1,70 +1,14 @@
 'use client';
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-import {
-  SuccessStatusBar,
-  SearchBar,
-  SearchButton,
-  EditButton,
-  TextSizeRadio,
-  SignUp,
-  SignIn,
-  Tags,
-  Heart,
-  Join,
-  Post,
-  Send,
-  Return,
-  Follow,
-  ProfileTag,
-  SignUp_Input,
-  AnonymousToggle,
-  Search,
-  Profile,
-  Comment,
-  Edit,
-  Delete,
-  Toggle,
-  HomePageNav,
-  TakePhotoButton,
-  ChoosePhotoButton,
-  UserCircles,
-  StudentCategories,
-  SingleComment,
-  CommentWithReply,
-  LocationDropdown,
-  StudentTypeDropdown,
-  Share,
-  PlaceholderImg_profile_sm,
-  PlaceholderImg_profile,
-  PlaceholderImg_event,
-  PlaceholderImg_featured,
-  PlaceholderImg_lg,
-  PlaceholderImg_sm,
-  EditBioText,
-  ParticipantField,
-  SettingsButton,
-  Explore,
-  Skip,
-  Add,
-  Community,
-  Event,
-  Elipses,
-  Report,
-  ImageAdd,
-  EventNotification,
-  RoundNext,
-  LeaveEvent,
-  EventDateTag,
-  CalendarViewButton
-} from "./components/buttons/buttons";
+import Buttons from "./_ui/components/buttons";
 
 import {
   Username,
   Comment as CommentField,
   EventsPostTextField,
   CommunityPostTextField
-} from "./components/textfield/textfield";
+} from "./_ui/components/textfield";
 
 export default function Page() {
   const [selectedTags, setSelectedTags] = useState([]);

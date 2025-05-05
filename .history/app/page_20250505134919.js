@@ -57,14 +57,14 @@ import {
   LeaveEvent,
   EventDateTag,
   CalendarViewButton
-} from "./components/buttons/buttons";
+} from "./_ui/components/buttons";
 
 import {
   Username,
   Comment as CommentField,
   EventsPostTextField,
   CommunityPostTextField
-} from "./components/textfield/textfield";
+} from "./_ui/components/textfield";
 
 export default function Page() {
   const [selectedTags, setSelectedTags] = useState([]);

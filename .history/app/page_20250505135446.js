@@ -1,40 +1,46 @@
 'use client';
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
+
+// Auth Components
+import { SignUp, SignIn, SignUp_Input } from "./components/Buttons/Auth";
+
+// UI Components
+import { Heart, Tags, Share, SearchBar, SearchButton, EditButton, Delete, Toggle } from "./components/Buttons/UI";
+
+// Layout Components
+import { HomePageNav } from "./components/Buttons/Layout";
+
+// Post Components
+import { Post, Send, Comment, SingleComment, CommentWithReply } from "./components/Buttons/Post";
+
+// Profile Components
+import { Profile, ProfileTag, Follow } from "./components/Buttons/Profile";
+
+// Settings Components
+import { SettingsButton } from "./components/Buttons/Settings";
+
+// Textfield Components
+import {
+  Username,
+  Comment as CommentField,
+  EventsPostTextField,
+  CommunityPostTextField
+} from "./components/Textfield/textfield";
+
 import {
   SuccessStatusBar,
-  SearchBar,
-  SearchButton,
-  EditButton,
   TextSizeRadio,
-  SignUp,
-  SignIn,
-  Tags,
-  Heart,
   Join,
-  Post,
-  Send,
   Return,
-  Follow,
-  ProfileTag,
-  SignUp_Input,
   AnonymousToggle,
   Search,
-  Profile,
-  Comment,
-  Edit,
-  Delete,
-  Toggle,
-  HomePageNav,
   TakePhotoButton,
   ChoosePhotoButton,
   UserCircles,
   StudentCategories,
-  SingleComment,
-  CommentWithReply,
   LocationDropdown,
   StudentTypeDropdown,
-  Share,
   PlaceholderImg_profile_sm,
   PlaceholderImg_profile,
   PlaceholderImg_event,
@@ -43,7 +49,6 @@ import {
   PlaceholderImg_sm,
   EditBioText,
   ParticipantField,
-  SettingsButton,
   Explore,
   Skip,
   Add,
@@ -57,14 +62,7 @@ import {
   LeaveEvent,
   EventDateTag,
   CalendarViewButton
-} from "./components/buttons/buttons";
-
-import {
-  Username,
-  Comment as CommentField,
-  EventsPostTextField,
-  CommunityPostTextField
-} from "./components/textfield/textfield";
+} from "./components/Buttons/buttons";
 
 export default function Page() {
   const [selectedTags, setSelectedTags] = useState([]);

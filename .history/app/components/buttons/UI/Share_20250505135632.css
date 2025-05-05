@@ -1,0 +1,15 @@
+.share-button {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.share-button:hover {
+    transform: scale(1.1);
+}
+
+.share-button:active {
+    transform: scale(0.95);
+} 

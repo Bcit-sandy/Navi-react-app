@@ -1,0 +1,20 @@
+.signin-button {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #E5E5EA;
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.signin-button:hover {
+    background-color: #D1D1D6;
+}
+
+.signin-button:active {
+    background-color: #C7C7CC;
+} 

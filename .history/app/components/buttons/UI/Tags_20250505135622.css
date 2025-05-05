@@ -1,0 +1,26 @@
+.tag {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #E5E5EA;
+    background-color: white;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 4px;
+}
+
+.tag:hover {
+    background-color: #F2F2F7;
+}
+
+.tag--selected {
+    background-color: #007AFF;
+    color: white;
+    border-color: #007AFF;
+}
+
+.tag--selected:hover {
+    background-color: #0056b3;
+} 

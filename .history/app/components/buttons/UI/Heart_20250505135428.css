@@ -1,0 +1,25 @@
+.heart-button {
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.heart-button:hover {
+    transform: scale(1.1);
+}
+
+.heart-button:active {
+    transform: scale(0.95);
+}
+
+.heart-small {
+    width: 24px;
+    height: 24px;
+}
+
+.heart-large {
+    width: 32px;
+    height: 32px;
+} 
