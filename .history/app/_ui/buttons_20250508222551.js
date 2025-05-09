@@ -271,7 +271,6 @@ export function LeaveEvent() {
         </div>
     );
 }
-//test
 // Setting
 
 export function SettingsButton() {
