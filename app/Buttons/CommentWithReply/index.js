@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function CommentWithReply({ comment, onReply }) {
+export function CommentWithReply({ comment, onReply }) {
     const [isReplying, setIsReplying] = useState(false);
     const [replyText, setReplyText] = useState("");
 

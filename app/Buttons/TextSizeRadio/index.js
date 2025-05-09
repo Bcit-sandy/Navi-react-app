@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function TextSizeRadio() {
+export function TextSizeRadio() {
     const [selectedSize, setSelectedSize] = useState("medium");
 
     const sizes = [

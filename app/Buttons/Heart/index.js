@@ -4,7 +4,7 @@ import "../../globals.css";
 import { useState } from "react";
 import Image from "next/image";
 
-export default function Heart({ initialLiked = false, onLike }) {
+export function Heart({ initialLiked = false, onLike }) {
     const [isLiked, setIsLiked] = useState(initialLiked);
 
     const handleClick = () => {

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function UserCircles() {
+export function UserCircles() {
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {

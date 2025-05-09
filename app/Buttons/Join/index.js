@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function Join() {
+export function Join() {
     const [isJoined, setIsJoined] = useState(false);
 
     const handleClick = () => {

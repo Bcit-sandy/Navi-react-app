@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function StudentCategories() {
+export function StudentCategories() {
     const [selectedCategory, setSelectedCategory] = useState(null);
 
     const categories = [

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function Login({ onLogin }) {
+export function Login({ onLogin }) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 

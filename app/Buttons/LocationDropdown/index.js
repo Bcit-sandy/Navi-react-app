@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function LocationDropdown({ locations, onSelect }) {
+export function LocationDropdown({ locations, onSelect }) {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedLocation, setSelectedLocation] = useState("");
 

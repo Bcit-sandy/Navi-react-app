@@ -1,64 +1,8 @@
 'use client';
+import "./globals.css";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-import {
-  Explore,
-  Skip,
-  Add,
-  Community,
-  Event,
-  Elipses,
-  Report,
-  ImageAdd,
-  EventNotification,
-  RoundNext,
-  LeaveEvent,
-  SettingsButton,
-  ParticipantField,
-  EditBioText,
-  PlaceholderImg_sm,
-  PlaceholderImg_lg,
-  PlaceholderImg_event,
-  PlaceholderImg_featured,
-  PlaceholderImg_profile,
-  PlaceholderImg_profile_sm,
-  Share,
-  PopupSlider,
-  SignUp_Input,
-  SignUp,
-  SignIn,
-  Tags,
-  Heart,
-  Join,
-  Post,
-  Send,
-  Return,
-  Follow,
-  SearchBar,
-  SearchButton,
-  EditButton,
-  TextSizeRadio,
-  ProfileTag,
-  EventDateTag,
-  CalendarViewButton,
-  SuccessStatusBar,
-  StudentCategories,
-  LocationDropdown,
-  Search,
-  Profile,
-  Comment as CommentButton,
-  SingleComment,
-  CommentWithReply,
-  AnonymousToggle,
-  UserCircles,
-  Edit,
-  Delete,
-  HomePageNav,
-  TakePhotoButton,
-  ChoosePhotoButton,
-  Toggle,
-  StudentTypeDropdown
-} from "./components/buttons";
+import * as Buttons from "./Buttons/allbuttons";
 
 import {
   Username,
@@ -97,26 +41,26 @@ export default function Page() {
   };
 
   return (
-    <main>
+    <main style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
       <h1>ALL COMPONENTS DEMO</h1>
 
-      <SuccessStatusBar message="Successfully created event!" />
-      <SearchBar onChange={e => {
+      <Buttons.SuccessStatusBar message="Successfully created event!" />
+      <Buttons.SearchBar onChange={e => {
         setSearchQuery(e.target.value);
         console.log("Searching:", e.target.value);
       }} />
-      <SearchButton onClick={() => console.log("Search button clicked:", searchQuery)} />
-      <EditButton onClick={() => console.log("Editing...")} />
-      <TextSizeRadio value={textSize} onChange={e => {
+      <Buttons.SearchButton onClick={() => console.log("Search button clicked:", searchQuery)} />
+      <Buttons.EditButton onClick={() => console.log("Editing...")} />
+      <Buttons.TextSizeRadio value={textSize} onChange={e => {
         setTextSize(e.target.value);
         console.log("Text size changed to:", e.target.value);
       }} />
-      <SignUp onClick={() => console.log("Sign up!")} />
-      <SignIn onClick={() => console.log("Sign In ...Loading...")} />
+      <Buttons.SignUp onClick={() => console.log("Sign up!")} />
+      <Buttons.SignIn onClick={() => console.log("Sign In ...Loading...")} />
 
       <div className="tags-container">
         {tags.map(tag => (
-          <Tags
+          <Buttons.Tags
             key={tag}
             label={tag}
             isSelected={selectedTags.includes(tag)}
@@ -126,17 +70,17 @@ export default function Page() {
       </div>
 
       <div className="heart-buttons-container">
-        <Heart size="small" isLiked={smallHeartLiked} onClick={() => setSmallHeartLiked(!smallHeartLiked)} />
-        <Heart size="large" isLiked={largeHeartLiked} onClick={() => setLargeHeartLiked(!largeHeartLiked)} />
+        <Buttons.Heart size="small" isLiked={smallHeartLiked} onClick={() => setSmallHeartLiked(!smallHeartLiked)} />
+        <Buttons.Heart size="large" isLiked={largeHeartLiked} onClick={() => setLargeHeartLiked(!largeHeartLiked)} />
       </div>
 
-      <Join isJoined={isJoined} onClick={() => setIsJoined(!isJoined)} />
-      <Post onClick={() => console.log("Posting...")} />
-      <Send onClick={() => console.log("Sending...")} />
-      <Return onClick={() => console.log("Returning...")} />
-      <Follow isFollowing={isFollowing} onClick={() => setIsFollowing(!isFollowing)} />
+      <Buttons.Join isJoined={isJoined} onClick={() => setIsJoined(!isJoined)} />
+      <Buttons.Post onClick={() => console.log("Posting...")} />
+      <Buttons.Send onClick={() => console.log("Sending...")} />
+      <Buttons.Return onClick={() => console.log("Returning...")} />
+      <Buttons.Follow isFollowing={isFollowing} onClick={() => setIsFollowing(!isFollowing)} />
 
-      <ProfileTag
+      <Buttons.ProfileTag
         onClick={() => console.log("Profile tag clicked")}
         title="Username"
         subtitle="Date"
@@ -145,27 +89,27 @@ export default function Page() {
 
       <Username onChange={handleUserChange} />
       <Comment onChange={handleUserChange} />
-      <EventDateTag onClick={() => console.log("Event Date:")} month="APR" date="08" />
-      <CalendarViewButton onClick={() => console.log("Calendar clicked")} text="Calendar View →" />
+      <Buttons.EventDateTag onClick={() => console.log("Event Date:")} month="APR" date="08" />
+      <Buttons.CalendarViewButton onClick={() => console.log("Calendar clicked")} text="Calendar View →" />
 
       {/* SignUp Inputs */}
-      <SignUp_Input label="Email" type="email" name="email" placeholder="Enter email" />
-      <SignUp_Input label="Password" type="password" name="password" placeholder="Enter password" />
-      <SignUp_Input label="Re-enter Password" type="password" name="repassword" placeholder="Re-enter password" />
+      <Buttons.SignUp_Input label="Email" type="email" name="email" placeholder="Enter email" />
+      <Buttons.SignUp_Input label="Password" type="password" name="password" placeholder="Enter password" />
+      <Buttons.SignUp_Input label="Re-enter Password" type="password" name="repassword" placeholder="Re-enter password" />
 
       {/* Extras */}
-      <AnonymousToggle />
-      <Search />
-      <Profile />
-      <CommentButton />
-      <Edit />
-      <Delete />
-      <Toggle />
-      <HomePageNav />
-      <TakePhotoButton />
-      <ChoosePhotoButton />
-      <UserCircles users={users} />
-      <StudentCategories onSelect={category => {
+      <Buttons.AnonymousToggle />
+      <Buttons.Search />
+      <Buttons.Profile />
+      <Buttons.CommentButton />
+      <Buttons.Edit />
+      <Buttons.Delete />
+      <Buttons.Toggle />
+      <Buttons.HomePageNav />
+      <Buttons.TakePhotoButton />
+      <Buttons.ChoosePhotoButton />
+      <Buttons.UserCircles users={users} />
+      <Buttons.StudentCategories onSelect={category => {
         setSelectedCategory(category);
         console.log("Selected category:", category);
       }} />
@@ -173,39 +117,39 @@ export default function Page() {
       <CommunityPostTextField value={post} onChange={(e) => setPost(e.target.value)} />
       <EventsPostTextField />
 
-      <SingleComment
+      <Buttons.SingleComment
         author='Jenny Pham'
         date='Mar 31, 2025'
         content="I would say Granville Island. I'd have a lot of fun!!"
       />
-      <CommentWithReply />
+      <Buttons.CommentWithReply />
 
-      <LocationDropdown />
-      <StudentTypeDropdown />
-      <Share />
+      <Buttons.LocationDropdown />
+      <Buttons.StudentTypeDropdown />
+      <Buttons.Share />
 
       {/* Placeholder images */}
-      <PlaceholderImg_profile_sm />
-      <PlaceholderImg_profile />
-      <PlaceholderImg_event />
-      <PlaceholderImg_featured />
-      <PlaceholderImg_lg />
-      <PlaceholderImg_sm />
+      <Buttons.PlaceholderImg_profile_sm />
+      <Buttons.PlaceholderImg_profile />
+      <Buttons.PlaceholderImg_event />
+      <Buttons.PlaceholderImg_featured />
+      <Buttons.PlaceholderImg_lg />
+      <Buttons.PlaceholderImg_sm />
 
-      <EditBioText />
-      <ParticipantField />
-      <SettingsButton />
-      <Explore />
-      <Skip />
-      <Add />
-      <Community />
-      <Event />
-      <Elipses />
-      <Report />
-      <ImageAdd />
-      <EventNotification />
-      <RoundNext />
-      <LeaveEvent />
+      <Buttons.EditBioText />
+      <Buttons.ParticipantField />
+      <Buttons.SettingsButton />
+      <Buttons.Explore />
+      <Buttons.Skip />
+      <Buttons.Add />
+      <Buttons.Community />
+      <Buttons.Event />
+      <Buttons.Elipses />
+      <Buttons.Report />
+      <Buttons.ImageAdd />
+      <Buttons.EventNotification />
+      <Buttons.RoundNext />
+      <Buttons.LeaveEvent />
     </main>
   );
 }

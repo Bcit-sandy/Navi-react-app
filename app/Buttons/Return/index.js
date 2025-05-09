@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function Return() {
+export function Return() {
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {

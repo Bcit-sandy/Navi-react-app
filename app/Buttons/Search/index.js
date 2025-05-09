@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function Search({ onSearch }) {
+export function Search({ onSearch }) {
     const [searchTerm, setSearchTerm] = useState("");
 
     const handleChange = (e) => {

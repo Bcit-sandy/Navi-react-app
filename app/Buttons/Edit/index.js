@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function Edit({ onEdit }) {
+export function Edit({ onEdit }) {
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {

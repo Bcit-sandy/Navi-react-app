@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function AnonymousToggle({ initialState = false, onChange }) {
+export function AnonymousToggle({ initialState = false, onChange }) {
     const [isAnonymous, setIsAnonymous] = useState(initialState);
 
     const handleToggle = () => {

@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import "./styles.css";
 
-export default function ImageUpload({ onUpload }) {
+export function ImageUpload({ onUpload }) {
     const [preview, setPreview] = useState(null);
     const fileInputRef = useRef(null);
 

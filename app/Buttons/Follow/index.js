@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function Follow() {
+export function Follow() {
     const [isFollowing, setIsFollowing] = useState(false);
 
     const handleClick = () => {

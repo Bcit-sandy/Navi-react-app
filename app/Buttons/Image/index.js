@@ -2,7 +2,7 @@
 
 import "./styles.css";
 
-export default function Image({ src, alt, className, ...props }) {
+export function Image({ src, alt, className, ...props }) {
     return (
         <img
             src={src}

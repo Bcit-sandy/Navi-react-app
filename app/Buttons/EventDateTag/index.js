@@ -2,7 +2,7 @@
 
 import "./styles.css";
 
-export default function EventDateTag({ date }) {
+export function EventDateTag({ date }) {
     const formatDate = (dateString) => {
         const date = new Date(dateString);
         return date.toLocaleDateString('en-US', {

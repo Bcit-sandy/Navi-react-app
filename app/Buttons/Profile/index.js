@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function Profile({ user }) {
+export function Profile({ user }) {
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {

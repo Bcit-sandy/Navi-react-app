@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function Toggle({ initialState = false, onChange }) {
+export function Toggle({ initialState = false, onChange }) {
     const [isOn, setIsOn] = useState(initialState);
 
     const handleClick = () => {

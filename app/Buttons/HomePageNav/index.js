@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function HomePageNav({ onNavigate }) {
+export function HomePageNav({ onNavigate }) {
     const [activeTab, setActiveTab] = useState("home");
 
     const handleTabClick = (tab) => {
