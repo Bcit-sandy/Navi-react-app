@@ -1,0 +1,94 @@
+.commentWithReply {
+    padding: 16px;
+    border-bottom: 1px solid var(--neutral-200);
+}
+
+.comment {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.commentContent {
+    flex: 1;
+}
+
+.commentHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.username {
+    font-weight: 600;
+    color: var(--neutral-800);
+}
+
+.timestamp {
+    font-size: 12px;
+    color: var(--neutral-500);
+}
+
+.text {
+    margin: 0;
+    color: var(--neutral-700);
+    line-height: 1.5;
+}
+
+.replySection {
+    margin-left: 52px;
+}
+
+.replyButton {
+    background: none;
+    border: none;
+    color: var(--analogous-blue-500);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 0;
+}
+
+.replyInput {
+    margin-top: 8px;
+}
+
+.replyInput textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px;
+    border: 1px solid var(--neutral-200);
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 8px;
+}
+
+.replyActions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.cancelButton {
+    padding: 6px 12px;
+    background: none;
+    border: 1px solid var(--neutral-300);
+    border-radius: 4px;
+    color: var(--neutral-700);
+    cursor: pointer;
+}
+
+.submitButton {
+    padding: 6px 12px;
+    background: var(--analogous-blue-500);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+} 

@@ -1,0 +1,15 @@
+.eventDateTag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    background: var(--neutral-100);
+    color: var(--neutral-700);
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.eventDateTag-active {
+    background-color: var(--secondary-beige-500);
+    color: white;
+} 

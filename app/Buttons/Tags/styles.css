@@ -1,0 +1,9 @@
+.tags {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tags-active {
+    background-color: var(--analogous-blue-100);
+} 

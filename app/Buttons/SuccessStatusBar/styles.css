@@ -1,0 +1,27 @@
+.successStatusBar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    background-color: var(--success-color);
+    color: white;
+    border-radius: 8px;
+    font-size: var(--bodytext-font-size);
+    animation: slideIn 0.3s ease-out;
+}
+
+.successStatusBar img {
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} 

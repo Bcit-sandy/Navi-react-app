@@ -1,0 +1,28 @@
+.eventTag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.eventTag.blue {
+    background: var(--analogous-blue-100);
+    color: var(--analogous-blue-700);
+}
+
+.eventTag.green {
+    background: var(--analogous-green-100);
+    color: var(--analogous-green-700);
+}
+
+.eventTag.orange {
+    background: var(--analogous-orange-100);
+    color: var(--analogous-orange-700);
+}
+
+.eventTag.purple {
+    background: var(--analogous-purple-100);
+    color: var(--analogous-purple-700);
+} 

@@ -1,0 +1,36 @@
+.imageUpload {
+    width: 100%;
+    max-width: 300px;
+}
+
+.uploadButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 24px;
+    background: var(--white);
+    border: 2px dashed var(--neutral-300);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.uploadButton:hover {
+    border-color: var(--analogous-blue-500);
+    background: var(--analogous-blue-50);
+}
+
+.previewImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.uploadButton span {
+    color: var(--neutral-600);
+    font-size: 14px;
+} 

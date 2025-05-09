@@ -1,0 +1,23 @@
+.textSizeRadio {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.radioOption {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.radioOption input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-blue-500);
+}
+
+.radioOption label {
+    font-size: var(--bodytext-font-size);
+    color: var(--primary-blue-500);
+    cursor: pointer;
+} 

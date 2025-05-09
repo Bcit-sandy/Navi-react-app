@@ -1,0 +1,14 @@
+.return {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.return-active {
+    background-color: var(--analogous-blue-100);
+}
+
+.return img {
+    width: 24px;
+    height: 24px;
+} 

@@ -1,0 +1,14 @@
+.calendarViewButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.calendarViewButton-active {
+    background-color: var(--analogous-blue-100);
+}
+
+.calendarViewButton img {
+    width: 24px;
+    height: 24px;
+} 

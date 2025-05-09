@@ -1,0 +1,15 @@
+.profileTag {
+    padding: 4px 12px;
+    background: none;
+    border: 1px solid var(--primary-blue-500);
+    border-radius: 16px;
+    color: var(--primary-blue-500);
+    font-size: var(--caption-font-size);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profileTag-active {
+    background-color: var(--primary-blue-500);
+    color: white;
+} 
