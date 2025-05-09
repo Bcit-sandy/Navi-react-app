@@ -1,6 +1,9 @@
 .commentWithReply {
+    background-color: var(--white-color);
+    border-radius: 8px;
     padding: 16px;
-    border-bottom: 1px solid var(--neutral-200);
+    margin: 16px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .comment {
@@ -13,6 +16,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .commentContent {
@@ -21,24 +25,23 @@
 
 .commentHeader {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
     margin-bottom: 4px;
 }
 
 .username {
-    font-weight: 600;
-    color: var(--neutral-800);
+    font-weight: var(--bold-weight);
+    color: var(--primary-blue-700);
 }
 
 .timestamp {
-    font-size: 12px;
-    color: var(--neutral-500);
+    font-size: var(--caption-font-size);
+    color: var(--neutral-blue-300);
 }
 
 .text {
-    margin: 0;
-    color: var(--neutral-700);
+    color: var(--neutral-blue-900);
     line-height: 1.5;
 }
 
@@ -49,10 +52,14 @@
 .replyButton {
     background: none;
     border: none;
-    color: var(--analogous-blue-500);
-    font-size: 14px;
+    color: var(--primary-blue-500);
+    font-size: var(--bodytext-font-size);
     cursor: pointer;
     padding: 4px 0;
+}
+
+.replyButton:hover {
+    color: var(--primary-blue-700);
 }
 
 .replyInput {
@@ -63,7 +70,7 @@
     width: 100%;
     min-height: 80px;
     padding: 8px;
-    border: 1px solid var(--neutral-200);
+    border: 1px solid var(--primary-blue-300);
     border-radius: 4px;
     resize: vertical;
     margin-bottom: 8px;
@@ -75,20 +82,29 @@
     justify-content: flex-end;
 }
 
-.cancelButton {
-    padding: 6px 12px;
-    background: none;
-    border: 1px solid var(--neutral-300);
+.cancelButton, .submitButton {
+    padding: 8px 16px;
     border-radius: 4px;
-    color: var(--neutral-700);
     cursor: pointer;
+    font-size: var(--bodytext-font-size);
+}
+
+.cancelButton {
+    background: none;
+    border: 1px solid var(--primary-blue-300);
+    color: var(--primary-blue-500);
 }
 
 .submitButton {
-    padding: 6px 12px;
-    background: var(--analogous-blue-500);
+    background-color: var(--primary-blue-500);
     border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
+    color: var(--white-color);
+}
+
+.cancelButton:hover {
+    background-color: var(--primary-blue-100);
+}
+
+.submitButton:hover {
+    background-color: var(--primary-blue-700);
 } 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import "./styles.css";
+import Image from "next/image";
 
 export function EditButton() {
     const [isActive, setIsActive] = useState(false);
@@ -16,7 +17,12 @@ export function EditButton() {
             className={`editButton ${isActive ? 'editButton-active' : ''}`}
             onClick={handleClick}
         >
-            <img src="/edit.svg" alt="Edit" />
+            <Image 
+                src="/edit.svg" 
+                alt="Edit"
+                width={24}
+                height={24}
+            />
         </button>
     );
 } 

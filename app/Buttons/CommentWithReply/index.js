@@ -3,12 +3,18 @@
 import { useState } from "react";
 import "./styles.css";
 
-export function CommentWithReply({ comment, onReply }) {
+export function CommentWithReply({ 
+    author = "Anonymous User",
+    date = "Just now",
+    content = "This is a sample comment.",
+    avatar = "/default_avatar.svg",
+    onReply = () => console.log("Reply clicked")
+}) {
     const [isReplying, setIsReplying] = useState(false);
     const [replyText, setReplyText] = useState("");
 
     const handleReply = () => {
-        if (replyText.trim() && onReply) {
+        if (replyText.trim()) {
             onReply(replyText);
             setReplyText("");
             setIsReplying(false);
@@ -18,13 +24,13 @@ export function CommentWithReply({ comment, onReply }) {
     return (
         <div className="commentWithReply">
             <div className="comment">
-                <img src={comment.avatar} alt="User Avatar" className="avatar" />
+                <img src={avatar} alt={`${author}'s avatar`} className="avatar" />
                 <div className="commentContent">
                     <div className="commentHeader">
-                        <span className="username">{comment.username}</span>
-                        <span className="timestamp">{comment.timestamp}</span>
+                        <span className="username">{author}</span>
+                        <span className="timestamp">{date}</span>
                     </div>
-                    <p className="text">{comment.text}</p>
+                    <p className="text">{content}</p>
                 </div>
             </div>
             <div className="replySection">

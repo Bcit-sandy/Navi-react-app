@@ -2,14 +2,13 @@
 
 import "./styles.css";
 
-export function Tags({ tags }) {
+export function Tags({ label, isSelected, onClick }) {
     return (
-        <div className="tags">
-            {tags.map((tag, index) => (
-                <span key={index} className="tag">
-                    {tag}
-                </span>
-            ))}
-        </div>
+        <button 
+            className={`tag ${isSelected ? 'tag-selected' : ''}`}
+            onClick={onClick}
+        >
+            {label}
+        </button>
     );
 }

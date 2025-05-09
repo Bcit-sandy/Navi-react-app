@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import "./styles.css";
+import Image from "next/image";
 
 export function Send() {
     const [isActive, setIsActive] = useState(false);
@@ -16,7 +17,12 @@ export function Send() {
             className={`send ${isActive ? 'send-active' : ''}`}
             onClick={handleClick}
         >
-            <img src="/send.svg" alt="Send" />
+            <Image 
+                src="/send.svg" 
+                alt="Send"
+                width={24}
+                height={24}
+            />
         </button>
     );
 } 

@@ -21,8 +21,10 @@ export function Heart({ initialLiked = false, onLike }) {
             onClick={handleClick}
         >
             <Image 
-                src={isLiked ? "/heart_filled.svg" : "/heart.svg"} 
-                alt={isLiked ? "Unlike" : "Like"} 
+                src={isLiked ? "/filledheart.svg" : "/outlineheart.svg"} 
+                alt={isLiked ? "Unlike" : "Like"}
+                width={24}
+                height={24}
             />
         </button>
     );

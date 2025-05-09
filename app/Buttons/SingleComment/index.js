@@ -2,21 +2,21 @@
 
 import "./styles.css";
 
-export function SingleComment({ comment }) {
+export function SingleComment({ author, date, content }) {
     return (
         <div className="singleComment">
             <div className="commentHeader">
                 <img 
-                    src={comment.author.avatar} 
-                    alt={comment.author.name} 
+                    src="/default_avatar.svg"
+                    alt={author}
                     className="authorAvatar"
                 />
-                <div className="commentInfo">
-                    <span className="authorName">{comment.author.name}</span>
-                    <span className="commentDate">{comment.date}</span>
+                <div className="authorInfo">
+                    <span className="authorName">{author}</span>
+                    <span className="commentDate">{date}</span>
                 </div>
             </div>
-            <p className="commentText">{comment.text}</p>
+            <p className="commentContent">{content}</p>
         </div>
     );
-}
+} 
