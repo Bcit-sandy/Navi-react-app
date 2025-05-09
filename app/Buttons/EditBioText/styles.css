@@ -1,0 +1,10 @@
+.editBio {
+    display: flex;
+    font-family: var(--font-family);
+    width: 398px;
+    height: 212px;
+    border: 1px solid var(--primary-blue-500);
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+    font-size: var(--bodytext-font-size);
+} 

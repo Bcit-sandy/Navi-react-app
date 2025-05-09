@@ -1,0 +1,9 @@
+.searchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.searchButton-active {
+    background-color: var(--analogous-blue-100);
+} 

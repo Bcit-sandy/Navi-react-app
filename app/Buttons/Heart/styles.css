@@ -1,0 +1,17 @@
+.heart-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.heart-button:active {
+    transform: scale(1.1);
+}
+
+.heart-buttons-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+} 
