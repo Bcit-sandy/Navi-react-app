@@ -46,7 +46,7 @@ import {
   LocationDropdown,
   Search,
   Profile,
-  Comment as CommentButton,
+  Comment,
   SingleComment,
   CommentWithReply,
   AnonymousToggle,
@@ -144,7 +144,7 @@ export default function Page() {
       />
 
       <Username onChange={handleUserChange} />
-      <Comment onChange={handleUserChange} />
+      <CommentField onChange={handleUserChange} />
       <EventDateTag onClick={() => console.log("Event Date:")} month="APR" date="08" />
       <CalendarViewButton onClick={() => console.log("Calendar clicked")} text="Calendar View →" />
 
@@ -157,7 +157,7 @@ export default function Page() {
       <AnonymousToggle />
       <Search />
       <Profile />
-      <CommentButton />
+      <Comment />
       <Edit />
       <Delete />
       <Toggle />
