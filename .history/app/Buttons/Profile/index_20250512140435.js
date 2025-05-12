@@ -9,7 +9,7 @@ export function Profile({ onClick }) {
             className='profile-button'
             onClick={onClick}
         >
-            <img
+            <Image
                 src='/profile.svg'
                 alt='profile icon'
                 width={32}

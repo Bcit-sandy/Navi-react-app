@@ -3,15 +3,15 @@
 import { useState } from "react";
 import "./styles.css";
 
-export function Profile({ onClick }) {
+export function Search({ onClick }) {
     return (
         <button
-            className='profile-button'
+            className='search-button'
             onClick={onClick}
         >
-            <img
-                src='/profile.svg'
-                alt='profile icon'
+            <Image
+                src='search.svg'
+                alt='search icon'
                 width={32}
                 height={32}
             />

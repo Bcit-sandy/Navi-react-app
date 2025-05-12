@@ -1,0 +1,29 @@
+.search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: var(--neutral-blue-100);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+.searchInput {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: var(--bodytext-font-size);
+    color: var(--neutral-blue-500);
+    outline: none;
+}
+
+.searchInput::placeholder {
+    color: var(--neutral-blue-400);
+} 
