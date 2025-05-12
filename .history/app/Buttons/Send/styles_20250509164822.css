@@ -1,0 +1,9 @@
+.send {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.send-active {
+    background-color: var(--analogous-blue-100);
+} 
