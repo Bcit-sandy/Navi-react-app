@@ -5,10 +5,14 @@ import AddOptions from "../Buttons/AddOptions/AddOptions";
 import * as Buttons from "../Buttons/allbuttons";
 
 export default function Page() {
+
+  // default show options to false
   const [showOptions, setShowOptions] = useState(false);
+
+  // ref detects clicks outside of the overlay
   const overlayRef = useRef(null);
 
-  // Close when clicking outside the overlay
+  // Close when clicking outside the overlay, using event listener 
   useEffect(() => {
     function handleClickOutside(event) {
       if (overlayRef.current && !overlayRef.current.contains(event.target)) {
@@ -31,9 +35,10 @@ export default function Page() {
     <main>
       <Buttons.Add onClick={() => setShowOptions(true)} />
 
+      {/* && means if showoptions is truthy */}
       {showOptions && (
         <>
-          {/* Dim Background */}
+          {}
           <div
             style={{
               position: 'fixed',

@@ -1,0 +1,19 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* Center horizontally */
+  justify-content: center;   /* Center vertically */
+  min-height: 100vh;         /* Full screen height */
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.login-fields {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
