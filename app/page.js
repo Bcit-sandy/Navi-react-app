@@ -11,8 +11,26 @@ import {
   CommunityPostTextField
 } from "./components/textfield";
 
-
 export default function Page() {
+  function AddOptions() {
+  return (
+    <div>
+      <Buttons.AddOptions
+        icon="/community.svg"
+        value="Create Community Post"
+        bgColor="var(--white)"
+        color="var(--black)"
+      />
+      <Buttons.AddOptions
+        icon="/event.svg"
+        value="Create Event Post"
+        bgColor="var(--blue)"
+        color="var(--white)"
+      />
+    </div>
+  );
+}
+  
   const [selectedTags, setSelectedTags] = useState([]);
   const [smallHeartLiked, setSmallHeartLiked] = useState(false);
   const [largeHeartLiked, setLargeHeartLiked] = useState(false);
