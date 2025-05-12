@@ -1,0 +1,137 @@
+/* Comment with reply */
+.comment-thread {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.comment-thread .single-comment {
+    display: flex;
+    gap: 8px;
+    margin-bottom: -12px;
+}
+
+.comment-thread .author-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.share {
+    background-color: transparent;
+    border: none;
+}
+
+.share-active {
+    background-color: var(--analogous-blue-100);
+}
+
+.signUp_input {
+    font-family: var(--font-family);
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.signUp_input input {
+    width: 280px;
+    height: 30px;
+    padding: 16px 12px 8px;
+    font-size: var(--bodytext-font-size);
+    border: 1px solid #b8a999;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    color: #6a5e52;
+}
+
+.signUp_input label {
+    position: absolute;
+    left: 8px;
+    top: -8px;
+    font-size: var(--caption-font-size);
+    color: #b8a999;
+    background: white;
+    padding: 0 4px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.signUp_input input:focus + label,
+.signUp_input input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 8px;
+    font-size: 12px;
+    color: #6a5e52;
+}
+
+.signUp_input input::placeholder {
+    color: #d4c4b3;
+}
+.reply-comment .author-image {
+    width: 26px;
+    height: 26px;
+}
+
+.comment-thread .comment-content {
+    background: var(--analogous-blue-100);
+    padding: 8px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.comment-thread .reply-comment .comment-content {
+    background: var(--secondary-beige-100);
+}
+
+.comment-thread .author-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.comment-thread .author-name {
+    font-weight: 600;
+    color: var(--neutral-blue-900);
+    font-size: var(--bodytext-font-size);
+}
+
+.reply-comment .author-name {
+    font-size: var(--caption-font-size);
+}
+
+.comment-thread .comment-date {
+    font-size: var(--label-font-size);
+    color: var(--analogous-blue-700);
+}
+
+.comment-thread .comment-text {
+    font-size: var(--label-font-size);
+    color: var(--analogous-blue-900);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.comment-thread .reply-comment {
+    padding-left: 34px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.comment-thread .reply-line {
+    position: absolute;
+    left: 15px;
+    top: -8px;
+    width: 1.5px;
+    height: 28px;
+    background: var(--analogous-blue-500);
+}
+
+.comment-thread .reply-line-horizontal {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width: 10px;
+    height: 1.5px;
+    background: var(--analogous-blue-500);
+}

@@ -1,0 +1,59 @@
+/* Single Comment button */
+
+.single-comment {
+    width: 285px;
+    display: flex;
+    gap: 4px;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+/* Profile image styling */
+.author-image {
+    width: 30px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--analogous-blue-700);
+    object-fit: cover;
+    padding: 2px;
+}
+
+/* Comment content layout */
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 3px;
+    width: 100%;
+    background-color: var(--analogous-blue-100);
+    border-radius: 10px;
+}
+
+/* Header: Name and date */
+.author-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.author-name {
+    font-weight: var(--bold-weight);
+    color: var(--neutral-blue-900);
+    font-size: var(--bodytext-font-size);
+}
+
+.comment-date {
+    font-size: var(--label-font-size);
+    font-weight: var(--thin-weight);
+    color: var(--analogous-blue-700);
+}
+
+/* Comment text */
+.comment-text {
+    color: var(--neutral-blue-900);
+    line-height: 1.25;
+    margin: 0;
+    font-size: var(--label-font-size);
+}

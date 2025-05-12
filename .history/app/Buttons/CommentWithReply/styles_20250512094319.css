@@ -1,0 +1,131 @@
+/* Profile image styling */
+.author-image {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--analogous-blue-700);
+    object-fit: cover;
+    padding: 2px;
+}
+
+/* Comment content layout */
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 3px;
+    width: 100%;
+    background-color: var(--analogous-blue-100);
+    font-family: var(--font-family);
+    border-radius: 10px;
+}
+
+/* Header: Name and date */
+.author-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.author-name {
+    font-weight: var(--bold-weight);
+    color: var(--neutral-blue-900);
+    font-size: var(--bodytext-font-size);
+}
+
+.comment-date {
+    font-size: var(--label-font-size);
+    font-weight: var(--thin-weight);
+    color: var(--analogous-blue-700);
+}
+
+/* Comment with reply */
+.comment-thread {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.comment-thread .single-comment {
+    display: flex;
+    width: 320px;
+    gap: 8px;
+    margin-bottom: -5px;
+}
+
+.comment-thread .author-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.reply-comment .author-image {
+    width: 26px;
+    height: 26px;
+}
+
+.comment-thread .comment-content {
+    background: var(--analogous-blue-100);
+    padding: 8px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.comment-thread .reply-comment .comment-content {
+    background: var(--secondary-beige-100);
+}
+
+.comment-thread .author-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.comment-thread .author-name {
+    font-weight: 600;
+    color: var(--neutral-blue-900);
+    font-size: var(--bodytext-font-size);
+}
+
+.reply-comment .author-name {
+    font-size: var(--caption-font-size);
+}
+
+.comment-thread .comment-date {
+    font-size: var(--label-font-size);
+    color: var(--analogous-blue-700);
+}
+
+.comment-thread .comment-text {
+    font-size: var(--label-font-size);
+    color: var(--analogous-blue-900);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.comment-thread .reply-comment {
+    padding-left: 34px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.comment-thread .reply-line {
+    position: absolute;
+    left: 15px;
+    top: -8px;
+    width: 1.5px;
+    height: 28px;
+    background: var(--analogous-blue-500);
+}
+
+.comment-thread .reply-line-horizontal {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    width: 10px;
+    height: 1.5px;
+    background: var(--analogous-blue-500);
+}
