@@ -2,22 +2,15 @@
 import { useState } from "react";
 import "./styles.css";
 
-export function Add() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        console.log("Add button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
+export function Add({ onClick }) {
 
     return (
-        <button
-            className={`add ${isActive ? "add-active" : ""}`}
-            onClick={handleClick}>
+        <button className='add'
+            onClick={onClick}>
             <img
                 className='add_button'
                 src='/add.svg'
                 alt='add button'></img>
         </button>
     );
-} 
+}

@@ -54,3 +54,4 @@ export { TakePhotoButton } from "./TakePhotoButton";
 export { ChoosePhotoButton } from "./ChoosePhotoButton";
 export { Toggle } from "./Toggle";
 export { StudentTypeDropdown } from "./StudentTypeDropdown";
+export { default as AddOptions } from "./AddOptions/AddOptions";

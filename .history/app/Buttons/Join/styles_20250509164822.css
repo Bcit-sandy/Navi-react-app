@@ -1,0 +1,16 @@
+.join {
+    padding: 8px 24px;
+    background: none;
+    border: 1px solid var(--secondary-beige-500);
+    border-radius: 20px;
+    color: var(--secondary-beige-500);
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.joined {
+    background-color: var(--secondary-beige-500);
+    color: white;
+} 
