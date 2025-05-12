@@ -11,6 +11,7 @@ import {
   CommunityPostTextField
 } from "./components/textfield";
 
+
 export default function Page() {
   const [selectedTags, setSelectedTags] = useState([]);
   const [smallHeartLiked, setSmallHeartLiked] = useState(false);

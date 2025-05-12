@@ -6,9 +6,10 @@
     padding: 10px;
     background-color: var(--white-color);
     transition: all 0.3s ease;
+    width: 65px;
     cursor: pointer;
 }
 
 .add-active {
     background-color: var(--primary-blue-100);
-} 
+}

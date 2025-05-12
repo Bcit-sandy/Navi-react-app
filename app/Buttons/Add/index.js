@@ -20,4 +20,4 @@ export function Add() {
                 alt='add button'></img>
         </button>
     );
-} 
+}
