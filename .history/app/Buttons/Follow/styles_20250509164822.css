@@ -1,0 +1,16 @@
+.follow {
+    padding: 8px 24px;
+    background: none;
+    border: 1px solid var(--primary-blue-500);
+    border-radius: 20px;
+    color: var(--primary-blue-500);
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.following {
+    background-color: var(--primary-blue-500);
+    color: white;
+} 

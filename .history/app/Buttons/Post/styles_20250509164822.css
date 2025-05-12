@@ -1,0 +1,15 @@
+.post {
+    padding: 10px 24px;
+    background-color: var(--primary-blue-500);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.post-active {
+    background-color: var(--primary-blue-300);
+} 
