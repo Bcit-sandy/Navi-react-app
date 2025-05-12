@@ -8,7 +8,7 @@ const AddOptions = ({ icon: Icon, value, color, bgColor }) => {
       className="add-options-button"
       style={{ backgroundColor: bgColor, color: color }}
     >
-      <Icon className="add-options-icon" style={{ color: color }} />
+      <img src={Icon} alt="" className="add-options-icon" style={{ color: color }} />
       <span className="add-options-label">{value}</span>
     </button>
   );
