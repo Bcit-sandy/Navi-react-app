@@ -3,9 +3,10 @@ import { useEffect, useRef, useState } from "react";
 import "../globals.css";
 import AddOptions from "../Buttons/AddOptions/AddOptions";
 import * as Buttons from "../Buttons/allbuttons";
+import styles from './featured.module.css'; 
+
 
 export default function Page() {
-
   // default show options to false
   const [showOptions, setShowOptions] = useState(false);
 
@@ -32,8 +33,9 @@ export default function Page() {
   }, [showOptions]);
 
   return (
-    <main>
-      <Buttons.Add onClick={() => setShowOptions(true)} />
+    <main className={styles.screen}>
+      <h1>testing</h1>
+      <Buttons.Add className={styles.addButton} onClick={() => setShowOptions(true)} />
 
       {/* && means if showoptions is truthy */}
       {showOptions && (
