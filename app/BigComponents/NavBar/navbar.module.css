@@ -52,18 +52,34 @@
 .navBar_container{
     background-color: var(--primary-blue-500);
     display: flex;
+  justify-content: space-between;
+  height: 96px;
+  padding: 0 16px;     
 }
 
 .logo{
     display: flex;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.logo_img {
+    width: 33px;
+    margin-right: 8px;
 }
 
 .logo_text {
     font-size: var(--h2-font-size);
+    font-family: var(--font-family);
     color: white;
 }
 
 .icons {
     display: flex;
+    align-items: center;
+    padding-top: 32px;
+}
 
+.search {
+    margin-right: 16px;
 }

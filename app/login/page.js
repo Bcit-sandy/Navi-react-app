@@ -10,6 +10,7 @@ export default function Login() {
         <main className='login-container'>
             <h1>hihihih</h1>
             <NavBar/>
+            <br></br>
             <img
                 src='/signinlogo.svg'
                 alt='logo art'></img>

@@ -6,19 +6,18 @@ import styles from "./navbar.module.css";
 export default function NavBar() {
     return (
         <main className={styles.navBar_container}>
-            <h1>testing</h1>
             <div className={styles.logo}>
-                <img
+                <img className={styles.logo_img}
                     src='/logo_light.svg'
                     alt='logo'></img>
                 <h1 className={styles.logo_text}>Navi</h1>
             </div>
 
             <div className={styles.icons}>
-                <img
+                <img className={styles.search}
                     src='/search.svg'
                     alt='search'></img>
-                <img
+                <img className={styles.profile}
                     src='/profile.svg'
                     alt='profile'></img>
             </div>
