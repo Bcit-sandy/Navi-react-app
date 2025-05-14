@@ -4,10 +4,8 @@ import Button from "./button";
 
 export default function ButtonPage() {
     return <Button 
-        size="small"
-        type="primary"
+        size="medium"
+        type="round"
         icon="filledheart.svg"
-        value="Click me"
-        onClick={() => alert("Button clicked")}
     />;
 }

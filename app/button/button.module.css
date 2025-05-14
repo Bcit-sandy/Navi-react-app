@@ -58,7 +58,7 @@
     justify-content: center;
     gap: 8px;
     padding: 8px 16px;
-    border-radius: 4px;
+    border-radius: 8px;
     font-family: var(--font-family);
     border: none;
     outline: none;
@@ -68,19 +68,24 @@
 .small {
     padding: 6px 12px;
     font-size: var(--bodytext-font-size);
-    min-height: 32px;
+    width: 70px;
+    height: 30px;
+    
 }
 
 .medium {
     padding: 8px 16px;
     font-size: var(--bodytext-font-size);
-    min-height: 40px;
+    width:auto;
+    height: 35px;
 }
 
 .large {
     padding: 12px 24px;
-    font-size: var(--h3-font-size);
-    min-height: 48px;
+    font-size:  var(--h3-font-size);
+    font-weight: var(--bold-weight);
+    width:280px;
+    height: 40px;
 }
 
 /* Type variants */
@@ -89,17 +94,17 @@
     color: var(--white-color);
 }
 
-.primary:hover:not(.disabled) {
+.primary:active {
     background-color: var(--primary-blue-700);
 }
 
-.secondary {
-    background-color: var(--secondary-beige-100);
-    color: var(--secondary-beige-900);
+.neutral {
+    background-color: var( --neutral-blue-100);
+    color: var(--neutral-blue-900 );
 }
 
-.secondary:hover:not(.disabled) {
-    background-color: var(--secondary-beige-300);
+.neutral:active {
+    background-color: var(--neutral-blue-500);
 }
 
 .success {
@@ -107,27 +112,28 @@
     color: var(--white-color);
 }
 
-.success:hover:not(.disabled) {
-    background-color: #6ba84a;
-}
 
 .outline {
     background-color: transparent;
-    border: 1px solid var(--primary-blue-500);
-    color: var(--primary-blue-500);
+    border: 2px solid var(--primary-blue-300);
+    color: var(--analogous-blue-700);
 }
 
-.outline:hover:not(.disabled) {
-    background-color: var(--primary-blue-100);
+.outline:active {
+    background-color: var(--primary-blue-500);
+    color: var(--white-color);
+    border: none;
 }
 
 /* Shape variants */
 .round {
-    border-radius: 24px;
-}
-
-.square {
-    border-radius: 4px;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--white-color);
 }
 
 /* Color themes */
