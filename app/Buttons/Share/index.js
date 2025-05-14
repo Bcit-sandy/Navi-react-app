@@ -13,11 +13,13 @@ export function Share() {
     return (
         <button
             className={`share ${isActive ? "share-active" : ""}`}
-            onClick={handleClick}>
+            onClick={handleClick}
+        >
             <img
                 className='share_icon'
                 src='/share.svg'
-                alt='share icon'></img>
+                alt='share icon'
+            ></img>
         </button>
     );
-} 
+}

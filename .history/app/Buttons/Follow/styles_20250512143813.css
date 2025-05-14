@@ -1,0 +1,40 @@
+.follow-button {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-beige-300);
+    background-color: var(--primary-blue-500);
+    transition: all 0.2s ease;
+    width: 120px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.follow-button:active {
+    opacity: 0.7;
+}
+
+.follow-text {
+    font-size: var(--bodytext-font-size);
+}
+
+/* When not following */
+.follow-button:not(.followed) .follow-text {
+    color: var(--secondary-beige-100);
+}
+
+/* When following */
+.follow-button.followed {
+    background-color: var(--white-color);
+    border: 1px solid var(--neutral-blue-500);
+}
+
+.follow-button.followed .follow-text {
+    color: var(--neutral-blue-500);
+}
+
+/* Follow button container */
+.follow-container {
+    margin-top: 20px;
+}

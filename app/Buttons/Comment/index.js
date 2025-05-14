@@ -3,20 +3,18 @@
 import { useState } from "react";
 import "./styles.css";
 
-export function CommentButton() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        setIsActive(!isActive);
-        console.log("Comment button clicked, active:", !isActive);
-    };
-
+export function Comment({ onClick }) {
     return (
-        <button 
-            className={`comment ${isActive ? 'comment-active' : ''}`}
-            onClick={handleClick}
+        <button
+            className='comment-button'
+            onClick={onClick}
         >
-            <img src="/comment.svg" alt="Comment" />
+            <img
+                src='/comment.svg'
+                alt='comment icon'
+                width={24}
+                height={24}
+            />
         </button>
     );
-} 
+}

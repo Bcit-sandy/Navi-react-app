@@ -1,0 +1,22 @@
+.studentCategories {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.category {
+    width: 280px;
+    height: 40px;
+    background: none;
+    border: 1px solid var(--primary-blue-500);
+    border-radius: 8px;
+    color: var(--primary-blue-500);
+    font-size: var(--bodytext-font-size);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-active {
+    background-color: var(--primary-blue-500);
+    color: white;
+} 

@@ -1,14 +1,5 @@
-.comment {
+.comment-button {
     background: none;
     border: none;
     cursor: pointer;
 }
-
-.comment-active {
-    background-color: var(--analogous-blue-100);
-}
-
-.comment img {
-    width: 24px;
-    height: 24px;
-} 

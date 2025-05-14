@@ -34,40 +34,46 @@ export default function Page() {
     }, [showOptions]);
 
     return (
-        <main className={styles.screen}>
-            <button
-                className={styles.add}
-                onClick={() => setShowOptions(true)}>
-                <img
-                    src='/add.svg'
-                    className='addButton'
-                    alt='Add'
-                />
-            </button>
+        <main>
+            <Buttons.Add onClick={() => setShowOptions(true)} />
 
             {/* && means if showoptions is truthy */}
             {showOptions && (
                 <>
                     {}
-                    <div className={styles.overlay}></div>
+                    <div
+                        style={{
+                            position: "fixed",
+                            top: 0,
+                            left: 0,
+                            width: "100vw",
+                            height: "100vh",
+                            backgroundColor: "rgba(0, 0, 0, 0.5)",
+                            zIndex: 999,
+                        }}
+                    />
 
-                    {/* Post Options */}
+                    {/* Options Overlay */}
                     <div
                         ref={overlayRef}
-                        className={styles.optionsOverlay}>
+                        style={{
+                            position: "absolute",
+                            top: "100px",
+                            left: "50%",
+                            transform: "translateX(-50%)",
+                            zIndex: 1000,
+                        }}>
                         <AddOptions
                             icon='/community.svg'
                             value='Create Community Post'
                             bgColor='var(--analogous-blue-300)'
                             color='var(--neutral-blue-500)'
-                            className='post_type'
                         />
                         <AddOptions
                             icon='/event.svg'
                             value='Create Event Post'
                             bgColor='var(--secondary-beige-300)'
                             color='var(--secondary-beige-900)'
-                            className='post_type'
                         />
                     </div>
                 </>

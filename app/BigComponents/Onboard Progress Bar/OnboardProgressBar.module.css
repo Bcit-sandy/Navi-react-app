@@ -1,0 +1,63 @@
+.progressBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 398px;
+    gap: 35px;
+}
+
+.arrowButton {
+    background-color: var(--neutral-blue-100);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.arrowButton.right {
+    background-color: var(--primary-blue-500);
+}
+
+.arrowButton.left {
+    background-color: var(--neutral-blue-100);
+}
+
+.arrowButton.right .arrow {
+    color: var(--white-color);
+}
+
+.dotsContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.activeDot {
+    width: 12px;
+    height: 12px;
+    background: #4a64a8;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.inactiveDot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--secondary-beige-100);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.disabled {
+    background: var(--neutral-blue-100) !important;
+    cursor: not-allowed !important;
+}
+
+.disabled .arrow {
+    color: var(--neutral-blue-100) !important;
+}

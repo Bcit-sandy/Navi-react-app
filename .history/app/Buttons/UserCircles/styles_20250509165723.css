@@ -1,0 +1,14 @@
+.userCircles {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.userCircles-active {
+    background-color: var(--analogous-blue-100);
+}
+
+.userCircles img {
+    width: 24px;
+    height: 24px;
+} 

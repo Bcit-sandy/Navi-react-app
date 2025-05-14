@@ -1,0 +1,9 @@
+.takePhotoButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.takePhotoButton-active {
+    background-color: var(--analogous-blue-100);
+} 

@@ -1,0 +1,46 @@
+.card {
+    border: 2px solid #2a3565;
+    border-radius: 16px;
+    padding: 10px 15px 10px 15px;
+    background: var(--white-color);
+    width: 398px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: -3px;
+}
+
+.title {
+    font-size: var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    color: var(--neutral-blue-700);
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    font-size: var(--label-font-size);
+    font-weight: var(--bold-weight);
+    color: var(--neutral-blue-700);
+    margin-bottom: 5px;
+}
+
+.bottomRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bottomRow > :first-child {
+    flex: 1;
+}
+
+.longJoin {
+    min-width: 120px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
