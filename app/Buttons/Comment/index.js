@@ -12,15 +12,8 @@ export function Comment({ onClick }) {
             <img
                 src='/comment.svg'
                 alt='comment icon'
-                width={32}
-                height={32}
-            />
-
-            <img
-                src='/comment.svg'
-                alt='comment icon'
-                width={28}
-                height={28}
+                width={24}
+                height={24}
             />
         </button>
     );
