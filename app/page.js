@@ -6,6 +6,7 @@ import * as Buttons from "./Buttons/allbuttons";
 import { EventPost } from "./BigComponents/EventPost/EventPost";
 import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
 import { OnboardProgressBar } from "./BigComponents/Onboard Progress Bar/OnboardProgressBar";
+import { EventJoining } from "./BigComponents/EventJoining/EventJoining";
 
 import {
     Username,
@@ -82,14 +83,16 @@ export default function Page() {
                 gap: "20px",
             }}
         >
+            <h1>ALL COMPONENTS DEMO</h1>
+
             <ProfileTopNav />
+
             <OnboardProgressBar
                 currentStep={progressStep}
                 totalSteps={6}
                 onPrev={() => setProgressStep((prev) => Math.max(1, prev - 1))}
                 onNext={() => setProgressStep((prev) => Math.min(6, prev + 1))}
             />
-            <h1>ALL COMPONENTS DEMO</h1>
 
             <EventPost
                 date='15'
@@ -103,6 +106,19 @@ export default function Page() {
                 onJoin={() => alert("Joined Badminton Activities!")}
             />
 
+            <EventJoining
+                title='Badminton for beginner'
+                time='12:00PM - 6:00PM'
+                users={[
+                    { id: 1, name: "User1", avatar: "/user1.jpg" },
+                    { id: 2, name: "User2", avatar: "/user2.jpg" },
+                    { id: 3, name: "User3", avatar: "/user3.jpg" },
+                    { id: 4, name: "User4", avatar: "/user4.jpg" },
+                    // ...more users
+                ]}
+                onJoin={() => alert("Joined!")}
+                onShare={() => alert("Shared!")}
+            />
             <Buttons.SuccessStatusBar message='Successfully created event!' />
             <Buttons.SearchBar
                 onChange={(e) => {
