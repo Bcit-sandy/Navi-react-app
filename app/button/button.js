@@ -36,6 +36,7 @@ export default function Button({
         [styles.post]: type === "post",
         [styles.lightblue]: color === "lightblue",
         [styles.beige]: color === "beige",
+        [styles.darkblue]: color === "darkblue",
         [styles.disabled]: isDisabled,
     });
 

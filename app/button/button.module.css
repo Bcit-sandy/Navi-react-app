@@ -72,7 +72,6 @@
     border: none;
 }
 
-/* Shape variants */
 .round {
     border-radius: 100%;
     width: 65px;
@@ -106,12 +105,18 @@
 .lightblue {
     color: var(--neutral-blue-500);
     background-color: var(--analogous-blue-300);
+    border: none;
 }
 
 .lightblue-active {
     background-color: var(--analogous-blue-100);
+    border: none;
 }
 
+.darkblue {
+    background-color: var(--primary-blue-500);
+    border: none;
+}
 
 .beige {
     background-color: var(--secondary-beige-300);
@@ -124,7 +129,7 @@
 
 /* Disabled state */
 .disabled {
-    opacity: 0.5;
+    opacity: 0.8;
     cursor: not-allowed;
     pointer-events: none;
 }

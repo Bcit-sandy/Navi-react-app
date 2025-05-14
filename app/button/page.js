@@ -27,11 +27,34 @@ export default function ButtonPage() {
                 icon="add.svg"
              /> 
 
-             {/* next button */}
+             {/* Active next button */}
              <Button
                 icon="roundnext.svg"
+                type="round"
+                color="darkblue"
              /> 
 
+             {/* inactive next button */}
+             <Button
+                icon="roundnext.svg"
+                type="round"
+                color="lightblue"
+                isDisabled={true}
+             /> 
+
+             {/* Active back button */}
+             <Button
+                icon="roundback.svg"
+                type="round"
+                color="darkblue"
+             /> 
+
+             {/* inactive back button */}
+             <Button
+                icon="roundback.svg"
+                type="round"
+                color="lightblue"
+             /> 
              {/* community tab button */}
              <Button
                 value="Community"
