@@ -4,8 +4,29 @@
     height: 50px;
     border-radius: 50%;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.roundNext_icon {
+    display: block;
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.roundNext_icon-left {
+    transform: scaleX(-1);
+}
+
+.roundNext-disabled {
+    background-color: #e9eef4 !important;
+    cursor: not-allowed !important;
 }
 
 .roundNext-active {
     background-color: var(--neutral-blue-100);
-} 
+}

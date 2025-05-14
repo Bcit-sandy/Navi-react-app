@@ -1,22 +1,20 @@
 "use client";
-import { useState } from "react";
 import "./styles.css";
 
-export function RoundNext() {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleClick = () => {
-        console.log("event button clicked, current state:", isActive);
-        setIsActive(!isActive);
-    };
+export function RoundNext({ direction = "right", disabled = false, onClick }) {
     return (
         <button
-            className={`roundNext ${isActive ? "roundNext-active" : ""}`}
-            onClick={handleClick}>
+            className={`roundNext${disabled ? " roundNext-disabled" : ""}`}
+            onClick={onClick}
+            disabled={disabled}
+        >
             <img
-                className='roundNext_icon'
+                className={`roundNext_icon${
+                    direction === "left" ? " roundNext_icon-left" : ""
+                }`}
                 src='/arrow_right.svg'
-                alt='next icon'></img>
+                alt={direction === "left" ? "previous icon" : "next icon"}
+            />
         </button>
     );
-} 
+}

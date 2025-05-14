@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import * as Buttons from "./Buttons/allbuttons";
 import { EventPost } from "./BigComponents/EventPost/EventPost";
 import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
+import { OnboardProgressBar } from "./BigComponents/Onboard Progress Bar/OnboardProgressBar";
 
 import {
     Username,
@@ -43,6 +44,7 @@ export default function Page() {
     const [userQuery, setUserQuery] = useState("");
     const [post, setPost] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
+    const [progressStep, setProgressStep] = useState(2);
 
     const users = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
     const tags = [
@@ -81,6 +83,12 @@ export default function Page() {
             }}
         >
             <ProfileTopNav />
+            <OnboardProgressBar
+                currentStep={progressStep}
+                totalSteps={6}
+                onPrev={() => setProgressStep((prev) => Math.max(1, prev - 1))}
+                onNext={() => setProgressStep((prev) => Math.min(6, prev + 1))}
+            />
             <h1>ALL COMPONENTS DEMO</h1>
 
             <EventPost
