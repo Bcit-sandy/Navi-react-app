@@ -32,3 +32,9 @@
     transform: translateX(-50%);
     z-index: 1000;
 }
+
+.post_type {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}

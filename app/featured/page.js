@@ -1,9 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import "../globals.css";
-import AddOptions from "../Buttons/AddOptions/AddOptions";
-import * as Buttons from "../Buttons/allbuttons";
-import styles from "./featured.module.css";
+import AddOptions from "@/app/Buttons/AddOptions/AddOptions";
+import styles from "@/app/featured/featured.module.css";
 
 export default function Page() {
     // default show options to false
@@ -52,7 +51,7 @@ export default function Page() {
                     {}
                     <div className={styles.overlay}></div>
 
-                    {/* Options Overlay */}
+                    {/* Post Options */}
                     <div
                         ref={overlayRef}
                         className={styles.optionsOverlay}>
@@ -61,12 +60,14 @@ export default function Page() {
                             value='Create Community Post'
                             bgColor='var(--analogous-blue-300)'
                             color='var(--neutral-blue-500)'
+                            className='post_type'
                         />
                         <AddOptions
                             icon='/event.svg'
                             value='Create Event Post'
                             bgColor='var(--secondary-beige-300)'
                             color='var(--secondary-beige-900)'
+                            className='post_type'
                         />
                     </div>
                 </>
