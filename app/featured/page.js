@@ -36,11 +36,15 @@ export default function Page() {
 
     return (
         <main className={styles.screen}>
-
-            <Buttons.Add
+            <button
                 className={styles.add}
-                onClick={() => setShowOptions(true)}
-            />
+                onClick={() => setShowOptions(true)}>
+                <img
+                    src='/add.svg'
+                    className='addButton'
+                    alt='Add'
+                />
+            </button>
 
             {/* && means if showoptions is truthy */}
             {showOptions && (
