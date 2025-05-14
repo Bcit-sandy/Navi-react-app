@@ -3,6 +3,8 @@ import "./globals.css";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import * as Buttons from "./Buttons/allbuttons";
+import { EventPost } from "./BigComponents/EventPost/EventPost";
+import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
 
 import {
     Username,
@@ -78,7 +80,20 @@ export default function Page() {
                 gap: "20px",
             }}
         >
+            <ProfileTopNav />
             <h1>ALL COMPONENTS DEMO</h1>
+
+            <EventPost
+                date='15'
+                month='MAY'
+                title='Badminton (beginner)'
+                tags='Sports, Badminton'
+                location='Richmond, BC'
+                maxParticipants={22}
+                time='10:00 AM - 2:00 PM'
+                image='/images/soccer.jpg'
+                onJoin={() => alert("Joined Badminton Activities!")}
+            />
 
             <Buttons.SuccessStatusBar message='Successfully created event!' />
             <Buttons.SearchBar
