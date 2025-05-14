@@ -1,0 +1,146 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+}
+  
+/* Size variants */
+.small {
+    padding: 6px 12px;
+    font-size: var(--bodytext-font-size);
+    width: 70px;
+    height: 30px;
+    
+}
+
+.medium {
+    padding: 8px 16px;
+    font-size: var(--bodytext-font-size);
+    width:100px ;
+    height: 35px;
+}
+
+.large {
+    padding: 12px 24px;
+    font-size:  var(--bodytext-font-size);
+    font-weight: var(--bold-weight);
+    width:280px;
+    height: 40px;
+}
+
+/* Type variants */
+.primary {
+    background-color: var(--primary-blue-500);
+    color: var(--white-color);
+}
+
+.primary:active {
+    background-color: var(--primary-blue-700);
+}
+
+.neutral {
+    background-color: var( --neutral-blue-100);
+    color: var(--neutral-blue-900 );
+}
+
+.neutral:active {
+    background-color: var(--neutral-blue-500);
+}
+
+.success {
+    background-color: var(--success-color);
+    color: var(--white-color);
+}
+
+
+.outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-blue-300);
+    color: var(--analogous-blue-700);
+}
+
+.outline:active {
+    background-color: var(--primary-blue-500);
+    color: var(--white-color);
+    border: none;
+}
+
+/* Shape variants */
+.round {
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--white-color);
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: var(--primary-blue-700);
+    font-weight: var(--bold-weight);
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: var(--bodytext-font-size);
+    padding: 10px 16px;
+    border-radius: 30px 30px 5px 30px;
+    transition: all 0.3s ease;
+    width: 250px;
+    height: 40px;
+}
+    
+/* Color themes */
+.lightblue {
+    color: var(--neutral-blue-500);
+    background-color: var(--analogous-blue-300);
+}
+
+.lightblue-active {
+    background-color: var(--analogous-blue-100);
+}
+
+
+.beige {
+    background-color: var(--secondary-beige-300);
+    color: var(--secondary-beige-900);
+}
+
+.beige:active {
+    background-color: var(--secondary-beige-500);
+}
+
+/* Disabled state */
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+/* Icon styles */
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
+/* Value text styles */
+.value {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+}
