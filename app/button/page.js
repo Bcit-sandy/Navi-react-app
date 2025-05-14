@@ -27,6 +27,18 @@ export default function ButtonPage() {
                 icon="add.svg"
              /> 
 
+             {/* next button */}
+             <Button
+                icon="roundnext.svg"
+             /> 
+
+             {/* community tab button */}
+             <Button
+                value="Community"
+                type="underline"
+             />
+             
+
              {/* join button */}
              <Button
                 size="small"
@@ -39,6 +51,21 @@ export default function ButtonPage() {
                 size="small"
                 type="success"
                 value="Joined"
+             />
+
+             {/* community post button */}
+             <Button
+                type="post"
+                color="lightblue"
+                icon="community.svg"
+                value="Create Community Post"
+             />
+            {/* event post button */}
+             <Button
+                type="post"
+                color="beige"
+                icon="event.svg"
+                value="Create Event Post"
              />
 
               {/* explore button */}

@@ -30,8 +30,10 @@ export default function Button({
         [styles.neutral]: type === "neutral",
         [styles.success]: type === "success",
         [styles.outline]: type === "outline",
-        [styles.post]: type === "post",
+        [styles.community]: type === "community",
         [styles.round]: type === "round",
+        [styles.underline]: type === "underline",
+        [styles.post]: type === "post",
         [styles.lightblue]: color === "lightblue",
         [styles.beige]: color === "beige",
         [styles.disabled]: isDisabled,
@@ -47,8 +49,8 @@ export default function Button({
                 <Image
                     src={`/${icon}`}
                     alt="button icon"
-                    width={25}
-                    height={25}
+                    width={30}
+                    height={30}
                     className={styles.icon}
                 />
             )}

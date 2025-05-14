@@ -83,6 +83,13 @@
     background-color: var(--white-color);
 }
 
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: var(--primary-blue-700);
+    font-weight: var(--bold-weight);
+}
+
 .post {
     display: flex;
     align-items: center;
@@ -91,7 +98,8 @@
     padding: 10px 16px;
     border-radius: 30px 30px 5px 30px;
     transition: all 0.3s ease;
-    width: 249px;
+    width: 250px;
+    height: 40px;
 }
     
 /* Color themes */
@@ -126,6 +134,8 @@
 .icon {
     display: inline-block;
     vertical-align: middle;
+    width: 30px;
+    height: 30px;
 }
 
 /* Value text styles */
