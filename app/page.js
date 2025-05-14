@@ -3,6 +3,10 @@ import "./globals.css";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import * as Buttons from "./Buttons/allbuttons";
+import { EventPost } from "./BigComponents/EventPost/EventPost";
+import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
+import { OnboardProgressBar } from "./BigComponents/Onboard Progress Bar/OnboardProgressBar";
+import { EventJoining } from "./BigComponents/EventJoining/EventJoining";
 
 import {
     Username,
@@ -41,6 +45,7 @@ export default function Page() {
     const [userQuery, setUserQuery] = useState("");
     const [post, setPost] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
+    const [progressStep, setProgressStep] = useState(2);
 
     const users = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
     const tags = [
@@ -80,6 +85,40 @@ export default function Page() {
         >
             <h1>ALL COMPONENTS DEMO</h1>
 
+            <ProfileTopNav />
+
+            <OnboardProgressBar
+                currentStep={progressStep}
+                totalSteps={6}
+                onPrev={() => setProgressStep((prev) => Math.max(1, prev - 1))}
+                onNext={() => setProgressStep((prev) => Math.min(6, prev + 1))}
+            />
+
+            <EventPost
+                date='15'
+                month='MAY'
+                title='Badminton (beginner)'
+                tags='Sports, Badminton'
+                location='Richmond, BC'
+                maxParticipants={22}
+                time='10:00 AM - 2:00 PM'
+                image='/images/soccer.jpg'
+                onJoin={() => alert("Joined Badminton Activities!")}
+            />
+
+            <EventJoining
+                title='Badminton for beginner'
+                time='12:00PM - 6:00PM'
+                users={[
+                    { id: 1, name: "User1", avatar: "/user1.jpg" },
+                    { id: 2, name: "User2", avatar: "/user2.jpg" },
+                    { id: 3, name: "User3", avatar: "/user3.jpg" },
+                    { id: 4, name: "User4", avatar: "/user4.jpg" },
+                    // ...more users
+                ]}
+                onJoin={() => alert("Joined!")}
+                onShare={() => alert("Shared!")}
+            />
             <Buttons.SuccessStatusBar message='Successfully created event!' />
             <Buttons.SearchBar
                 onChange={(e) => {
