@@ -2,10 +2,10 @@
 import { useState } from "react";
 import "./styles.css";
 
-export function Add({ onClick }) {
+export function Add({ onClick, className }) {
 
     return (
-        <button className='add'
+        <button className={className}
             onClick={onClick}>
             <img
                 className='add_button'

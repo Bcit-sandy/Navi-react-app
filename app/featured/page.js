@@ -36,9 +36,9 @@ export default function Page() {
 
     return (
         <main className={styles.screen}>
-            <h1>testing</h1>
+
             <Buttons.Add
-                className={styles.addButton}
+                className={styles.add}
                 onClick={() => setShowOptions(true)}
             />
 
