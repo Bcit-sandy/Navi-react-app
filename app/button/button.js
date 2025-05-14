@@ -30,9 +30,10 @@ export default function Button({
         [styles.neutral]: type === "neutral",
         [styles.success]: type === "success",
         [styles.outline]: type === "outline",
+        [styles.post]: type === "post",
         [styles.round]: type === "round",
-        [styles.light]: color === "light",
-        [styles.dark]: color === "dark",
+        [styles.lightblue]: color === "lightblue",
+        [styles.beige]: color === "beige",
         [styles.disabled]: isDisabled,
     });
 
