@@ -9,11 +9,15 @@ export default function Login() {
     return (
         <main className='login-container'>
             <CommunityPost
-                imgSm="/alex.svg"
+                imgSm='/alex.svg'
                 name='Alex Smith'
                 date='Apr 7, 2025'
                 content='Hello guys, I just got to Vancouver. What are some of the best places to visit first in Van?'
                 imgLg='/post1.svg'
+                commentPic='https://randomuser.me/api/portraits/thumb/women/45.jpg'
+                commenter='Navjot Bains'
+                commentDate='May 14, 2025'
+                comment="I'd say Granville Island, I love that place so much!"
             />
             <br></br>
             <h1>hihihih</h1>
