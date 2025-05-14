@@ -99,3 +99,27 @@
 .imageWrapper {
     margin-bottom: 8px;
 }
+
+/* icons */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .interact {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+  
+  .share {
+    margin-right: 20px;
+  }
+
+  .customBorder {
+    height: 1px;
+    background-color: #ccc;
+    width: calc(100% - 40px);
+  }

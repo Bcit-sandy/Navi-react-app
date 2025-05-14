@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { EventDateTag } from "@/app/Buttons/EventDateTag";
 import styles from "@/app/BigComponents/CommunityPost/communitypost.module.css";
+import * as Buttons from "@/app/Buttons/allbuttons";
 
 export default function CommunityPost({ imgSm, name, date, content, imgLg }) {
     return (
@@ -10,9 +11,9 @@ export default function CommunityPost({ imgSm, name, date, content, imgLg }) {
                 <img
                     src={imgSm}
                     alt={name}
-                    className={styles.smallImage} 
+                    className={styles.smallImage}
                 />
-                <div className={styles.postInfo} >
+                <div className={styles.postInfo}>
                     <h3 className={styles.name}>{name}</h3>
                     <p className={styles.date}>{date}</p>
                 </div>
@@ -29,6 +30,16 @@ export default function CommunityPost({ imgSm, name, date, content, imgLg }) {
                     />
                 </div>
             )}
+            <div className={styles.icons}>
+                <div className={styles.interact}>
+                    <Buttons.Heart />
+                    <Buttons.Comment />
+                </div>
+                <div className={styles.share}>
+                    <Buttons.Share />
+                </div>
+            </div>
+            <div className={styles.customBorder}></div>
         </div>
     );
 }
