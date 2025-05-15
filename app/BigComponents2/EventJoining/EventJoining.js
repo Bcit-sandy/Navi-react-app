@@ -17,14 +17,17 @@ export function EventJoining({
         <div className={styles.card}>
             <div className={styles.header}>
                 <span className={styles.title}>{title}</span>
-                <Share onClick={onShare} />
+                <Button
+                    icon="share.svg"
+                    className={styles.icon}
+                />
             </div>
             <div className={styles.time}>{time}</div>
             <div className={styles.bottomRow}>
                 <UserCircles users={users} />
-                <Join
-                    onClick={onJoin}
-                    className={styles.longJoin}
+                <Button
+                    value="Join"
+                    type="primary"
                 />
             </div>
         </div>

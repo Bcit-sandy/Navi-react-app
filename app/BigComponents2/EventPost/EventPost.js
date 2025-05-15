@@ -45,8 +45,9 @@ export function EventPost({
                         <Elipses />
                     </div>
                     <Button
-                        icon="join.svg"
                         className={styles.icon}
+                        value="Join"
+                        type="primary"
                     />
                 </div>
             </div>
