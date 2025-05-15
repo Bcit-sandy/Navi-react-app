@@ -2,7 +2,6 @@
 
 import styles from "./button.module.css";
 import classNames from "classnames";
-import "../globals.css";
 import Image from "next/image";
 
 //type: primary, secondary, success, outline, round, light, dark  
@@ -13,32 +12,36 @@ import Image from "next/image";
 //onClick: () => void (optional)  
 //color: light, dark
 export default function Button({
-    size,
+    size = "medium",
     type,
     color,
     icon,
     isDisabled = false, 
     value,
-    onClick
+    onClick,
+    className
 }) {
     const buttonClasses = classNames(
-      styles.button, {
-        [styles.small]: size === "small",
-        [styles.medium]: size === "medium",
-        [styles.large]: size === "large",
-        [styles.primary]: type === "primary",
-        [styles.neutral]: type === "neutral",
-        [styles.success]: type === "success",
-        [styles.outline]: type === "outline",
-        [styles.community]: type === "community",
-        [styles.round]: type === "round",
-        [styles.underline]: type === "underline",
-        [styles.post]: type === "post",
-        [styles.lightblue]: color === "lightblue",
-        [styles.blue]: color === "blue",
-        [styles.beige]: color === "beige",
-        [styles.disabled]: isDisabled,
-    });
+        styles.button,
+        {
+            [styles.small]: size === "small",
+            [styles.medium]: size === "medium",
+            [styles.large]: size === "large",
+            [styles.primary]: type === "primary",
+            [styles.neutral]: type === "neutral",
+            [styles.success]: type === "success",
+            [styles.outline]: type === "outline",
+            [styles.community]: type === "community",
+            [styles.round]: type === "round",
+            [styles.underline]: type === "underline",
+            [styles.post]: type === "post",
+            [styles.lightblue]: color === "lightblue",
+            [styles.blue]: color === "blue",
+            [styles.beige]: color === "beige",
+            [styles.disabled]: isDisabled,
+        },
+        className
+    );
 
     return (
         <button
@@ -48,14 +51,14 @@ export default function Button({
         >
             {icon && (
                 <Image
-                    src={`/${icon}`}
+                    src={icon}
                     alt="button icon"
                     width={30}
                     height={30}
                     className={styles.icon}
                 />
             )}
-            {value}
+            {value && <span className={styles.value}>{value}</span>}
         </button>
     );
 }

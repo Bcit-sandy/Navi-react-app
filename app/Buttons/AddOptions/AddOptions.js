@@ -1,15 +1,15 @@
 "use client";
 import { useState } from "react";
-import "./styles.css";
+import styles from "./styles.module.css";
 
-const AddOptions = ({ icon: Icon, value, color, bgColor }) => {
+const AddOptions = ({ icon, value, color, bgColor, className }) => {
   return (
     <button
-      className="add-options-button"
+      className={`${styles.addOptionsButton} ${className || ''}`}
       style={{ backgroundColor: bgColor, color: color }}
     >
-      <img src={Icon} alt="" className="add-options-icon" style={{ color: color }} />
-      <span className="add-options-label">{value}</span>
+      <img src={icon} alt="" className={styles.addOptionsIcon} style={{ color: color }} />
+      <span className={styles.addOptionsLabel}>{value}</span>
     </button>
   );
 };

@@ -59,6 +59,8 @@ export default function BigComponentsPage() {
                     comment="Great post! Thanks for sharing."
                 />
             </section>
+
+            
         </div>
     );
 }

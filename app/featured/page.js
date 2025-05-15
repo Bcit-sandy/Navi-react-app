@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import "../globals.css";
-import AddOptions from "@/app/Buttons/AddOptions/AddOptions";
+import Button from "@/app/button/button";
 import styles from "@/app/featured/featured.module.css";
 
 export default function Page() {
@@ -35,39 +35,32 @@ export default function Page() {
 
     return (
         <main className={styles.screen}>
-            <button
-                className={styles.add}
-                onClick={() => setShowOptions(true)}>
-                <img
-                    src='/add.svg'
-                    className='addButton'
-                    alt='Add'
-                />
-            </button>
+            <Button
+                type="round"
+                icon="/add.svg"
+                onClick={() => setShowOptions(true)}
+            />
 
             {/* && means if showoptions is truthy */}
             {showOptions && (
                 <>
-                    {}
                     <div className={styles.overlay}></div>
 
                     {/* Post Options */}
                     <div
                         ref={overlayRef}
                         className={styles.optionsOverlay}>
-                        <AddOptions
-                            icon='/community.svg'
-                            value='Create Community Post'
-                            bgColor='var(--analogous-blue-300)'
-                            color='var(--neutral-blue-500)'
-                            className='post_type'
+                        <Button
+                            type="primary"
+                            icon="/community.svg"
+                            value="Create Community Post"
+                            onClick={() => console.log("Create Community Post")}
                         />
-                        <AddOptions
-                            icon='/event.svg'
-                            value='Create Event Post'
-                            bgColor='var(--secondary-beige-300)'
-                            color='var(--secondary-beige-900)'
-                            className='post_type'
+                        <Button
+                            type="primary"
+                            icon="/event.svg"
+                            value="Create Event Post"
+                            onClick={() => console.log("Create Event Post")}
                         />
                     </div>
                 </>
