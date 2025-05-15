@@ -35,6 +35,7 @@ export default function Button({
         [styles.underline]: type === "underline",
         [styles.post]: type === "post",
         [styles.lightblue]: color === "lightblue",
+        [styles.blue]: color === "blue",
         [styles.beige]: color === "beige",
         [styles.disabled]: isDisabled,
     });

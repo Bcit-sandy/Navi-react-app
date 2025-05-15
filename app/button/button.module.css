@@ -106,6 +106,13 @@
 .lightblue {
     color: var(--neutral-blue-500);
     background-color: var(--analogous-blue-300);
+    border: none;
+}
+
+.blue {
+    color: var(--white-color);
+    background-color: var(--primary-blue-500);
+    border: none;
 }
 
 .lightblue-active {
@@ -124,7 +131,7 @@
 
 /* Disabled state */
 .disabled {
-    opacity: 0.5;
+    opacity: 0.8;
     cursor: not-allowed;
     pointer-events: none;
 }
