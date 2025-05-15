@@ -2,11 +2,10 @@
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { EventDateTag } from "@/app/Buttons/EventDateTag";
-import { Join } from "@/app/Buttons/Join";
-import { Share } from "@/app/Buttons/Share";
 import { Elipses } from "@/app/Buttons/Elipses";
 import { PlaceholderImg_event } from "@/app/Buttons/PlaceholderImg_event";
 import styles from "./EventPost.module.css";
+import Button from "@/app/button/button";
 
 export function EventPost({
     date = "",
@@ -39,10 +38,16 @@ export function EventPost({
                 </div>
                 <div className={styles.actions}>
                     <div className={styles.shareAndElipses}>
-                        <Share />
+                        <Button
+                            icon="share.svg"
+                            className={styles.icon}
+                        />
                         <Elipses />
                     </div>
-                    <Join onClick={onJoin} />
+                    <Button
+                        icon="join.svg"
+                        className={styles.icon}
+                    />
                 </div>
             </div>
             <div className={styles.imageWrapper}>

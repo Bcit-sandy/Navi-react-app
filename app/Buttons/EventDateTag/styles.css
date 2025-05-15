@@ -1,15 +1,25 @@
-.eventDateTag {
-    display: inline-flex;
+.event-tag-content {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 11px;
     align-items: center;
-    padding: 4px 8px;
-    background: var(--neutral-100);
-    color: var(--neutral-700);
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 500;
+    background-color: var(--primary-blue-500);
+    width: 90px;
+    height: 107px;
+    padding: 0;
 }
 
-.eventDateTag-active {
-    background-color: var(--secondary-beige-500);
-    color: white;
-} 
+.event-tag-month {
+    font-size: var(--h2-font-size);
+    margin-top: 15px;
+    margin-bottom: 2px;
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+}
+
+.event-tag-date {
+    font-size: var(--h2-font-size);
+    color: var(--white-color);
+    margin-top: 0;
+}
