@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { EventDateTag } from "@/app/Buttons/EventDateTag";
+import { EventDateTag } from "@/app/UiElements/EventDateTag";
 import styles from "@/app/BigComponents/NavBar/navbar.module.css";
 import Button from "@/app/button/button";
 

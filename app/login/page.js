@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import "../globals.css";
-import * as Buttons from "@/app/Buttons/allbuttons";
+import * as Buttons from "@/app/UiElements/allbuttons";
 import NavBar from "@/app/BigComponents/NavBar/navbar";
 import CommunityPost from "@/app/BigComponents/CommunityPost/communitypost";
 import Button from "@/app/button/button";

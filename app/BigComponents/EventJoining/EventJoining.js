@@ -1,6 +1,6 @@
 "use client";
 import styles from "./EventJoining.module.css";
-import { UserCircles } from "@/app/Buttons/UserCircles";
+import { UserCircles } from "@/app/UiElements/UserCircles";
 import Button from "@/app/button/button";
 import classNames from "classnames";
 
