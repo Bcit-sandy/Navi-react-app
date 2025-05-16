@@ -42,7 +42,10 @@ export function EventPost({
                             icon="share.svg"
                             className={styles.icon}
                         />
-                        <Elipses />
+                        <Button
+                            icon="elipses.svg"
+                            className={styles.icon}
+                        />
                     </div>
                     <Button
                         className={styles.icon}

@@ -2,7 +2,6 @@
 import "./globals.css";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-import * as Buttons from "./Buttons/allbuttons";
 import { EventPost } from "./BigComponents/EventPost/EventPost";
 import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
 import { OnboardProgressBar } from "./BigComponents/Onboard Progress Bar/OnboardProgressBar";
