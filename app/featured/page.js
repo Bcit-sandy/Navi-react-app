@@ -58,6 +58,7 @@ export default function Page() {
                             value="Create Community Post"
                             type="post"
                             onClick={() => console.log("Create Community Post")}
+                            className={styles.post_type}
                         />
                         <Button
                             color="beige"
@@ -65,6 +66,7 @@ export default function Page() {
                             value="Create Event Post"
                             type="post"
                             onClick={() => console.log("Create Event Post")}
+                            className={styles.post_type}
                         />
                     </div>
                 </>

@@ -6,6 +6,8 @@ import { EventPost } from "./BigComponents/EventPost/EventPost";
 import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
 import { OnboardProgressBar } from "./BigComponents/Onboard Progress Bar/OnboardProgressBar";
 import { EventJoining } from "./BigComponents/EventJoining/EventJoining";
+import Button from "@/app/button/button";
+import * as Buttons from "@/app/Buttons/allbuttons";
 
 import {
     Username,
@@ -35,9 +37,6 @@ export default function Page() {
     }
 
     const [selectedTags, setSelectedTags] = useState([]);
-    const [smallHeartLiked, setSmallHeartLiked] = useState(false);
-    const [largeHeartLiked, setLargeHeartLiked] = useState(false);
-    const [isJoined, setIsJoined] = useState(false);
     const [isFollowing, setIsFollowing] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
     const [textSize, setTextSize] = useState("medium");
@@ -125,22 +124,12 @@ export default function Page() {
                     console.log("Searching:", e.target.value);
                 }}
             />
-            <Buttons.SearchButton
-                onClick={() =>
-                    console.log("Search button clicked:", searchQuery)
-                }
-            />
-            <Buttons.EditButton onClick={() => console.log("Editing...")} />
             <Buttons.TextSizeRadio
                 value={textSize}
                 onChange={(e) => {
                     setTextSize(e.target.value);
                     console.log("Text size changed to:", e.target.value);
                 }}
-            />
-            <Buttons.SignUp onClick={() => console.log("Sign up!")} />
-            <Buttons.SignIn
-                onClick={() => console.log("Sign In ...Loading...")}
             />
 
             <div className='tags-container'>
@@ -154,26 +143,7 @@ export default function Page() {
                 ))}
             </div>
 
-            <div className='heart-buttons-container'>
-                <Buttons.Heart
-                    size='small'
-                    isLiked={smallHeartLiked}
-                    onClick={() => setSmallHeartLiked(!smallHeartLiked)}
-                />
-                <Buttons.Heart
-                    size='large'
-                    isLiked={largeHeartLiked}
-                    onClick={() => setLargeHeartLiked(!largeHeartLiked)}
-                />
-            </div>
-
-            <Buttons.Join
-                isJoined={isJoined}
-                onClick={() => setIsJoined(!isJoined)}
-            />
-            <Buttons.Post onClick={() => console.log("Posting...")} />
-            <Buttons.Send onClick={() => console.log("Sending...")} />
-            <Buttons.Return onClick={() => console.log("Returning...")} />
+        
             <Buttons.Follow
                 isFollowing={isFollowing}
                 onClick={() => setIsFollowing(!isFollowing)}
@@ -191,10 +161,6 @@ export default function Page() {
                 onClick={() => console.log("Event Date:")}
                 month='APR'
                 date='08'
-            />
-            <Buttons.CalendarViewButton
-                onClick={() => console.log("Calendar clicked")}
-                text='Calendar View →'
             />
 
             {/* SignUp Inputs */}
@@ -219,11 +185,7 @@ export default function Page() {
 
             {/* Extras */}
             <Buttons.AnonymousToggle />
-            <Buttons.Search />
-            <Buttons.Profile />
-            <Buttons.Comment />
-            <Buttons.Edit />
-            <Buttons.Delete />
+
             <Buttons.Toggle />
             <Buttons.HomePageNav />
             <Buttons.TakePhotoButton />
@@ -247,11 +209,9 @@ export default function Page() {
                 date='Mar 31, 2025'
                 content="I would say Granville Island. I'd have a lot of fun!!"
             />
-            <Buttons.CommentWithReply />
 
             <Buttons.LocationDropdown />
             <Buttons.StudentTypeDropdown />
-            <Buttons.Share />
 
             {/* Placeholder images */}
             <Buttons.PlaceholderImg_profile_sm />
@@ -263,10 +223,6 @@ export default function Page() {
 
             <Buttons.EditBioText />
             <Buttons.ParticipantField />
-            <Buttons.SettingsButton />
-            <Buttons.Explore />
-            <Buttons.Skip />
-            <Buttons.Add />
             <Buttons.Community />
             <Buttons.Event />
             <Buttons.Elipses />

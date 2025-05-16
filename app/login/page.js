@@ -4,6 +4,7 @@ import "../globals.css";
 import * as Buttons from "@/app/Buttons/allbuttons";
 import NavBar from "@/app/BigComponents/NavBar/navbar";
 import CommunityPost from "@/app/BigComponents/CommunityPost/communitypost";
+import Button from "@/app/button/button";
 
 export default function Login() {
     return (
@@ -46,11 +47,19 @@ export default function Login() {
                     placeholder='Re-enter password'
                 />
             </div>
-            <Buttons.SignIn
-                onClick={() => console.log("Sign In ...Loading...")}
+            <Button
+                size="large"
+                type="primary"
+                value="Sign in"
             />
+            
+            {/* Sign up button */}
             <h5 className='noAccount'>Don’t have an account?</h5>
-            <Buttons.SignUp onClick={() => console.log("Sign up!")} />
+            <Button
+               size="large"
+               type="outline"
+               value="Sign up"
+            />
         </main>
     );
 }
