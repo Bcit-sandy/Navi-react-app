@@ -1,4 +1,5 @@
 "use client";
+import React, { useState } from 'react';
 import Image from "next/image";
 import styles from "./OnboardProgressBar.module.css";
 import Button from "@/app/button/button";

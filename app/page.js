@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { EventPost } from "./BigComponents/EventPost/EventPost";
 import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
-import { OnboardProgressBar } from "./BigComponents/Onboard Progress Bar/OnboardProgressBar";
+import { OnboardProgressBar }from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar"
 import { EventJoining } from "./BigComponents/EventJoining/EventJoining";
 import Button from "@/app/button/button";
 import * as Buttons from "@/app/Buttons/allbuttons";
