@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import styles from "./OnboardProgressBar.module.css";
-import { RoundNext } from "@/app/Buttons/allbuttons";
+import Button from "@/app/button/button";
 
 export function OnboardProgressBar({
-    currentStep = 1,
+    currentStep = 2,
     totalSteps = 6,
     onPrev,
     onNext,
@@ -13,9 +13,11 @@ export function OnboardProgressBar({
     const isLast = currentStep === totalSteps;
     return (
         <div className={styles.progressBarContainer}>
-            <RoundNext
-                direction='left'
-                disabled={isFirst}
+            <Button
+                icon="arrowback.svg"
+                type="round"
+                color="lightblue"
+                isDisabled="disabled"
                 onClick={isFirst ? undefined : onPrev}
             />
             <div className={styles.dotsContainer}>
@@ -30,9 +32,10 @@ export function OnboardProgressBar({
                     ></span>
                 ))}
             </div>
-            <RoundNext
-                direction='right'
-                disabled={isLast}
+            <Button
+                icon="arrowforward.svg"
+                type="round"
+                color="blue"
                 onClick={onNext}
             />
         </div>

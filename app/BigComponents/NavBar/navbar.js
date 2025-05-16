@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { EventDateTag } from "@/app/Buttons/EventDateTag";
 import styles from "@/app/BigComponents/NavBar/navbar.module.css";
+import Button from "@/app/button/button";
 
 export default function NavBar() {
     return (
@@ -15,14 +16,14 @@ export default function NavBar() {
             </div>
 
             <div className={styles.icons}>
-                <img
-                    className={styles.search}
-                    src='/search.svg'
-                    alt='search'></img>
-                <img
-                    className={styles.profile}
-                    src='/profile.svg'
-                    alt='profile'></img>
+                <Button
+                    icon="search.svg"
+                    className={styles.icon}
+                />
+                <Button
+                    icon="profile.svg"
+                    className={styles.icon}
+                />
             </div>
         </main>
     );

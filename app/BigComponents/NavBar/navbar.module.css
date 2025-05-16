@@ -74,12 +74,9 @@
     color: white;
 }
 
-.icons {
+.icon {
     display: flex;
     align-items: center;
     padding-top: 32px;
-}
-
-.search {
     margin-right: 16px;
 }

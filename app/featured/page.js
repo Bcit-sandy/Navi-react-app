@@ -35,11 +35,13 @@ export default function Page() {
 
     return (
         <main className={styles.screen}>
-            <Button
-                type="round"
-                icon="/add.svg"
-                onClick={() => setShowOptions(true)}
-            />
+            <div className={styles.add}>
+                <Button
+                    type="round"
+                    icon="/add.svg"
+                    onClick={() => setShowOptions(true)}
+                />
+            </div>
 
             {/* && means if showoptions is truthy */}
             {showOptions && (
@@ -51,15 +53,17 @@ export default function Page() {
                         ref={overlayRef}
                         className={styles.optionsOverlay}>
                         <Button
-                            type="primary"
+                            color="lightblue"
                             icon="/community.svg"
                             value="Create Community Post"
+                            type="post"
                             onClick={() => console.log("Create Community Post")}
                         />
                         <Button
-                            type="primary"
+                            color="beige"
                             icon="/event.svg"
                             value="Create Event Post"
+                            type="post"
                             onClick={() => console.log("Create Event Post")}
                         />
                     </div>

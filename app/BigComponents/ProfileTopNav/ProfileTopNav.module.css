@@ -1,9 +1,19 @@
 .topNav {
-    width: 400px;
-    margin: 0;
+    width: 100%;
+    max-width: 400px;
+    padding: 16px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    gap: 255px;
+    justify-content: space-between;
+    background-color: var(--white);
+    border: none;
+   
 }
+
+.rightButtons {
+    display: flex;
+    align-items: center;
+}
+
+

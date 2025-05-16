@@ -1,8 +1,6 @@
 "use client";
-import { useState } from "react";
-import { EventDateTag } from "@/app/Buttons/EventDateTag";
-import styles from "@/app/BigComponents/CommunityPost/communitypost.module.css";
-import * as Buttons from "@/app/Buttons/allbuttons";
+import styles from "./communitypost.module.css";
+import Button from "@/app/button/button";
 
 export default function CommunityPost({
     imgSm,
@@ -42,11 +40,20 @@ export default function CommunityPost({
             )}
             <div className={styles.icons}>
                 <div className={styles.interact}>
-                    <Buttons.Heart />
-                    <Buttons.Comment />
+                    <Button
+                        icon="outlineheart.svg"
+                        className={styles.icon}
+                    />
+                    <Button
+                        icon="comment.svg"
+                        className={styles.icon}
+                    />
                 </div>
-                <div className={styles.share}>
-                    <Buttons.Share />
+                <div className={styles.icon}>
+                    <Button
+                        icon="share.svg"
+                        className={styles.icon}
+                    />
                 </div>
             </div>
             <div className={styles.customBorder}></div>
