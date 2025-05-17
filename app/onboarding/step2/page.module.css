@@ -64,13 +64,15 @@
     border: 1px solid black;
 }
 
-.blob{
-    width: 30%;
-    left: 0;
+.activeBackButton {
+  background-color: var(--primary-blue-500);
+  cursor: pointer;
+  opacity: 1;
 }
 
+
 .illustration { 
-    margin-top: -60px;
+    margin-top: 34px;
 }
 
 .text {
@@ -97,6 +99,9 @@
 }
 
 .progress {
-    display: flex;
-    justify-content: center;
+  position: fixed;
+  bottom: 185px; /* or top: 0; */
+  left: 26px;
+  width: 100%;
+  z-index: 1000;
 }

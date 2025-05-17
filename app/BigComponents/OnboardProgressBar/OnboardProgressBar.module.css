@@ -24,12 +24,9 @@
 }
 
 .arrowButton.left {
-    background-color: var(--neutral-blue-100);
+    background-color: var(--neutral-blue-500);
 }
 
-.arrowButton.right .arrow {
-    color: var(--white-color);
-}
 
 .dotsContainer {
     display: flex;
@@ -60,4 +57,17 @@
 
 .disabled .arrow {
     color: var(--neutral-blue-100) !important;
+}
+
+
+.activeBackButton {
+  background-color: var(--primary-blue-500); /* your active blue */
+  cursor: pointer;
+}
+
+
+.firstStepBackButton {
+  background-color: var(--primary-blue-100); /* light blue */
+  cursor: not-allowed;       /* show disabled cursor */
+  opacity: 1;               /* slightly faded */
 }
