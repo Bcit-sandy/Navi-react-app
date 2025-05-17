@@ -3,7 +3,7 @@ import { EventJoining } from "./EventJoining/EventJoining";
 import { ProfileTopNav } from "./ProfileTopNav/ProfileTopNav";
 import { OnboardProgressBar } from "./OnboardProgressBar/OnboardProgressBar";
 import NavBar from "./NavBar/navbar";
-import { EventPost } from "./EventPost/EventPost";
+import EventPost from "./EventPost/EventPost";
 import CommunityPost from "./CommunityPost/communitypost";
 import EventSlider from "./EventSliders/eventslider";
 export default function BigComponentsPage() {

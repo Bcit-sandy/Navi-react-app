@@ -17,11 +17,11 @@ export default function NavBar() {
 
             <div className={styles.icons}>
                 <Button
-                    icon="search.svg"
+                    icon="/search.svg"
                     className={styles.icon}
                 />
                 <Button
-                    icon="profile.svg"
+                    icon="/profile.svg"
                     className={styles.icon}
                 />
             </div>

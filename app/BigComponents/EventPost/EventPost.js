@@ -7,7 +7,7 @@ import { PlaceholderImg_event } from "@/app/UiElements/PlaceholderImg_event";
 import styles from "./EventPost.module.css";
 import Button from "@/app/button/button";
 
-export function EventPost({
+export default function EventPost({
     date = "",
     month = "",
     title = "",

@@ -1,4 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+"use client"
+
+import React from 'react';
+import { useState, useRef } from 'react';
 import styles from './eventslider.module.css';
 
 const EventSlider = () => {

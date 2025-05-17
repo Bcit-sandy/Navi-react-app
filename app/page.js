@@ -2,7 +2,7 @@
 import "./globals.css";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-import { EventPost } from "./BigComponents/EventPost/EventPost";
+import EventPost from "./BigComponents/EventPost/EventPost";
 import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
 import { OnboardProgressBar }from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar"
 import { EventJoining } from "./BigComponents/EventJoining/EventJoining";

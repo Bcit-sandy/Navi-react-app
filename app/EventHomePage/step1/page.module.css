@@ -1,0 +1,24 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  
+    width: 430px;
+}
+
+.topContainer {
+    width: 430px;
+    height: 100%;
+}
+
+.middleContainer {
+    width: 430px;
+    height: 100%;
+}
+
+.bottomContainer {
+    width: 430px;    
+    height: 100%;
+}
+
