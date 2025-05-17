@@ -15,7 +15,7 @@ export function OnboardProgressBar({
     return (
         <div className={styles.progressBarContainer}>
             <Button
-                icon="arrowback.svg"
+                icon="/arrowback.svg"
                 type="round"
                 color="lightblue"
                 isDisabled="disabled"
@@ -34,7 +34,7 @@ export function OnboardProgressBar({
                 ))}
             </div>
             <Button
-                icon="arrowforward.svg"
+                icon="/arrowforward.svg"
                 type="round"
                 color="blue"
                 onClick={onNext}
