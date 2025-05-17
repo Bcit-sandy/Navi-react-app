@@ -5,7 +5,7 @@ import { OnboardProgressBar } from "./OnboardProgressBar/OnboardProgressBar";
 import NavBar from "./NavBar/navbar";
 import { EventPost } from "./EventPost/EventPost";
 import CommunityPost from "./CommunityPost/communitypost";
-
+import EventSlider from "./EventSliders/eventslider";
 export default function BigComponentsPage() {
     return (
         <div>
@@ -58,6 +58,11 @@ export default function BigComponentsPage() {
                     commentDate="1 hour ago"
                     comment="Great post! Thanks for sharing."
                 />
+            </section>
+
+            <section>
+                <h2>Event Slider</h2>
+                <EventSlider />
             </section>
 
             
