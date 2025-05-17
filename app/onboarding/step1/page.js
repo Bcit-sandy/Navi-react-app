@@ -13,7 +13,7 @@ export default function Step1() {
     };
 
     return (
-        <main>
+        <main className={styles.main_container}>
             <section className={styles.container}>
             <img className={styles.blob} src="/onboarding_graphics/topLeftBlob.svg" alt="graphics"></img>
             <img className={styles.illustration} src="/onboarding_graphics/step1.svg" alt="graphics"></img>
@@ -31,7 +31,7 @@ export default function Step1() {
         onNext={handleNext}
       />
       </div>
-            </section>
+                  </section> 
         </main>
     );
 }

@@ -53,7 +53,17 @@
 }
 
 
+.main_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
 .container {
+    margin: 0;
+    padding: 0;
     gap: var(--space-regular);
     padding: var(--space-regular);
     width:430px;
@@ -63,13 +73,6 @@
     margin-top: 0;
     border: 1px solid black;
 }
-
-.activeBackButton {
-  background-color: var(--primary-blue-500);
-  cursor: pointer;
-  opacity: 1;
-}
-
 
 .illustration { 
     margin-top: 34px;
@@ -99,9 +102,6 @@
 }
 
 .progress {
-  position: fixed;
-  bottom: 185px; /* or top: 0; */
-  left: 26px;
-  width: 100%;
-  z-index: 1000;
+  position: relative;
+  left: 14px;
 }

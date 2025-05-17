@@ -17,7 +17,7 @@ export default function Step2() {
     };
 
     return (
-        <main>
+        <main className={styles.main_container}>
             <section className={styles.container}>
             <img className={styles.illustration} src="/onboarding_graphics/step2.svg" alt="graphics"></img>
             <div className={styles.text}>
@@ -34,7 +34,7 @@ export default function Step2() {
         onNext={handleNext}
       />
       </div>
-            </section>
+                  </section>
         </main>
     );
 }

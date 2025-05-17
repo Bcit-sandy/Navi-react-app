@@ -52,8 +52,17 @@
 --label-font-size: 12px; 
 }
 
+.main_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
 
 .container {
+    margin: 0;
+    padding: 0;
     gap: var(--space-regular);
     padding: var(--space-regular);
     width:430px;
@@ -97,9 +106,6 @@
 }
 
 .progress {
-  position: fixed;
-  bottom: 185px; /* or top: 0; */
-  left: 26px;
-  width: 100%;
-  z-index: 1000;
+  position: relative;
+  left: 14px;
 }
