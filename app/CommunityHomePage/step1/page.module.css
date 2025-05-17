@@ -1,0 +1,12 @@
+.community_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
