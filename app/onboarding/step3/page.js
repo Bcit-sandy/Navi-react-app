@@ -5,7 +5,7 @@ import styles from "@/app/onboarding/step3/page.module.css";
 import { StudentCategories } from "@/app/Buttons/StudentCategories";
 
 
-export default function Step2() {
+export default function Step3() {
     const router = useRouter(); 
 
     const handlePrev = () => {

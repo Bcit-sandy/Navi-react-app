@@ -91,7 +91,7 @@
 
 .supportingText {
     font-family: var(--font-family);
-    font-size: --bodytext-font-size;
+    font-size: var(--bodytext-font-size);
     font-weight: var(--thin-weight);
     margin-top: -10px;
 }
