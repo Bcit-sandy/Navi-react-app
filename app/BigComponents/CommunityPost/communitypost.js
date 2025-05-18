@@ -49,7 +49,7 @@ export default function CommunityPost({
                         className={styles.icon}
                     />
                 </div>
-                <div className={styles.icon}>
+                <div className={styles.share}>
                     <Button
                         icon='/share.svg'
                         className={styles.icon}
