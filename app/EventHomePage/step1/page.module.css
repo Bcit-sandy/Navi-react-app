@@ -4,6 +4,7 @@
     justify-content: center;
     position: absolute;
     top: 0;
+    left: 0;
 }
 
 .container {
@@ -12,49 +13,66 @@
 }
 
 .main {
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;  
-    width: 430px;
 }
 
-.homePageNav {
+.fixedNavBar {
+    position: fixed;
     width: 430px;
-    height: 10%;
+    z-index: 3;
+}
+
+.homePageNav2 {
+    width: 430px;
     display: flex;
+    padding: 20px 0;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #EDF4F9 0%, rgba(237, 244, 249, 0.80) 59%, rgba(237, 244, 249, 0.00) 100%);
+    background: linear-gradient(
+        180deg,
+        #edf4f9 0%,
+        rgba(237, 244, 249, 0.8) 59%,
+        rgba(237, 244, 249, 0) 100%
+    );
 }
 
+/* 
 .topContainer {
     width: 430px;
     height: 10%;
-
-}
+} */
 
 .middleContainer {
     width: 430px;
-    height:15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
     background-color: #EDF4F9;
+    margin-top: 0
 }
 
 .bottomContainer {
     width: 430px;    
-    height: 100%;
+    margin-top: 30px;
 }
 
-.eventSliderContainer {
+/* .eventSliderContainer {
     width: 100%;
     max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
+.eventPostContainer {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}

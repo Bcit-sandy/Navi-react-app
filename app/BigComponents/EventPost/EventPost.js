@@ -8,15 +8,14 @@ import styles from "./EventPost.module.css";
 import Button from "@/app/button/button";
 
 export default function EventPost({
-    date = "",
-    month = "",
-    title = "",
-    tags = "",
-    location = "",
-    maxParticipants = Number,
-    time = "",
-    image = null,
-    onJoin,
+    date = "01",
+    month = "JAN",
+    title = "Badminton (beginner)",
+    tags = "Sports, Badminton",
+    location = "Richmond, BC",
+    maxParticipants = "30",
+    time = "12:00 PM – 6:00 PM",
+    image = "/placeholder.png",
 }) {
     return (
         <div className={styles.card}>
@@ -37,13 +36,9 @@ export default function EventPost({
                     <p className={styles.time}>{time}</p>
                 </div>
                 <div className={styles.actions}>
-                    <div className={styles.shareAndElipses}>
+                    <div className={styles.share}>
                         <Button
-                            icon="share.svg"
-                            className={styles.icon}
-                        />
-                        <Button
-                            icon="elipses.svg"
+                            icon="/share.svg"
                             className={styles.icon}
                         />
                     </div>

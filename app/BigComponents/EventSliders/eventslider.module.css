@@ -1,5 +1,5 @@
 .sliderContainer {
-    width: 100%;
+    width: 430px;
     max-width: 400px;
     margin: 0;
     overflow-x: auto;
@@ -69,7 +69,6 @@
 }
 
 .navButton {
-
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -78,7 +77,6 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s ease;
-    z-index: 1;
 }
 
 

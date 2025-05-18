@@ -24,15 +24,15 @@
     --primary-blue-2000: #000000;
 } */
 
-.navBar_container{
+.navBar_container {
     background-color: var(--primary-blue-500);
     display: flex;
-  justify-content: space-between;
-  height: 96px;
-  padding: 0 16px;     
+    justify-content: space-between;
+    height: 96px;
+    padding: 0 16px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     padding-top: 32px;
@@ -52,6 +52,5 @@
 .icon {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    margin-right: 16px;
+    margin-top: 40px;
 }
