@@ -4,22 +4,22 @@ import styles from "./button.module.css";
 import classNames from "classnames";
 import Image from "next/image";
 
-//type: primary, secondary, success, outline, round, light, dark  
+//type: primary, secondary, success, outline, round, light, dark
 //size: small, large
 //isDisabled: boolean
 //icon: svg in public folder
-//value: string (optional)  
-//onClick: () => void (optional)  
+//value: string (optional)
+//onClick: () => void (optional)
 //color: light, dark
 export default function Button({
     size,
     type,
     color,
     icon,
-    isDisabled = false, 
+    isDisabled = false,
     value,
     onClick,
-    className
+    className,
 }) {
     const buttonClasses = classNames(
         styles.button,
@@ -27,6 +27,7 @@ export default function Button({
             [styles.small]: size === "small",
             [styles.medium]: size === "medium",
             [styles.large]: size === "large",
+            [styles.xLarge]: size === "xLarge",
             [styles.primary]: type === "primary",
             [styles.neutral]: type === "neutral",
             [styles.success]: type === "success",
@@ -52,7 +53,7 @@ export default function Button({
             {icon && (
                 <Image
                     src={icon}
-                    alt="button icon"
+                    alt='button icon'
                     width={30}
                     height={30}
                     className={styles.icon}

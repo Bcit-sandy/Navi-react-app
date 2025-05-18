@@ -1,12 +1,19 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRouter } from 'next/navigation';
 import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar"
 import styles from "@/app/onboarding/step1/page.module.css";
 import { Username } from "@/app/components/textfield";
 
+
 export default function Step1() {
+    const router = useRouter(); 
+
+    const handleNext = () => {
+        router.push('/onboarding/step2');
+    };
+
     return (
-        <main>
+        <main className={styles.main_container}>
             <section className={styles.container}>
             <img className={styles.blob} src="/onboarding_graphics/topLeftBlob.svg" alt="graphics"></img>
             <img className={styles.illustration} src="/onboarding_graphics/step1.svg" alt="graphics"></img>
@@ -21,9 +28,10 @@ export default function Step1() {
             <OnboardProgressBar
         currentStep={1}
         totalSteps={6}
+        onNext={handleNext}
       />
       </div>
-            </section>
+                  </section> 
         </main>
     );
 }

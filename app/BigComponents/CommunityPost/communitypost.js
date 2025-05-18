@@ -41,17 +41,17 @@ export default function CommunityPost({
             <div className={styles.icons}>
                 <div className={styles.interact}>
                     <Button
-                        icon="outlineheart.svg"
+                        icon='/outlineheart.svg'
                         className={styles.icon}
                     />
                     <Button
-                        icon="comment.svg"
+                        icon='/comment.svg'
                         className={styles.icon}
                     />
                 </div>
-                <div className={styles.icon}>
+                <div className={styles.share}>
                     <Button
-                        icon="share.svg"
+                        icon='/share.svg'
                         className={styles.icon}
                     />
                 </div>
