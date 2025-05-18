@@ -3,11 +3,10 @@ import { useState } from "react";
 import styles from "./EventJoining.module.css";
 import { UserCircles } from "@/app/UiElements/UserCircles";
 import Button from "@/app/button/button";
-import classNames from "classnames";
 
-export function EventJoining({
-    title = "Badminton for beginner",
-    time = "12:00PM - 6:00PM",
+export default function EventJoining({
+    title = "",
+    time = "",
     users = []
 }) {
     const [isJoined, setIsJoined] = useState(false);

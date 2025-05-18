@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import Image from "next/image";
 import "./styles.css";
 
 export function UserCircles({ users = [] }) {
@@ -21,7 +21,15 @@ export function UserCircles({ users = [] }) {
                     <div
                         key={index}
                         className='circle'
-                    ></div>
+                    >
+                        <Image
+                            src={user.avatar}
+                            alt={user.name}
+                            width={20}
+                            height={20}
+                            style={{ objectFit: 'cover' }}
+                        />
+                    </div>
                 ))}
         </div>
     );

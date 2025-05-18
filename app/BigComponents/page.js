@@ -1,5 +1,5 @@
 "use client";
-import { EventJoining } from "./EventJoining/EventJoining";
+import EventJoining from "./EventJoining/EventJoining";
 import { ProfileTopNav } from "./ProfileTopNav/ProfileTopNav";
 import { OnboardProgressBar } from "./OnboardProgressBar/OnboardProgressBar";
 import NavBar from "./NavBar/navbar";

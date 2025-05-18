@@ -68,7 +68,7 @@ const Step1 = () => {
                                 location = "Downtown Vancouver, BC"
                                 maxParticipants = "300"
                                 time = "6:00 PM – 11:00 PM"
-                                image = "/event/event3.png"
+                                image = "/event/event3.jpg"
                                 />
                         </div>
 

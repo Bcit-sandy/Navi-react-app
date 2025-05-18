@@ -42,8 +42,9 @@ export default function EventPost({
                 <div className={styles.actions}>
                     <div className={styles.share}>
                         <Button
-                            icon="/share.svg"
+                            icon={isShared ? "/success.svg" : "/share.svg"}
                             className={styles.icon}
+                            onClick={handleShareClick}
                         />
                     </div>
                     <Button
