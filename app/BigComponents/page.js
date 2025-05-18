@@ -1,7 +1,7 @@
 "use client";
 import { EventJoining } from "./EventJoining/EventJoining";
 import { ProfileTopNav } from "./ProfileTopNav/ProfileTopNav";
-import { OnboardProgressBar } from "./Onboard Progress Bar/OnboardProgressBar";
+import { OnboardProgressBar } from "./OnboardProgressBar/OnboardProgressBar";
 import NavBar from "./NavBar/navbar";
 import { EventPost } from "./EventPost/EventPost";
 import CommunityPost from "./CommunityPost/communitypost";
