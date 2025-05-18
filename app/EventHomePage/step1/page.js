@@ -5,7 +5,7 @@ import styles from '@/app/EventHomePage/step1/page.module.css';
 import EventSlider from '@/app/BigComponents/EventSliders/eventslider';
 import EventPost from '@/app/BigComponents/EventPost/EventPost';
 import NavBar from '@/app/BigComponents/NavBar/navbar';
-import { HomePageNav2 } from "@/app/UiElements/HomePageNav2";
+import { HomePageNav2 } from "@/app/UiElements/H";
 import Feature from "@/app/featured/page";
 
 const Step1 = () => {
@@ -41,7 +41,7 @@ const Step1 = () => {
                                 location = "Richmond, BC"
                                 maxParticipants = "30"
                                 time = "12:00 PM – 6:00 PM"
-                                image = "/placeholder.png"
+                                image = "/event/event1.jpg"
                                 />
                         </div>
 
@@ -54,7 +54,7 @@ const Step1 = () => {
                                 location = "Burnaby, BC"
                                 maxParticipants = "300"
                                 time = "10:00 AM – 8:00 PM"
-                                image = "/placeholder.png"
+                                image = "/event/event2.jpg"
                                 />
                         </div>
 
@@ -68,7 +68,7 @@ const Step1 = () => {
                                 location = "Downtown Vancouver, BC"
                                 maxParticipants = "300"
                                 time = "6:00 PM – 11:00 PM"
-                                image = "/placeholder.png"
+                                image = "/event/event3.png"
                                 />
                         </div>
 
@@ -81,7 +81,7 @@ const Step1 = () => {
                                 location = "Langley, BC"
                                 maxParticipants = "50"
                                 time = "11:00 AM – 7:00 PM"
-                                image = "/placeholder.png"
+                                image = "/event/event4.jpg"
                                 />
                         </div>
 
@@ -94,7 +94,7 @@ const Step1 = () => {
                                 location = "Vancouver, BC"
                                 maxParticipants = "200"
                                 time = "5:00 PM – 9:00 PM"
-                                image = "/placeholder.png"
+                                image = "/event/event5.jpg"
                                 />
                         </div>
                     

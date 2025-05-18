@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState, useRef } from "react";
+import {useState} from "react";
 import { EventDateTag } from "@/app/UiElements/EventDateTag";
-import { Elipses } from "@/app/UiElements/Elipses";
-import { PlaceholderImg_event } from "@/app/UiElements/PlaceholderImg_event";
 import styles from "./EventPost.module.css";
 import Button from "@/app/button/button";
 
@@ -17,6 +15,12 @@ export default function EventPost({
     time = "12:00 PM – 6:00 PM",
     image = "/placeholder.png",
 }) {
+    const [isJoined, setIsJoined] = useState(false);
+
+    const handleJoinClick = () => {
+        setIsJoined(!isJoined);
+    };
+
     return (
         <div className={styles.card}>
             <div className={styles.headerRow}>
@@ -44,14 +48,21 @@ export default function EventPost({
                     </div>
                     <Button
                         className={styles.icon}
-                        value="Join"
-                        type="primary"
+                        value={isJoined ? "Joined" : "Join"}
+                        type={isJoined ? "success" : "primary"}
                         size="small"
+                        onClick={handleJoinClick}
                     />
                 </div>
             </div>
             <div className={styles.imageWrapper}>
-                <PlaceholderImg_event />
+                <Image
+                    src={image}
+                    alt={title}
+                    width={398}
+                    height={183}
+                    style={{ objectFit: 'cover' }}
+                />
             </div>
             <div className={styles.line}></div>
         </div>
