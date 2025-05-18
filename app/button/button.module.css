@@ -10,29 +10,36 @@
     border: transparent;
     outline: none;
 }
-  
+
 /* Size variants */
 .small {
     padding: 6px 12px;
     font-size: var(--bodytext-font-size);
     width: 70px;
     height: 30px;
-    
 }
 
 .medium {
     padding: 8px 16px;
     font-size: var(--bodytext-font-size);
-    width:100px ;
+    width: 100px;
     height: 35px;
 }
 
 .large {
     padding: 12px 24px;
-    font-size:  var(--bodytext-font-size);
+    font-size: var(--bodytext-font-size);
     font-weight: var(--bold-weight);
-    width:280px;
+    width: 280px;
     height: 40px;
+}
+
+.xLarge {
+    padding: 10px 20px;
+    font-size:  var(--h3-font-size);
+    font-weight: var(--bold-weight);
+    width: 238px;
+    height: 73px;
 }
 
 /* Type variants */
@@ -46,8 +53,8 @@
 }
 
 .neutral {
-    background-color: var( --neutral-blue-100);
-    color: var(--neutral-blue-900 );
+    background-color: var(--neutral-blue-100);
+    color: var(--neutral-blue-900);
 }
 
 .neutral:active {
@@ -58,7 +65,6 @@
     background-color: var(--success-color);
     color: var(--white-color);
 }
-
 
 .outline {
     background-color: transparent;
@@ -77,7 +83,7 @@
     border-radius: 100%;
     width: 65px;
     height: 65px;
-    border: 2px solid #000;
+    border: 2px solid var(--primary-blue-700);
     border-radius: 50%;
     padding: 10px;
     background-color: var(--white-color);
@@ -101,8 +107,16 @@
     width: 250px;
     height: 40px;
 }
-    
+
 /* Color themes */
+
+/* Disabled state */
+.disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .lightblue {
     color: var(--neutral-blue-500);
     background-color: var(--analogous-blue-300);
@@ -119,7 +133,6 @@
     background-color: var(--analogous-blue-100);
 }
 
-
 .beige {
     background-color: var(--secondary-beige-300);
     color: var(--secondary-beige-900);
@@ -128,14 +141,6 @@
 .beige:active {
     background-color: var(--secondary-beige-500);
 }
-
-/* Disabled state */
-.disabled {
-    opacity: 0.8;
-    cursor: not-allowed;
-    pointer-events: none;
-}
-
 
 /* Icon styles */
 .icon {

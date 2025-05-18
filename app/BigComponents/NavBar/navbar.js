@@ -1,6 +1,4 @@
 "use client";
-import { useState } from "react";
-import { EventDateTag } from "@/app/UiElements/EventDateTag";
 import styles from "@/app/BigComponents/NavBar/navbar.module.css";
 import Button from "@/app/button/button";
 
@@ -11,17 +9,18 @@ export default function NavBar() {
                 <img
                     className={styles.logo_img}
                     src='/logo_light.svg'
-                    alt='logo'></img>
+                    alt='logo'
+                ></img>
                 <h1 className={styles.logo_text}>Navi</h1>
             </div>
 
             <div className={styles.icons}>
                 <Button
-                    icon="search.svg"
+                    icon='/search.svg'
                     className={styles.icon}
                 />
                 <Button
-                    icon="profile.svg"
+                    icon='/profile.svg'
                     className={styles.icon}
                 />
             </div>

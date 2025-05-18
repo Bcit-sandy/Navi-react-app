@@ -4,7 +4,7 @@ import "../globals.css";
 import Button from "@/app/button/button";
 import styles from "@/app/featured/featured.module.css";
 
-export default function Page() {
+export default function Feature() {
     // default show options to false
     const [showOptions, setShowOptions] = useState(false);
 
@@ -37,8 +37,8 @@ export default function Page() {
         <main className={styles.screen}>
             <div className={styles.add}>
                 <Button
-                    type="round"
-                    icon="/add.svg"
+                    type='round'
+                    icon='/add.svg'
                     onClick={() => setShowOptions(true)}
                 />
             </div>
@@ -51,20 +51,21 @@ export default function Page() {
                     {/* Post Options */}
                     <div
                         ref={overlayRef}
-                        className={styles.optionsOverlay}>
+                        className={styles.optionsOverlay}
+                    >
                         <Button
-                            color="lightblue"
-                            icon="/community.svg"
-                            value="Create Community Post"
-                            type="post"
+                            color='lightblue'
+                            icon='/community.svg'
+                            value='Create Community Post'
+                            type='post'
                             onClick={() => console.log("Create Community Post")}
                             className={styles.post_type}
                         />
                         <Button
-                            color="beige"
-                            icon="/event.svg"
-                            value="Create Event Post"
-                            type="post"
+                            color='beige'
+                            icon='/event.svg'
+                            value='Create Event Post'
+                            type='post'
                             onClick={() => console.log("Create Event Post")}
                             className={styles.post_type}
                         />
