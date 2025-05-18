@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import styles from "./communitypost.module.css";
 import Button from "@/app/button/button";
 
@@ -13,9 +15,25 @@ export default function CommunityPost({
     commentDate,
     comment,
 }) {
+    const [isLiked, setIsLiked] = useState(false);
+    const [isShared, setIsShared] = useState(false);
+    const router = useRouter();
+
+    const handleLikeClick = () => {
+        setIsLiked(!isLiked);
+    };
+
+    const handleShareClick = () => {
+        setIsShared(!isShared);
+    };
+
+    const handleAuthorClick = () => {
+        router.push('/profile');
+    };
+
     return (
         <div className={styles.postContainer}>
-            <section className={styles.author}>
+            <section className={styles.author} onClick={handleAuthorClick} style={{ cursor: 'pointer' }}>
                 <img
                     src={imgSm}
                     alt={name}
@@ -41,8 +59,9 @@ export default function CommunityPost({
             <div className={styles.icons}>
                 <div className={styles.interact}>
                     <Button
-                        icon='/outlineheart.svg'
+                        icon={isLiked ? '/filledheart.svg' : '/outlineheart.svg'}
                         className={styles.icon}
+                        onClick={handleLikeClick}
                     />
                     <Button
                         icon='/comment.svg'
@@ -51,8 +70,9 @@ export default function CommunityPost({
                 </div>
                 <div className={styles.share}>
                     <Button
-                        icon='/share.svg'
+                        icon={isShared ? '/success.svg' : '/share.svg'}
                         className={styles.icon}
+                        onClick={handleShareClick}
                     />
                 </div>
             </div>

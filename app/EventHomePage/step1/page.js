@@ -8,6 +8,7 @@ import NavBar from '@/app/BigComponents/NavBar/navbar';
 import { HomePageNav2 } from "@/app/UiElements/HomePageNav2";
 import Feature from "@/app/featured/page";
 
+
 const Step1 = () => {
     return (
         <main className={styles.community_container}>
