@@ -78,6 +78,18 @@ export default function Profile() {
                                 image = "/event/event2.jpg"
                                 />
                         </div>
+                        <div className={styles.eventPostContainer}>
+                            <EventPost
+                                date = "20"
+                                month = "DEC"
+                                title = "Music & Lights Festival"
+                                tags = "Music, Dance, Performance"
+                                location = "Downtown Vancouver, BC"
+                                maxParticipants = "300"
+                                time = "6:00 PM – 11:00 PM"
+                                image = "/event/event3.jpg"
+                                />
+                        </div>
                         </div>
   
         </section>
