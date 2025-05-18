@@ -4,12 +4,11 @@
     border: none;
     border-radius: 11px;
     align-items: center;
-    background-color: var(--primary-blue-500);
+    background-color: var(--neutral-blue-500);
     width: 90px;
     height: 107px;
-    padding: 0;
-}
 
+}
 .event-tag-month {
     font-size: var(--h2-font-size);
     margin-top: 15px;
