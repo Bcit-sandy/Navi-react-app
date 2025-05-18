@@ -34,6 +34,14 @@
     height: 40px;
 }
 
+.xLarge {
+    padding: 10px 20px;
+    font-size:  var(--h3-font-size);
+    font-weight: var(--bold-weight);
+    width: 238px;
+    height: 73px;
+}
+
 /* Type variants */
 .primary {
     background-color: var(--primary-blue-500);
@@ -101,6 +109,14 @@
 }
 
 /* Color themes */
+
+/* Disabled state */
+.disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .lightblue {
     color: var(--neutral-blue-500);
     background-color: var(--analogous-blue-300);
@@ -124,13 +140,6 @@
 
 .beige:active {
     background-color: var(--secondary-beige-500);
-}
-
-/* Disabled state */
-.disabled {
-    opacity: 0.8;
-    cursor: not-allowed;
-    pointer-events: none;
 }
 
 /* Icon styles */

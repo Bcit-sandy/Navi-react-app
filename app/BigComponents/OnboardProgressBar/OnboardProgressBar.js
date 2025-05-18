@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from 'react';
-import Image from "next/image";
-import styles from "./OnboardProgressBar.module.css";
+
+import React from 'react';
 import Button from "@/app/button/button";
+import styles from "./OnboardProgressBar.module.css";  // <--- THIS IS REQUIRED
 
 export function OnboardProgressBar({
     currentStep = 2,
@@ -11,16 +11,21 @@ export function OnboardProgressBar({
     onNext,
 }) {
     const isFirst = currentStep === 1;
-    const isLast = currentStep === totalSteps;
+
+
     return (
         <div className={styles.progressBarContainer}>
             <Button
-                icon="arrowback.svg"
-                type="round"
-                color="lightblue"
-                isDisabled="disabled"
-                onClick={isFirst ? undefined : onPrev}
-            />
+  icon="/arrowback.svg"
+  type="round"
+  color="blue"   // you can keep this or remove if using className for color
+  isDisabled={isFirst}
+  onClick={isFirst ? undefined : onPrev}
+  className={isFirst ? styles.firstStepBackButton : styles.activeBackButton}
+/>
+
+            
+
             <div className={styles.dotsContainer}>
                 {Array.from({ length: totalSteps }).map((_, idx) => (
                     <span
@@ -33,8 +38,9 @@ export function OnboardProgressBar({
                     ></span>
                 ))}
             </div>
+
             <Button
-                icon="arrowforward.svg"
+                icon="/arrowforward.svg"
                 type="round"
                 color="blue"
                 onClick={onNext}
