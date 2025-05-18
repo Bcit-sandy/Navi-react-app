@@ -1,15 +1,24 @@
+"use client";
+import { useRouter } from "next/navigation";
 import styles from "./page.module.css";
 import EventJoining from "@/app/BigComponents/EventJoining/EventJoining";
 import Button from "@/app/button/button";
+
 const Step2 = () => {
+    const router = useRouter();
+
+    const handleReturn = () => {
+        router.push('/EventHomePage/step1');
+    };
+
     return (
         <main className={styles.community_container}>
             <section className={styles.container}>
                 <div className={styles.nav}>
-                    <img
+                    <Button
                         className={styles.return}
-                        src='/return.svg'
-                        alt='return'
+                        icon="/return.svg"
+                        onClick={handleReturn}
                     />
                 </div>
 
@@ -73,10 +82,6 @@ const Step2 = () => {
 
 
                 </div>
-
-
-
-
             
                 <div className={styles.event_joining_container}>
                     <EventJoining

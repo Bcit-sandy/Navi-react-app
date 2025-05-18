@@ -15,9 +15,16 @@
     font-family: var(--font-family);
 }
 
+.return {
+    position: absolute;
+    top: 50px;
+    left: 24px;
+}
+
 .nav {
     display: flex;
     padding: 55px 24px 0 24px;
+    margin-bottom: 40px;
 }
 
 .header {
@@ -85,7 +92,9 @@
 .event_post_info {
     font-size: var(--bodytext-font-size);
     color: var(--neutral-blue-700);
-    margin: 0;
+    font-weight: var(--bold-weight);
+    margin: 5px 0;
+
 }
 
 .event_post_title {
@@ -98,7 +107,9 @@
 .event_post_description {
     display: flex;
     flex-direction: column;
+    width: 400px
 }
+
 
 .event_post_description_text {
     font-size: var(--bodytext-font-size);

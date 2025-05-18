@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import {useState} from "react";
+import { useRouter } from "next/navigation";
 import { EventDateTag } from "@/app/UiElements/EventDateTag";
 import styles from "./EventPost.module.css";
 import Button from "@/app/button/button";
@@ -17,17 +18,24 @@ export default function EventPost({
 }) {
     const [isJoined, setIsJoined] = useState(false);
     const [isShared, setIsShared] = useState(false);
+    const router = useRouter();
 
-    const handleJoinClick = () => {
+    const handleJoinClick = (e) => {
+        e.stopPropagation();
         setIsJoined(!isJoined);
     };
 
-    const handleShareClick = () => {
+    const handleShareClick = (e) => {
+        e.stopPropagation();
         setIsShared(!isShared);
     };
 
+    const handleCardClick = () => {
+        router.push('/EventHomePage/step2');
+    };
+
     return (
-        <div className={styles.card}>
+        <div className={styles.card} onClick={handleCardClick} style={{ cursor: 'pointer' }}>
             <div className={styles.headerRow}>
                 <div className={styles.dateTag}>
                     <EventDateTag

@@ -36,7 +36,7 @@ export default function EventJoining({
                 <Button
                     value={isJoined ? "Joined" : "Join"}
                     type={isJoined ? "success" : "primary"}
-                    size="small"
+                    size="medium"
                     onClick={handleJoinClick}
                 />
             </div>
