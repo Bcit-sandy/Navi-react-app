@@ -1,9 +1,9 @@
 "use client";
-import styles from "@/app/profile/page.module.css";
+import styles from "@/app/profile/event_posts/page.module.css";
 import { ProfileTopNav } from "@/app/BigComponents/ProfileTopNav/ProfileTopNav"
 import { PlaceholderImg_profile } from "@/app/UiElements/PlaceholderImg_profile/index"
 import { HomePageNav } from "@/app/UiElements/HomePageNav";
-import CommunityPost from "@/app/BigComponents/CommunityPost/communitypost";
+import EventPost from '@/app/BigComponents/EventPost/EventPost';
 
 export default function Profile() {
   return (
@@ -51,31 +51,35 @@ export default function Profile() {
                     <HomePageNav />
                 </div>
             </div>
-            <section className={styles.communityPosts}>
-            <CommunityPost
-                            imgSm='/homePage_images/alex_smith.jpg'
-                            name='Alex Smith'
-                            date='Apr 7, 2025'
-                            content='Hello guys, I just got in Vancouver. Anyone knows where is the best place to go in Van?'
-                            imgLg='/homePage_images/alex_first_post.jpg'
-                            commentPic='/homePage_images/jenny_pham.jpg'
-                            commenter='Jenny Pham'
-                            commentDate='Mar 31, 2025'
-                            comment='I would say Granville Island. It’d have a lot of fun!!'
-                        />
+          
+            <div className={styles.eventPosts}>
+                        <div className={styles.eventPostContainer}>
+                            <EventPost
+                                date = "08"
+                                month = "APR"
+                                title = "Badminton (beginner)"
+                                tags = "Sports, Badminton"
+                                location = "Richmond, BC"
+                                maxParticipants = "30"
+                                time = "12:00 PM – 6:00 PM"
+                                image = "/event/event1.jpg"
+                                />
+                        </div>
 
-                        <CommunityPost
-                            imgSm='/homePage_images/alex_smith.jpg'
-                            name='Alex Smith'
-                            date='Apr 6, 2025'
-                            content='Pinoy Cravins on Edmonds St just had their soft opening last week. Super delicious and authentic Filipino cuisine!'
-                            imgLg='/homePage_images/john_mendoza_post.jpg'
-                            commentPic='/homePage_images/kim_sullivan.jpg'
-                            commenter='Kim Sullivan'
-                            commentDate='2m'
-                            comment='Wow! That is amazing'
-                        />
-        </section>
+                        <div className={styles.eventPostContainer}>
+                            <EventPost
+                                date = "30"
+                                month = "MAR"
+                                title = "Spring Festival"
+                                tags = "Food,Carnival, Games"
+                                location = "Burnaby, BC"
+                                maxParticipants = "300"
+                                time = "10:00 AM – 8:00 PM"
+                                image = "/event/event2.jpg"
+                                />
+                        </div>
+                        </div>
+  
         </section>
         
     </main>

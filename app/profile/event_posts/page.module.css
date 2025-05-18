@@ -1,0 +1,90 @@
+.main_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: ;
+    position: absolute;
+    top: 0;
+    font-family: var(--font-family);
+
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    gap: var(--space-regular);
+    padding: var(--space-regular);
+    width:430px;
+    height: 932px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin-top: 0;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.follow_section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.followers {
+    background-color: var(--secondary-beige-100);
+    padding: 3px 6px;
+    border-radius: 8px;
+    color: var(--secondary-beige-700);
+}
+
+.following {
+    background-color: var(--secondary-beige-100);
+    padding: 3px 6px;
+    border-radius: 8px;
+    color: var(--secondary-beige-700);
+}
+
+.statusAndLocation {
+    display: flex;
+    gap: 8px;
+    margin-top: -8px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name h1{
+    margin-top: 0;
+}
+
+.name p {
+    margin-top: -15px;
+}
+
+.bio{
+    margin-top: -8px;
+    font-size: var(--bodytext-font-size);
+    font-weight: 100;
+}
+
+.navBar {
+    background-color: var(--primary-blue-100);
+    width: 430px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventPosts {
+  margin-top: 20px; 
+}
