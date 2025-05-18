@@ -8,6 +8,7 @@
     justify-content: space-between;
     background-color: var(--white);
     border: none;
+    gap: 80px;
    
 }
 
@@ -16,4 +17,8 @@
     align-items: center;
 }
 
+.icon2,
+.icon3 {
+  margin-left: -60px; /* or remove margin entirely */
+}
 
