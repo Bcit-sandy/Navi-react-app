@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar"
 import styles from "@/app/onboarding/step4/page.module.css";
-import { Tags } from "@/app/Buttons/Tags";
+import { Tags } from "@/app/UiElements/Tags";
 
 
 export default function Step4() {

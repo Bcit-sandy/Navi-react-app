@@ -12,7 +12,7 @@ import Image from "next/image";
 //onClick: () => void (optional)  
 //color: light, dark
 export default function Button({
-    size = "medium",
+    size,
     type,
     color,
     icon,

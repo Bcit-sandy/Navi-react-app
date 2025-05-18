@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-import { EventDateTag } from "@/app/Buttons/EventDateTag";
-import { Elipses } from "@/app/Buttons/Elipses";
-import { PlaceholderImg_event } from "@/app/Buttons/PlaceholderImg_event";
+import { EventDateTag } from "@/app/UiElements/EventDateTag";
+import { Elipses } from "@/app/UiElements/Elipses";
+import { PlaceholderImg_event } from "@/app/UiElements/PlaceholderImg_event";
 import styles from "./EventPost.module.css";
 import Button from "@/app/button/button";
 

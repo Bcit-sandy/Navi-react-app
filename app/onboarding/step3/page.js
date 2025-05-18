@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar"
 import styles from "@/app/onboarding/step3/page.module.css";
-import { StudentCategories } from "@/app/Buttons/StudentCategories";
+import { StudentCategories } from "@/app/UiElements/StudentCategories";
 
 
 export default function Step3() {

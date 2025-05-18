@@ -20,7 +20,6 @@ export function LocationDropdown() {
         "Burnaby, BC",
         "Coquitlam, BC",
         "Surrey, BC",
-        "Richmond, BC",
     ];
 
     return (
@@ -47,7 +46,7 @@ export function LocationDropdown() {
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <img
-                        src={isOpen ? "/dropdown.svg" : "/dropdown-right.svg"}
+                        src={isOpen ? "/dropdown.svg" : "/dropdownUp.svg"}
                         alt='expand'
                         width={18}
                         height={18}

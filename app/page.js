@@ -7,7 +7,7 @@ import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
 import { OnboardProgressBar }from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar"
 import { EventJoining } from "./BigComponents/EventJoining/EventJoining";
 import Button from "@/app/button/button";
-import * as Buttons from "@/app/Buttons/allbuttons";
+import * as Buttons from "@/app/UiElements/allbuttons";
 
 import {
     Username,
