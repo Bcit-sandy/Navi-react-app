@@ -18,9 +18,11 @@ export default function Step1() {
                         <HomePageNav />
                     </div>
                 </div>
+
                 <div className={styles.addFeature}>
                     <Feature />
                 </div>
+
                 <div className={styles.main}>
                     <div className={styles.communityPost}>
                         <CommunityPost

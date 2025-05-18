@@ -60,7 +60,6 @@
     background-color: var(--secondary-beige-100);
     border-radius: 8px;
     margin-bottom: 20px;
-    
 }
 
 .username-input {
@@ -98,7 +97,7 @@
     resize: vertical;
     min-height: 80px;
     max-height: 200px;
-} 
+}
 /* Email password inputs - Daniel*/
 /* Onboarding small inputs - Sandy*/
 
@@ -137,14 +136,14 @@
 /* Medium input box */
 
 .community-post-textfield {
-    width: 398px;
-    height: 398px;
+    width: 383px;
+    height: 383px;
     padding: 10px;
     border: 1px solid var(--primary-blue-500);
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: var(--bodytext-font-size);
     transition: border-color 0.2s;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     outline: none;
     resize: none;
     box-sizing: border-box;
