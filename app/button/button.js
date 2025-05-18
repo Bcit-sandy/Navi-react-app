@@ -27,6 +27,7 @@ export default function Button({
             [styles.small]: size === "small",
             [styles.medium]: size === "medium",
             [styles.large]: size === "large",
+            [styles.xLarge]: size === "xLarge",
             [styles.primary]: type === "primary",
             [styles.neutral]: type === "neutral",
             [styles.success]: type === "success",

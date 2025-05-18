@@ -35,6 +35,14 @@
     height: 40px;
 }
 
+.xLarge {
+    padding: 10px 20px;
+    font-size:  var(--h3-font-size);
+    font-weight: var(--bold-weight);
+    width: 238px;
+    height: 73px;
+}
+
 /* Type variants */
 .primary {
     background-color: var(--primary-blue-500);
