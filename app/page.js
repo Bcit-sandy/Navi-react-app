@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import EventPost from "./BigComponents/EventPost/EventPost";
 import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
-import { OnboardProgressBar }from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar"
+import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar";
 import * as Buttons from "@/app/UiElements/uielements";
 
 import {
@@ -15,7 +15,6 @@ import {
 } from "./components/textfield";
 
 export default function Page() {
-
     const [selectedTags, setSelectedTags] = useState([]);
     const [isFollowing, setIsFollowing] = useState(false);
     const [searchQuery, setSearchQuery] = useState("");
@@ -123,7 +122,6 @@ export default function Page() {
                 ))}
             </div>
 
-        
             <Buttons.Follow
                 isFollowing={isFollowing}
                 onClick={() => setIsFollowing(!isFollowing)}

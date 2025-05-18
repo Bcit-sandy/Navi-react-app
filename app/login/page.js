@@ -26,7 +26,8 @@ export default function Login() {
             <br></br>
             <img
                 src='/signinlogo.svg'
-                alt='logo art'></img>
+                alt='logo art'
+            ></img>
             <div className='login-fields'>
                 <Buttons.SignUp_Input
                     label='Email'
@@ -48,17 +49,17 @@ export default function Login() {
                 />
             </div>
             <Button
-                size="large"
-                type="primary"
-                value="Sign in"
+                size='large'
+                type='primary'
+                value='Sign in'
             />
-            
+
             {/* Sign up button */}
             <h5 className='noAccount'>Don’t have an account?</h5>
             <Button
-               size="large"
-               type="outline"
-               value="Sign up"
+                size='large'
+                type='outline'
+                value='Sign up'
             />
         </main>
     );
