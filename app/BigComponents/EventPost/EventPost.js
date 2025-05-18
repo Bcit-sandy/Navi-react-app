@@ -16,9 +16,14 @@ export default function EventPost({
     image = "/placeholder.png",
 }) {
     const [isJoined, setIsJoined] = useState(false);
+    const [isShared, setIsShared] = useState(false);
 
     const handleJoinClick = () => {
         setIsJoined(!isJoined);
+    };
+
+    const handleShareClick = () => {
+        setIsShared(!isShared);
     };
 
     return (
