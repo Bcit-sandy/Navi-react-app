@@ -1,10 +1,15 @@
 "use client";
+import { useRouter } from "next/navigation";
 import styles from "@/app/onboarding/step6/page.module.css";
-import Button  from "@/app/button/button";
+import Button from "@/app/button/button";
 
+const Step6 = () => {
+    const router = useRouter();
 
+    const handleExplore = () => {
+        router.push('/CommunityHomePage/step1');
+    };
 
-export default function Step6() {
     return (
         <main className={styles.main_container}>
             <section className={styles.container}>
@@ -18,6 +23,7 @@ export default function Step6() {
                             type="primary"
                             value="Let's go explore!"
                             round="round"
+                            onClick={handleExplore}
                          />
                          </div>
             <div className={styles.blob}> 
@@ -27,4 +33,6 @@ export default function Step6() {
             </section>
         </main>
     );
-}
+};
+
+export default Step6;
