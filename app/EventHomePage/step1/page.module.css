@@ -1,3 +1,16 @@
+.community_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -19,16 +32,29 @@
 .topContainer {
     width: 430px;
     height: 10%;
+
 }
 
 .middleContainer {
     width: 430px;
-    height: 30%;
+    height:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
     background-color: #EDF4F9;
 }
 
 .bottomContainer {
     width: 430px;    
     height: 100%;
+}
+
+.eventSliderContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 

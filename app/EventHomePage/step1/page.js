@@ -9,19 +9,25 @@ import { HomePageNav2 } from "@/app/UiElements/HomePageNav2";
 
 const Step1 = () => {
     return (
-        <main className={styles.main}>
+        <main className={styles.community_container}>
+               <section className={styles.container}>
+            <div className={styles.main}>
             <div className={styles.topContainer}>
-            <NavBar />
+                <NavBar />
+                </div>
+                <div className={styles.homePageNav}>
+                        <HomePageNav2 />
+                </div>
+                <div className={styles.middleContainer}>
+                    <div className={styles.eventSliderContainer}>
+                    <EventSlider />
+                    </div>
+                </div>
+                <div className={styles.bottomContainer}>
+                <EventPost />
+                </div>
             </div>
-            <div className={styles.homePageNav}>
-                    <HomePageNav2 />
-            </div>
-            <div className={styles.middleContainer}>
-            <EventSlider />
-            </div>
-            <div className={styles.bottomContainer}>
-            <EventPost />
-            </div>
+            </section>
         </main>
     );
 };
