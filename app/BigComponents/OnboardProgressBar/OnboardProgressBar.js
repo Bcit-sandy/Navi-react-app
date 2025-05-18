@@ -10,7 +10,8 @@ export function OnboardProgressBar({
     onPrev,
     onNext,
 }) {
-    const isFirst = currentStep === 1||6;
+    const isFirst = currentStep === 1;
+
 
     return (
         <div className={styles.progressBarContainer}>
