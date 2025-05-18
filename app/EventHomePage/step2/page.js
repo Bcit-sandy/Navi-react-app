@@ -40,7 +40,7 @@ const Step2 = () => {
                             src='/location.svg'
                             alt='location'
                         />
-                        <p className={styles.location_name}>4351 Number, Richmond</p>
+                        <p className={styles.location_name}>4351Number, Richmond</p>
                     </div>
                 </div>
 

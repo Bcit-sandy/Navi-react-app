@@ -15,16 +15,11 @@
     font-family: var(--font-family);
 }
 
-.return {
-    position: absolute;
-    top: 50px;
-    left: 24px;
-}
 
 .nav {
     display: flex;
-    padding: 55px 24px 0 24px;
-    margin-bottom: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -72,9 +67,8 @@
 }
 
 .location_name {
-    font-size: 14px;
+    font-size: var(--caption-font-size);
     color: var(--neutral-blue-700);
-    margin: 0;
 }
 
 .event_post_button_container{
