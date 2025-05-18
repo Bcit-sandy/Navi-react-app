@@ -1,8 +1,15 @@
 "use client";
 import styles from "@/app/BigComponents/NavBar/navbar.module.css";
 import Button from "@/app/button/button";
+import { useRouter } from "next/navigation";
 
 export default function NavBar() {
+    const router = useRouter();
+
+    const handleProfileClick = () => {
+        router.push('/profile');
+    };
+
     return (
         <main className={styles.navBar_container}>
             <div className={styles.logo}>
@@ -22,6 +29,7 @@ export default function NavBar() {
                 <Button
                     icon='/profile.svg'
                     className={styles.icon}
+                    onClick={handleProfileClick}
                 />
             </div>
         </main>
