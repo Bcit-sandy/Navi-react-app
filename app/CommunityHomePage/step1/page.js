@@ -9,11 +9,13 @@ export default function Step1() {
     return (
         <main className={styles.community_container}>
             <section className={styles.container}>
-                <div className={styles.navBar}>
-                    <NavBar />
-                </div>
-                <div className={styles.homePageNav}>
-                    <HomePageNav />
+                <div className={styles.fixedNavBar}>
+                    <div className={styles.navBar}>
+                        <NavBar />
+                    </div>
+                    <div className={styles.homePageNav}>
+                        <HomePageNav />
+                    </div>
                 </div>
                 <div className={styles.main}>
                     <div className={styles.communityPost}>
