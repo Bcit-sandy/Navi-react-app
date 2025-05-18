@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react";
 import EventPost from "./BigComponents/EventPost/EventPost";
 import { ProfileTopNav } from "./BigComponents/ProfileTopNav/ProfileTopNav";
 import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar";
+import EventJoining from "./BigComponents/EventJoining/EventJoining";
 import * as Buttons from "@/app/UiElements/uielements";
 
 import {
