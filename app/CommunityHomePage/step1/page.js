@@ -4,6 +4,7 @@ import NavBar from "@/app/BigComponents/NavBar/navbar";
 import CommunityPost from "@/app/BigComponents/CommunityPost/communitypost";
 import { HomePageNav } from "@/app/UiElements/HomePageNav";
 import styles from "@/app/CommunityHomePage/step1/page.module.css";
+import Feature from "@/app/featured/page";
 
 export default function Step1() {
     return (
@@ -16,6 +17,9 @@ export default function Step1() {
                     <div className={styles.homePageNav}>
                         <HomePageNav />
                     </div>
+                </div>
+                <div className={styles.addFeature}>
+                    <Feature />
                 </div>
                 <div className={styles.main}>
                     <div className={styles.communityPost}>
