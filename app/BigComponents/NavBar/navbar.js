@@ -24,11 +24,11 @@ export default function NavBar() {
             <div className={styles.icons}>
                 <Button
                     icon='/search.svg'
-                    className={styles.icon}
+                    className={styles.search}
                 />
                 <Button
                     icon='/profile.svg'
-                    className={styles.icon}
+                    className={styles.profile}
                     onClick={handleProfileClick}
                 />
             </div>

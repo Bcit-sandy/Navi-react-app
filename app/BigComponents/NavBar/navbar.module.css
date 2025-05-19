@@ -51,7 +51,11 @@
     color: white;
 }
 
-.icons {
+.search {
+    margin-right: -20px;
+}
+
+.search, .profile {
     display: flex;
     align-items: center;
     margin-top: 40px;

@@ -15,8 +15,10 @@
     position: fixed;
     width: 65px;
     height: 65px;
-    top: 700px;
-    right: 570px;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 150px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -37,8 +39,9 @@
 
 .optionsOverlay {
     position: fixed;
-    top: 600px;
-    right: 600px;
+    top: 65%;
+    left: 49.4%;
+    transform: translateX(-50%);
     z-index: 3;
     display: flex;
     flex-direction: column;
