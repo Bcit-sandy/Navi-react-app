@@ -39,8 +39,9 @@
 
 .optionsOverlay {
     position: fixed;
-    top: 600px;
-    right: 600px;
+    top: 65%;
+    left: 49.4%;
+    transform: translateX(-50%);
     z-index: 3;
     display: flex;
     flex-direction: column;
