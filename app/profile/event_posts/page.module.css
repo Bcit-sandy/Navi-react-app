@@ -6,6 +6,7 @@
     position: absolute;
     top: 0;
     font-family: var(--font-family);
+
 }
 
 .container {
@@ -13,7 +14,7 @@
     padding: 0;
     gap: var(--space-regular);
     padding: var(--space-regular);
-    width: 430px;
+    width:430px;
     height: 932px;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -25,6 +26,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .follow_section {
@@ -61,7 +63,7 @@
     flex-direction: column;
 }
 
-.name h1 {
+.name h1{
     margin-top: 0;
 }
 
@@ -69,7 +71,7 @@
     margin-top: -15px;
 }
 
-.bio {
+.bio{
     margin-top: -8px;
     font-size: var(--bodytext-font-size);
     font-weight: 100;
@@ -82,4 +84,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.eventPosts {
+  margin-top: 20px; 
 }

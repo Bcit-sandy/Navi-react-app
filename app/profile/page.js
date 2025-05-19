@@ -1,9 +1,10 @@
 "use client";
 import styles from "@/app/profile/page.module.css";
-import Button from "@/app/button/button";
-import { ProfileTopNav } from "../BigComponents/ProfileTopNav/ProfileTopNav";
-import { PlaceholderImg_profile } from "@/app/UiElements/PlaceholderImg_profile/index";
-import { HomePageNav } from "../UiElements/HomePageNav";
+
+import { ProfileTopNav } from "@/app/BigComponents/ProfileTopNav/ProfileTopNav"
+import { PlaceholderImg_profile } from "@/app/UiElements/PlaceholderImg_profile/index"
+import { HomePageNav } from "@/app/UiElements/HomePageNav";
+import CommunityPost from "@/app/BigComponents/CommunityPost/communitypost";
 
 export default function Profile() {
     return (
@@ -51,7 +52,33 @@ export default function Profile() {
                         <HomePageNav />
                     </div>
                 </div>
-            </section>
-        </main>
-    );
+            <section className={styles.communityPosts}>
+            <CommunityPost
+                            imgSm='/homePage_images/alex_smith.jpg'
+                            name='Alex Smith'
+                            date='Apr 7, 2025'
+                            content='Hello guys, I just got in Vancouver. Anyone knows where is the best place to go in Van?'
+                            imgLg='/homePage_images/alex_first_post.jpg'
+                            commentPic='/homePage_images/jenny_pham.jpg'
+                            commenter='Jenny Pham'
+                            commentDate='Mar 31, 2025'
+                            comment='I would say Granville Island. It’d have a lot of fun!!'
+                        />
+
+                        <CommunityPost
+                            imgSm='/homePage_images/alex_smith.jpg'
+                            name='Alex Smith'
+                            date='Apr 6, 2025'
+                            content='Pinoy Cravins on Edmonds St just had their soft opening last week. Super delicious and authentic Filipino cuisine!'
+                            imgLg='/homePage_images/john_mendoza_post.jpg'
+                            commentPic='/homePage_images/kim_sullivan.jpg'
+                            commenter='Kim Sullivan'
+                            commentDate='2m'
+                            comment='Wow! That is amazing'
+                        />
+        </section>
+        </section>
+        
+    </main>
+  );
 }
