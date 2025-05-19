@@ -34,6 +34,8 @@ export default function Feature() {
     }, [showOptions]);
 
     return (
+        <main className={styles.community_container}>
+        <section className={styles.container}>
         <main className={styles.screen}>
             <div className={styles.add}>
                 <Button
@@ -72,6 +74,8 @@ export default function Feature() {
                     </div>
                 </>
             )}
+        </main>
+        </section>
         </main>
     );
 }

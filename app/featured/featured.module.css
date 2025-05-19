@@ -4,13 +4,19 @@
     background-color: white;
     position: relative;
 } */
+.container {
+    width: 430px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
 
 .add {
     position: fixed;
     width: 65px;
     height: 65px;
-    top: 58vh;
-    right: 34vw;
+    top: 700px;
+    right: 575px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -31,8 +37,8 @@
 
 .optionsOverlay {
     position: fixed;
-    top: 53vh;
-    right: 40vw;
+    top: 600px;
+    right: 600px;
     z-index: 1000;
     display: flex;
     flex-direction: column;

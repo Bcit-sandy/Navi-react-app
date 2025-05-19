@@ -5,7 +5,7 @@ import styles from '@/app/EventHomePage/step1/page.module.css';
 import EventSlider from '@/app/BigComponents/EventSliders/eventslider';
 import EventPost from '@/app/BigComponents/EventPost/EventPost';
 import NavBar from '@/app/BigComponents/NavBar/navbar';
-import { HomePageNav2 } from "@/app/UiElements/HomePageNav2";
+import { HomePageNav2 } from "@/app/UiElements/H";
 import Feature from "@/app/featured/page";
 
 
