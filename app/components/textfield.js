@@ -65,7 +65,7 @@ export function CommunityPostTextField({
     placeholder = "What do you think...",
 }) {
     return (
-        <input
+        <textarea
             className='community-post-textfield'
             type='text'
             value={value}

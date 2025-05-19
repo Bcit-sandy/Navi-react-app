@@ -141,21 +141,23 @@
     padding: 10px;
     border: 1px solid var(--primary-blue-500);
     border-radius: 10px;
+    font-family: var(--font-family);
     font-size: var(--bodytext-font-size);
+    line-height: 1.5;
     transition: border-color 0.2s;
     margin-top: 0.5rem;
     outline: none;
     resize: none;
     box-sizing: border-box;
+    vertical-align: top;
+    overflow-y: auto;
 }
 
 .community-post-textfield::placeholder {
     color: var(--analogous-blue-700);
     opacity: 1;
-    position: relative;
-    top: -45%;
-    left: 0;
 }
+
 .community-post-textfield:focus {
     border-color: var(--primary-blue-500);
 }

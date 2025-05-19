@@ -60,12 +60,12 @@ export default function CommunityPost({
                 <div className={styles.interact}>
                     <Button
                         icon={isLiked ? '/filledheart.svg' : '/outlineheart.svg'}
-                        className={styles.icon}
+                        className={styles.heart}
                         onClick={handleLikeClick}
                     />
                     <Button
                         icon='/comment.svg'
-                        className={styles.icon}
+                        className={styles.comment}
                     />
                 </div>
                 <div className={styles.share}>
