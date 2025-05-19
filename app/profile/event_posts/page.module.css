@@ -5,7 +5,10 @@
     position: absolute;
     top: 0;
     font-family: var(--font-family);
-
+    background-image: url("/profileBG.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
 }
 
 .container {
