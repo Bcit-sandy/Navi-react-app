@@ -30,7 +30,7 @@ export { AnonymousToggle } from "./AnonymousToggle";
 export { UserCircles } from "./UserCircles";
 export { Delete } from "./Delete";
 export { HomePageNav } from "./HomePageNav";
-export { HomePageNav2 } from "./H";
+export { HomePageNav2 } from "./HomePageNav2";
 export { TakePhotoButton } from "./TakePhotoButton";
 export { ChoosePhotoButton } from "./ChoosePhotoButton";
 export { Toggle } from "./Toggle";

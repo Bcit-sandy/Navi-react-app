@@ -17,11 +17,12 @@
 
 .nav {
     display: flex;
-    padding: 55px 24px 0 24px;
+    padding: 0;
+    margin: 0;
 }
 
 .nav h1 {
-    margin: 0 auto;
+    margin: 15px 100px;
     color: var(--neutral-blue-700);
 }
 

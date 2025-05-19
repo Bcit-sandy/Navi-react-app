@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import "../globals.css";
 import Button from "@/app/button/button";
 import styles from "@/app/featured/featured.module.css";
+import { useRouter } from "next/navigation";
 
 export default function Feature() {
     // default show options to false
@@ -10,6 +11,8 @@ export default function Feature() {
 
     // ref detects clicks outside of the overlay
     const overlayRef = useRef(null);
+
+    const router = useRouter();
 
     // Close when clicking outside the overlay, using event listener
     useEffect(() => {
@@ -33,9 +36,11 @@ export default function Feature() {
         };
     }, [showOptions]);
 
+    const handleCreatePost = () => {
+        router.push('/CommunityHomePage/step2');
+    };
+
     return (
-        <main className={styles.community_container}>
-        <section className={styles.container}>
         <main className={styles.screen}>
             <div className={styles.add}>
                 <Button
@@ -60,7 +65,7 @@ export default function Feature() {
                             icon='/community.svg'
                             value='Create Community Post'
                             type='post'
-                            onClick={() => console.log("Create Community Post")}
+                            onClick={handleCreatePost}
                             className={styles.post_type}
                         />
                         <Button
@@ -74,8 +79,6 @@ export default function Feature() {
                     </div>
                 </>
             )}
-        </main>
-        </section>
         </main>
     );
 }

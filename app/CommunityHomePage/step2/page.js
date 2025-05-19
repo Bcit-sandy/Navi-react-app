@@ -5,17 +5,20 @@ import { AnonymousToggle } from "@/app/UiElements/AnonymousToggle";
 import { CommunityPostTextField } from "@/app/components/textfield";
 import { ImageAdd } from "@/app/UiElements/ImageAdd";
 import Button from "@/app/button/button";
+import { useRouter } from "next/navigation";
 
 export default function Step2() {
+    const router = useRouter();
+
     return (
         <main className={styles.community_container}>
             <section className={styles.container}>
                 <div className={styles.nav}>
-                    <img
+                    <Button
                         className={styles.return}
-                        src='/return.svg'
-                        alt='return'
-                    ></img>
+                        icon='/return.svg'
+                        onClick={() => router.back()}   
+                    />
                     <h1>Posting</h1>
                 </div>
                 <div className={styles.main}>
