@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import "./styles.css";
 
 // 2 buttons (community and events)
-export function HomePageNav3() {
-    const [activeLink, setActiveLink] = useState("community");
+export function HomePageNav4() {
+    const [activeLink, setActiveLink] = useState("events");
     const router = useRouter();
 
     const handleCommunityClick = () => {

@@ -7,7 +7,7 @@ export function ProfileTopNav() {
     const router = useRouter();
 
     const handleReturn = () => {
-        router.back();
+        router.push('/CommunityHomePage/step1');
     };
 
     return (
