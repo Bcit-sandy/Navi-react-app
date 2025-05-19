@@ -32,12 +32,11 @@
     height: 96px;
     padding: 0 16px;
     width: 400px;
-}
+}    
 
 .logo {
     display: flex;
     align-items: center;
-    margin-top: 40px;
 }
 
 .logo_img {
@@ -56,3 +55,4 @@
     align-items: center;
     margin-top: 40px;
 }
+

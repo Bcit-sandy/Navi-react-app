@@ -2,7 +2,7 @@
 import styles from "@/app/profile/event_posts/page.module.css";
 import { ProfileTopNav } from "@/app/BigComponents/ProfileTopNav/ProfileTopNav"
 import { PlaceholderImg_profile } from "@/app/UiElements/PlaceholderImg_profile/index"
-import { HomePageNav } from "@/app/UiElements/HomePageNav";
+import { HomePageNav3 } from "@/app/UiElements/HomePageNav3-profile";
 import EventPost from '@/app/BigComponents/EventPost/EventPost';
 
 export default function Profile() {
@@ -48,7 +48,7 @@ export default function Profile() {
                 </div>
 
                 <div className={styles.navBar}>
-                    <HomePageNav />
+                    <HomePageNav3 />
                 </div>
             </div>
           

@@ -10,6 +10,10 @@ import { useRouter } from "next/navigation";
 export default function Step2() {
     const router = useRouter();
 
+    const handlePost = () => {
+        router.push('/CommunityHomePage/step3');
+    };
+
     return (
         <main className={styles.community_container}>
             <section className={styles.container}>
@@ -48,6 +52,7 @@ export default function Step2() {
                             size='medium'
                             type='primary'
                             value='Post →'
+                            onClick={handlePost}
                         />
                     </div>
                 </div>
