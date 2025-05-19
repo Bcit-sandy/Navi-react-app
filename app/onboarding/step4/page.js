@@ -1,12 +1,12 @@
 "use client";
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar";
 import styles from "@/app/onboarding/step4/page.module.css";
 import { Tags } from "@/app/UiElements/Tags";
 
 export default function Step4() {
-    const router = useRouter(); 
+    const router = useRouter();
     const [selectedTags, setSelectedTags] = useState([]);
 
     const tagLabels = [
@@ -31,11 +31,11 @@ export default function Step4() {
     };
 
     const handlePrev = () => {
-        router.push('/onboarding/step3');
+        router.push("/onboarding/step3");
     };
 
     const handleNext = () => {
-        router.push('/onboarding/step5');
+        router.push("/onboarding/step5");
     };
 
     return (
@@ -43,15 +43,17 @@ export default function Step4() {
             <section className={styles.container}>
                 <img
                     className={styles.illustration}
-                    src="/onboarding_graphics/step4.svg"
-                    alt="graphics"
+                    src='/onboarding_graphics/step4.svg'
+                    alt='graphics'
                 />
                 <div className={styles.text}>
                     <h1 className={styles.question}>
                         Alex, <br />
                         What are you into?
                     </h1>
-                    <h3 className={styles.supportingText}>Select all that apply!</h3>
+                    <h3 className={styles.supportingText}>
+                        Select all that apply!
+                    </h3>
                 </div>
                 <div className={styles.tags}>
                     {tagLabels.map((label) => (
