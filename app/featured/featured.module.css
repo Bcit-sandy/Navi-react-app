@@ -15,8 +15,10 @@
     position: fixed;
     width: 65px;
     height: 65px;
-    top: 700px;
-    right: 570px;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 150px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
