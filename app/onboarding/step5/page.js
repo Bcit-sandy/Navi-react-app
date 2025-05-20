@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar";
 import styles from "@/app/onboarding/step5/page.module.css";
 import { LocationDropdown } from "@/app/UiElements/LocationDropdown";
+import { useEffect, useState } from "react";
 
 export default function Step5() {
     const router = useRouter();
@@ -15,6 +16,15 @@ export default function Step5() {
         router.push("/onboarding/step6");
     };
 
+    const [username, setUsername] = useState("");
+    
+      useEffect(() => {
+        const storedUsername = localStorage.getItem("username");
+        if (storedUsername) {
+          setUsername(storedUsername);
+        }
+      }, []);
+
     return (
         <main className={styles.main_container}>
             <section className={styles.container}>
@@ -25,7 +35,7 @@ export default function Step5() {
                 ></img>
                 <div className={styles.text}>
                     <h1 className={styles.question}>
-                        Alex, where do you call home?
+                        {username}, where do you call home?
                     </h1>
                     <h3 className={styles.supportingText}>
                         We want to connect you with people near you!

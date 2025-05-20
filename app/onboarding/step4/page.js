@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar";
 import styles from "@/app/onboarding/step4/page.module.css";
@@ -8,6 +8,15 @@ import { Tags } from "@/app/UiElements/Tags";
 export default function Step4() {
     const router = useRouter();
     const [selectedTags, setSelectedTags] = useState([]);
+
+    const [username, setUsername] = useState("");
+   
+    useEffect(() => {
+    const storedUsername = localStorage.getItem("username");
+       if (storedUsername) {
+         setUsername(storedUsername);
+       }
+     }, []);
 
     const tagLabels = [
         "Sports",
@@ -48,7 +57,7 @@ export default function Step4() {
                 />
                 <div className={styles.text}>
                     <h1 className={styles.question}>
-                        Alex, <br />
+                        {username}, <br />
                         What are you into?
                     </h1>
                     <h3 className={styles.supportingText}>
