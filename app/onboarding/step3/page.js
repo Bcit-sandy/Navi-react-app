@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import { OnboardProgressBar } from "@/app/BigComponents/OnboardProgressBar/OnboardProgressBar";
 import styles from "@/app/onboarding/step3/page.module.css";
 import { StudentCategories } from "@/app/UiElements/StudentCategories";
+import { useEffect, useState } from "react";
 
 export default function Step3() {
     const router = useRouter();
@@ -15,6 +16,15 @@ export default function Step3() {
         router.push("/onboarding/step4");
     };
 
+    const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    const storedUsername = localStorage.getItem("username");
+    if (storedUsername) {
+      setUsername(storedUsername);
+    }
+  }, []);
+
     return (
         <main className={styles.main_container}>
             <section className={styles.container}>
@@ -25,7 +35,7 @@ export default function Step3() {
                 ></img>
                 <div className={styles.text}>
                     <h1 className={styles.question}>
-                        Hi Alex, <br />
+                        Hi {username}, <br />
                         Which one describes <br /> you best?
                     </h1>
                 </div>

@@ -6,7 +6,7 @@ import { useState } from "react";
 // Email password inputs - Daniel
 
 // Onboarding small inputs - Sandy
-export function Username({ placeholder = "Type here", onChange, className="" }) {
+export function Username({ placeholder = "Type here", onChange, value, className="" }) {
     return (
         <div className={`username-container ${className}`}>
 
@@ -14,6 +14,7 @@ export function Username({ placeholder = "Type here", onChange, className="" }) 
                 type="text"
                 className="username-input"
                 placeholder={placeholder}
+                value={value}
                 onChange={onChange}
             />
         </div>
